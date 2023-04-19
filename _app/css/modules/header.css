@@ -11,3 +11,17 @@
 	text-align: center;
 	color: white;
 }
+
+.navbar__items {
+	display: flex;
+}
+
+.navbar__menu {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar__menu li {
+	list-style: none;
+}
