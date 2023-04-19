@@ -1,8 +1,13 @@
-.header {
+.navbar {
+	height: 15rem;
+	background-color: #266079;
 }
 
-.header__navigation {
-}
-
-.header__navigation--visible {
+.navbar__logo {
+	margin: 0 auto;
+	padding: 5rem;
+	font-size: 3rem;
+	width: 100vw;
+	text-align: center;
+	color: white;
 }
