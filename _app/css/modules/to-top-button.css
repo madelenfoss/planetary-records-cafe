@@ -1,4 +1,8 @@
 .to-top__button {
+	position: fixed;
 	background:none;
 	border: none;
+	right: 0.5rem;
+	bottom: 4rem;
+	cursor: pointer;
 }
