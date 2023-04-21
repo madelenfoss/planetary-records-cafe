@@ -6,9 +6,8 @@
 	--quinary-color: white;
 	--senary-color: #1C4A5E;
 
-	--header-font-family: ;
-	--header-font-style: ;
-	--header-font-size: ;
+	--header-font-family: 'Aladin', sans-serif;
+	--header-font-size: 5rem;
 
 	--navbar-font-family: ;
 	--navbar-font-style: ;
@@ -25,6 +24,6 @@
 	--body-font-size: ;
 	--body-font-style: ;
 	--body-font-family: ;
-	
+
 
 }

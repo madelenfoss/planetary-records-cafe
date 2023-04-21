@@ -1,6 +1,6 @@
 .navbar {
 	height: auto;
-	background-color: #266079;
+	background-color: rgb(38, 96, 121);
 }
 
 .navbar__logo {
@@ -9,13 +9,15 @@
 	font-size: 3rem;
 	width: 100vw;
 	text-align: center;
-	color: white;
+	font-family: var(--header-font-family);
+	font-size: 5rem;
 }
 
 .navbar__logo a {
-	color: white;
 	text-decoration: none;
 	cursor: pointer;
+	color: var(--secondary-color);
+	text-shadow: 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__items {
