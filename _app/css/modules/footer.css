@@ -1,0 +1,7 @@
+footer {
+	margin-top: auto;
+	background-color: var(--primary-color);
+	width: 100%;
+	padding: 1rem 3rem;
+}
+
