@@ -1,4 +1,5 @@
 :root {
+	/* Color variables */
 	--primary-color: #266079;
 	--secondary-color: #BBD8E8;
 	--tertiary-color: #D5E6F0;
@@ -6,12 +7,13 @@
 	--quinary-color: white;
 	--senary-color: #1C4A5E;
 
+	/* Logo styles */
 	--header-font-family: 'Aladin', sans-serif;
 	--header-font-size: 5rem;
 
 	--navbar-font-family: 'Roboto', sans-serif;
 	--navbar-font-style: ;
-	--navbar-font-size: ;
+	--navbar-font-size: 1.2rem;
 
 	--slideshow-font-family: ;
 	--slideshow-font-style: ;
