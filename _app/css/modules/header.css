@@ -22,20 +22,20 @@
 	display: flex;
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 2rem 1rem 2rem;
+	padding: 0 3rem 1rem 3rem;
 	align-items: center;
 	justify-content: space-between;
 }
 
 .navbar__menu {
 	display: flex;
+	width: 60%;
+	justify-content: space-between;
 }
 
 .navbar__menu-link {
 	margin: 0rem;
-	padding: 1rem;
 	list-style: none;
-
 }
 
 .navbar__menu a {
@@ -44,5 +44,27 @@
 }
 
 .navbar__search-container {
-	padding: 1rem;
+	display: flex;
+	position:relative;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.navbar__search-input {
+	width: 11rem;
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	border: none;
+	color: var(--primary-color);
+}
+
+.navbar__search-button {
+	background: none;
+	border: none;
+	position: absolute;
+	right: 0;
+}
+
+.navbar__search-button img {
+	width: 3rem;
 }
