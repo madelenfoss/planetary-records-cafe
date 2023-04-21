@@ -1,0 +1,30 @@
+:root {
+	--primary-color: #266079;
+	--secondary-color: #BBD8E8;
+	--tertiary-color: #D5E6F0;
+	--quaternary-color: #EAF4FA;
+	--quinary-color: white;
+	--senary-color: #1C4A5E;
+
+	--header-font-family: ;
+	--header-font-style: ;
+	--header-font-size: ;
+
+	--navbar-font-family: ;
+	--navbar-font-style: ;
+	--navbar-font-size: ;
+
+	--slideshow-font-family: ;
+	--slideshow-font-style: ;
+	--slideshow-font-size: ;
+
+	--h2-font-size: ;
+	--h2-font-style: ;
+	--h2-font-family: ;
+
+	--body-font-size: ;
+	--body-font-style: ;
+	--body-font-family: ;
+	
+
+}
