@@ -17,7 +17,7 @@
 	text-decoration: none;
 	cursor: pointer;
 	color: var(--secondary-color);
-	text-shadow: 0 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 15px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__items {
