@@ -28,17 +28,21 @@
 	align-items: center;
 	justify-content: space-between;
 	font-family: var(--navbar-font-family);
+	font-size: var(--navbar-font-size);
+	text-shadow: 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__menu {
 	display: flex;
 	width: 60%;
 	justify-content: space-between;
+	white-space:nowrap;
 }
 
 .navbar__menu-link {
-	margin: 0rem;
+	margin: 1rem;
 	list-style: none;
+
 }
 
 .navbar__menu a {
@@ -71,3 +75,4 @@
 .navbar__search-button img {
 	width: 3rem;
 }
+
