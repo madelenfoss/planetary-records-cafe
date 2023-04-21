@@ -20,17 +20,23 @@
 
 .navbar__items {
 	display: flex;
-}
-
-.navbar__menu {
-	margin: 0 auto;
-	padding: 1rem 2rem 2rem 2rem ;
-	display: flex;
+	margin: 1rem auto;
+	width: 100vw;
+	align-items: center;
 	justify-content: center;
 }
 
-.navbar__menu li {
+.navbar__menu {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.navbar__menu-link {
+	margin: 0rem;
+	padding: 1rem;
 	list-style: none;
+
 }
 
 .navbar__menu a {
