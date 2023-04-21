@@ -12,6 +12,12 @@
 	color: white;
 }
 
+.navbar__logo a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .navbar__items {
 	display: flex;
 }
@@ -24,4 +30,9 @@
 
 .navbar__menu li {
 	list-style: none;
+}
+
+.navbar__menu a {
+	text-decoration: none;
+	color: white;
 }
