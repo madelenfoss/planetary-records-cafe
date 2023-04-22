@@ -59,7 +59,7 @@
 }
 
 .navbar__search-input {
-	width: 11rem;
+	width: 12rem;
 	padding: 0.5rem 1rem;
 	border-radius: 2rem;
 	border: none;
@@ -77,16 +77,19 @@
 	width: 3rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
 	.navbar__logo {
-		width: 100%;
+		display: flex;
+		margin: 0 auto;
+		width: 90vw;
 		padding: 5rem 0;
 		font-size: 4.5rem;
-		white-space: nowrap;
+		justify-content: center;
 	}
 
 	.navbar__items {
 		display: flex;
+		padding: 1rem;
 	}
 
 	.navbar__menu {
@@ -106,13 +109,11 @@
 		width: 100%;
 		position: relative; 
 		margin: 0 auto 2rem auto;
-		padding: 3rem;
+		padding: 2rem;
 		background-color: var(--secondary-color);
 		justify-content: center;
 		border-radius: 1rem;
 	}
-
-
 
 	.navbar__search-container {
 		display: none;
@@ -123,10 +124,32 @@
 		align-items: center;
 		margin: 0 auto;
 		justify-content: space-between;
-		padding: 0 1rem 1rem 1rem;
+		padding: 0 1.5rem 1rem 1.5rem;
 	}
 
-	.navbar__mobile-seach-icon img {
+	.navbar__mobile-search-container {
+		display: flex;
+		position:relative;
+		align-items: center;
+		padding: 1rem 2rem;
+	}
+
+	.navbar__mobile-search-input {
+		width: 50vw;
+		padding: 0.5rem 1rem;
+		border-radius: 2rem;
+		border: none;
+		color: var(--primary-color);
+	}
+
+	.navbar__mobile-search-button {
+		background: none;
+		border: none;
+		position: absolute;
+		right: 0;
+	}
+
+	.navbar__mobile-search-button img {
 		height: 4rem;
 	}
 
@@ -136,7 +159,7 @@
 		width: 3.2rem;
 		height: 0.4rem;
 		background-color: var(--secondary-color);
-		margin: 0.6rem;
+		margin: 0.6rem 0;
 		border-radius: 1rem;
 	}
 
