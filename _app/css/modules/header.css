@@ -31,7 +31,6 @@
 	justify-content: space-between;
 	font-family: var(--navbar-font-family);
 	font-size: var(--navbar-font-size);
-	text-shadow: 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .navbar__menu {
@@ -87,6 +86,35 @@
 	}
 
 	.navbar__items {
+		display: flex;
+	}
+
+	.navbar__menu {
+		display: none;
+	}
+
+	.navbar__menu-link a {
+		display: flex;
+		color: var(--primary-color);
+		width: 100%;
+
+	}
+
+	.navbar__menu--visible {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative; 
+		margin: 0 auto 2rem auto;
+		padding: 3rem;
+		background-color: var(--secondary-color);
+		justify-content: center;
+		border-radius: 1rem;
+	}
+
+
+
+	.navbar__search-container {
 		display: none;
 	}
 
