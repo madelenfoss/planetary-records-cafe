@@ -4,7 +4,7 @@ import { visionTool } from '@sanity/vision';
 import schemas from './schemas/schemas.js';
 
 export default {
-	title: 'Studio',
+	title: 'Planetary Records Café',
 
 	projectId: 'xsjf1afi',
 	dataset: 'production',
