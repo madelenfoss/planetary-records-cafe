@@ -5,7 +5,6 @@
 .navbar__logo {
 	margin: 0 auto;
 	padding: 5rem;
-	font-size: 3rem;
 	width: 100vw;
 	text-align: center;
 	font-family: var(--header-font-family);
