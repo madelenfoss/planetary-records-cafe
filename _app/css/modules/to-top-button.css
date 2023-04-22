@@ -7,6 +7,10 @@
 	cursor: pointer;
 }
 
+.to-top__button img {
+	width: 5rem;
+}
+
 .hidden {
 	display: none;
 }
