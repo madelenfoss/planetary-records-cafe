@@ -3,6 +3,7 @@ import vinylOfTheMonth from "./documents/vinylOfTheMonth.js";
 import vinylCategory from "./documents/vinylCategory.js";
 import settings from "./documents/settings.js";
 import menu from "./documents/menu.js";
+import menuItems from "./documents/menuItems.js";
 
 export default [
 	shopItems,
@@ -10,4 +11,5 @@ export default [
 	vinylCategory,
 	settings,
 	menu,
+	menuItems,
 ]
