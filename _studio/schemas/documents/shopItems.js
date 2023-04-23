@@ -16,6 +16,14 @@ export default {
 				source: 'name'
 			}
 		},
+		{
+			title: 'Image',
+			name: 'image',
+			type: 'image',
+			options: {
+				hotspot: true
+			}
+		}
 
 	],
 
