@@ -13,7 +13,7 @@ export default {
 			name: 'slug',
 			type: 'slug',
 			options: {
-				source: 'foodCategory'
+				source: 'foodName'
 			}
 		},
 		{
@@ -29,10 +29,16 @@ export default {
 		{
 			title: 'Allergens',
 			name: 'allergens',
-			type: 'reference',
-			to: {
-				type: 'allergens'
-			}
+			type: 'array',
+			of: [
+				{
+					type: 'reference',
+					to: {
+						type: 'allergens'
+					}
+				}
+			]
+			
 		}
 
 	],
