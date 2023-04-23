@@ -1,0 +1,13 @@
+export default Structure => {
+	const { divider, list, documentTypeListItem } = Structure;
+
+	return list()
+		.title('Menu')
+		.showIcons(false)
+		.items([
+			documentTypeListItem('menuItem'),
+			documentTypeListItem('menu'),
+			documentTypeListItem('allergens')
+			
+		])
+}
