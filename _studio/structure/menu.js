@@ -7,6 +7,7 @@ export default Structure => {
 		.items([
 			documentTypeListItem('menuItem'),
 			documentTypeListItem('menu'),
+			documentTypeListItem('allergens')
 			
 		])
 }
