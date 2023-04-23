@@ -16,6 +16,14 @@ export default {
 				source: 'foodCategory'
 			}
 		},
+		{
+			title: 'Name',
+			name: 'name',
+			type: 'reference',
+			to: {
+				type: 'menuItem'
+			}
+		}
 	],
 
 	
