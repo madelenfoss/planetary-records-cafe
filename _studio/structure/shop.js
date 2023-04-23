@@ -7,9 +7,10 @@ export default Structure => {
 		.items([
 			documentTypeListItem('shopItem'),
 			documentTypeListItem('vinylOfTheMonth'),
-			documentTypeListItem('VinylCategory'),
 
 			divider(),
+
+			documentTypeListItem('VinylCategory'),
 
 
 
