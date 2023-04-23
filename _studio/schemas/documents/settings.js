@@ -14,6 +14,11 @@ export default {
 					type: 'string',
 				},
 				{
+					title: 'Image',
+					name: 'image',
+					type: 'image'
+				},
+				{
 					title: 'Visible',
 					name: 'visible',
 					type: 'boolean',
