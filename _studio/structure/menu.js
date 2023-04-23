@@ -5,6 +5,7 @@ export default Structure => {
 		.title('Menu')
 		.showIcons(false)
 		.items([
+			documentTypeListItem('menuItem'),
 			documentTypeListItem('menu'),
 			
 		])
