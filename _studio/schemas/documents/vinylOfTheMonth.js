@@ -4,17 +4,31 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			title: 'Name',
-			name: 'name',
-			type: 'string',
+			title: 'Album name',
+			name: 'albumName',
+			type: 'array',
+			of: [
+				{
+					type: 'reference',
+					to: {
+						type: 'shopItem'
+					}
+				}
+			]
 		},
 		{
 			title: 'Slug',
 			name: 'slug',
 			type: 'slug',
 			options: {
-				source: 'name'
+				source: 'albumName'
 			}
 		},
+		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
+		}
+
 	]
 }
