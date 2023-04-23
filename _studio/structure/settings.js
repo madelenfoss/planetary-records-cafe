@@ -1,7 +1,7 @@
-// export default Structure => {
-// 	const { editor } = Structure;
+export default Structure => {
+	const { editor } = Structure;
 
-// 	return editor().id('settings').schemaType('settings')
-// };
+	return editor().id('settings').schemaType('settings')
+};
 
 

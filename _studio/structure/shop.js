@@ -1,19 +1,13 @@
-// export default Structure => {
-// 	const { divider, list, documentTypeListItem } = Structure;
+export default Structure => {
+	const { divider, list, documentTypeListItem } = Structure;
 
-// 	return list()
-// 		.title('Shop')
-// 		.showIcons(false)
-// 		.items([
-// 			documentTypeListItem('shopItem'),
-// 			documentTypeListItem('vinylOfTheMonth'),
-
-// 			divider(),
-
-// 			documentTypeListItem('vinylCategory'),
-
-
-
+	return list()
+		.title('Shop')
+		.showIcons(false)
+		.items([
+			documentTypeListItem('shopItem'),
+			documentTypeListItem('vinylOfTheMonth'),
+			documentTypeListItem('vinylCategory'),
 			
-// 		])
-// }
+		])
+}
