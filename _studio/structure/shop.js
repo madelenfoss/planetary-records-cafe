@@ -1,19 +1,19 @@
-export default Structure => {
-	const { divider, list, documentTypeListItem } = Structure;
+// export default Structure => {
+// 	const { divider, list, documentTypeListItem } = Structure;
 
-	return list()
-		.title('Shop')
-		.showIcons(false)
-		.items([
-			documentTypeListItem('shopItem'),
-			documentTypeListItem('vinylOfTheMonth'),
+// 	return list()
+// 		.title('Shop')
+// 		.showIcons(false)
+// 		.items([
+// 			documentTypeListItem('shopItem'),
+// 			documentTypeListItem('vinylOfTheMonth'),
 
-			divider(),
+// 			divider(),
 
-			documentTypeListItem('VinylCategory'),
+// 			documentTypeListItem('vinylCategory'),
 
 
 
 			
-		])
-}
+// 		])
+// }
