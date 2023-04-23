@@ -9,7 +9,11 @@ export default {
 	projectId: 'xsjf1afi',
 	dataset: 'production',
 
-	plugins: [deskTool(), visionTool()],
+	plugins: 
+	[
+		deskTool(), 
+		visionTool()
+	],
 
 	schema: {
 		types: schemas,
