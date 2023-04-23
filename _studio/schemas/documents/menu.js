@@ -19,10 +19,15 @@ export default {
 		{
 			title: 'Name',
 			name: 'name',
-			type: 'reference',
-			to: {
-				type: 'menuItem'
-			}
+			type: 'array',
+			of: [
+				{
+					type: 'reference',
+					to: {
+						type: 'menuItem'
+					}
+				}
+			]
 		}
 	],
 
