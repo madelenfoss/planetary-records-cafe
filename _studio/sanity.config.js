@@ -2,9 +2,8 @@ import { deskTool } from 'sanity/desk';
 import { visionTool } from '@sanity/vision';
 
 import schemas from './schemas/schemas.js';
-import shop from './structure/shop.js';
 import settings from './structure/settings.js';
-import menu from './structure/menu.js';
+import content from './structure/content.js';
 
 export default {
 	title: 'Planetary Records Café',
@@ -15,16 +14,9 @@ export default {
 	plugins: 
 	[
 		deskTool({
-			title: 'Shop',
-			name: 'shop',
-			structure: shop
-
-		}), 
-
-		deskTool({
-			title: 'Menu',
-			name: 'menu',
-			structure: menu
+			title: 'Content',
+			name: 'content',
+			structure: content
 		}),
 
 		deskTool({
