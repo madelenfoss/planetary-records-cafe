@@ -1,7 +1,7 @@
 @import './reset.css';
+@import './fonts.css';
 @import './base.css';
 @import './variables.css';
-@import './fonts.css';
 
 @import './modules/header.css';
 @import './modules/footer.css';

@@ -35,7 +35,7 @@
 
 .navbar__menu {
 	display: flex;
-	width: 60%;
+	width: 40%;
 	justify-content: space-between;
 	white-space:nowrap;
 }
