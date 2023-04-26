@@ -6,13 +6,10 @@ export default {
 		{
 			title: 'Album name',
 			name: 'albumName',
-			type: 'array',
-			of: [
+			type: 'reference',
+			to: [
 				{
-					type: 'reference',
-					to: {
-						type: 'album'
-					}
+					type: 'album',
 				}
 			]
 		},
@@ -28,7 +25,20 @@ export default {
 			title: 'Description',
 			name: 'description',
 			type: 'text'
+		},
+		{
+			title: 'Album cover image',
+			name: 'image',
+			type: 'image',
+			options: {
+				hotspot: true
+			}
+		},
+		{
+			title: 'Price',
+			description: 'Price in NOK',
+			name: 'price',
+			type: 'number'
 		}
-
 	]
 }
