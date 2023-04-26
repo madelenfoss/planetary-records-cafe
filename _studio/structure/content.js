@@ -16,6 +16,7 @@ export default Structure => {
 			documentTypeListItem('album'),
 			documentTypeListItem('vinylOfTheMonth'),
 			documentTypeListItem('vinylCategory'),
+			documentTypeListItem('artist'),
 
 			divider(),
 
