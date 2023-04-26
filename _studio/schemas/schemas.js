@@ -5,7 +5,7 @@ import settings from "./documents/settings.js";
 import menu from "./documents/menu.js";
 import menuItems from "./documents/menuItems.js";
 import allergens from "./documents/allergens.js";
-// import slideshow from "./documents/slideshow.js";
+import staff from "./documents/staff.js";
 
 
 export default [
@@ -16,5 +16,5 @@ export default [
 	menu,
 	menuItems,
 	allergens,
-	// slideshow,
+	staff,
 ]
