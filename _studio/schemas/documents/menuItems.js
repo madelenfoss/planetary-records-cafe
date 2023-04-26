@@ -27,14 +27,14 @@ export default {
 			type: 'text'
 		},
 		{
-			title: 'Allergens',
-			name: 'allergens',
+			title: 'Allergen',
+			name: 'allergen',
 			type: 'array',
 			of: [
 				{
 					type: 'reference',
 					to: {
-						type: 'allergens'
+						type: 'allergen'
 					}
 				}
 			]
