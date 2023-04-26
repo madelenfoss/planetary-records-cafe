@@ -21,10 +21,6 @@ export default {
 			title: 'Image',
 			name: 'image',
 			type: 'image',
-			validation: rule => rule.required(),
-			options: {
-				hotspot: true
-			}
 		},
 		{
 			title: 'Role',
