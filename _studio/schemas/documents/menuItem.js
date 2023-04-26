@@ -4,8 +4,8 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			title: 'Food name',
-			name: 'foodName',
+			title: 'Name',
+			name: 'name',
 			type: 'string',
 		},
 		{
@@ -13,7 +13,7 @@ export default {
 			name: 'slug',
 			type: 'slug',
 			options: {
-				source: 'foodName'
+				source: 'name'
 			}
 		},
 		{
@@ -39,8 +39,13 @@ export default {
 				}
 			]
 			
+		},
+		{
+			title: 'Price',
+			description: 'Price in NOK',
+			name: 'price',
+			type: 'number',
 		}
-
 	],
 
 	
