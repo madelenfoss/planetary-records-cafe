@@ -7,12 +7,11 @@ export default Structure => {
 		.items([
 
 			documentTypeListItem('menuItem'),
-			documentTypeListItem('menu'),
+			documentTypeListItem('menuCategory'),
 			documentTypeListItem('allergen'),
 
 			divider(),
 			
-			documentTypeListItem('shopItem'),
 			documentTypeListItem('album'),
 			documentTypeListItem('vinylOfTheMonth'),
 			documentTypeListItem('vinylCategory'),
