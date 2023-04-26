@@ -5,6 +5,10 @@ export default Structure => {
 		.title('Content')
 		.showIcons(false)
 		.items([
+			// documentTypeListItem('slideshow'),
+
+			// divider(),
+
 			documentTypeListItem('menuItem'),
 			documentTypeListItem('menu'),
 			documentTypeListItem('allergens'),
