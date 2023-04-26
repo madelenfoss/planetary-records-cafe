@@ -37,6 +37,25 @@ export default {
 			type: 'text'
 		},
 		{
+			title: 'Price',
+			description: 'Price in NOK',
+			name: 'price',
+			type: 'number'
+		},
+		{
+			title: 'Category',
+			name: 'category',
+			type: 'array',
+			of: [
+				{
+				type: 'reference',
+				to: {
+					type: 'vinylCategory'
+				}
+			}
+		]
+		},
+		{
 			title: 'Album cover image',
 			name: 'image',
 			type: 'image',
@@ -44,11 +63,5 @@ export default {
 				hotspot: true
 			}
 		},
-		{
-			title: 'Price',
-			description: 'Price in NOK',
-			name: 'price',
-			type: 'number'
-		}
 	]
 }
