@@ -5,9 +5,6 @@ export default Structure => {
 		.title('Content')
 		.showIcons(false)
 		.items([
-			// documentTypeListItem('slideshow'),
-
-			// divider(),
 
 			documentTypeListItem('menuItem'),
 			documentTypeListItem('menu'),
@@ -20,6 +17,8 @@ export default Structure => {
 			documentTypeListItem('vinylCategory'),
 
 			divider(),
+
+			documentTypeListItem('staff'),
 			
 		])
 }
