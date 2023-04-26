@@ -26,6 +26,12 @@ export default {
 				}
 			]
 		},
+		{
+			title: 'Price',
+			description: 'Price in NOK',
+			name: 'price',
+			type: 'number'
+		}
 
 		
 	],
