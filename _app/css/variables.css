@@ -7,7 +7,7 @@
 	--quinary-color: white;
 	--senary-color: #1C4A5E;
 
-	/* Logo styles */
+	/* Font styles */
 	--header-font-family: 'Aladin', sans-serif;
 	--header-font-size: 5rem;
 
@@ -24,7 +24,7 @@
 	--body-font-family: ;
 
 
-
+	/* Gaps */
 	--gap-column: ;
 	--gap-row: ;
 
