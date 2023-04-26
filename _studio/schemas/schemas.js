@@ -7,6 +7,7 @@ import menuItems from "./documents/menuItems.js";
 import allergen from "./documents/allergen.js";
 import staff from "./documents/staff.js";
 import album from "./documents/album.js";
+import artist from "./documents/artist.js";
 
 
 
@@ -19,5 +20,6 @@ export default [
 	menuItems,
 	allergen,
 	staff,
-	album
+	album,
+	artist,
 ]

@@ -19,7 +19,12 @@ export default {
 		{
 			title: 'Artist',
 			name: 'artist',
-			type: 'string'
+			type: 'reference',
+			to: [
+				{
+					type: 'artist'
+				}
+			]
 		},
 
 		
