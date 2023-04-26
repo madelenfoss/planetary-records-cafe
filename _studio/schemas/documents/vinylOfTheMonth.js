@@ -22,6 +22,16 @@ export default {
 			}
 		},
 		{
+			title: 'Artist name',
+			name: 'artistName',
+			type: 'reference',
+			to: [
+				{
+					type: 'artist'
+			}
+			]
+		},
+		{
 			title: 'Description',
 			name: 'description',
 			type: 'text'

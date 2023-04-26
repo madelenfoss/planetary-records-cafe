@@ -7,14 +7,6 @@ export default {
 			title: 'Genre',
 			name: 'genre',
 			type: 'string',
-			of: [
-				{
-					type: 'reference',
-					to: {
-						type: 'genre'
-					}
-				}
-			]
 		},
 		{
 			title: 'Slug',
