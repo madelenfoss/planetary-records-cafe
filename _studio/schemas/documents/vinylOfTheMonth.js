@@ -11,7 +11,7 @@ export default {
 				{
 					type: 'reference',
 					to: {
-						type: 'shopItem'
+						type: 'album'
 					}
 				}
 			]
