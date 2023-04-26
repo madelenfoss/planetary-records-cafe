@@ -4,8 +4,10 @@ import vinylCategory from "./documents/vinylCategory.js";
 import settings from "./documents/settings.js";
 import menu from "./documents/menu.js";
 import menuItems from "./documents/menuItems.js";
-import allergens from "./documents/allergens.js";
+import allergen from "./documents/allergen.js";
 import staff from "./documents/staff.js";
+import album from "./documents/album.js";
+
 
 
 export default [
@@ -15,6 +17,7 @@ export default [
 	settings,
 	menu,
 	menuItems,
-	allergens,
+	allergen,
 	staff,
+	album
 ]

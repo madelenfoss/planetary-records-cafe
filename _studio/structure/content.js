@@ -8,11 +8,12 @@ export default Structure => {
 
 			documentTypeListItem('menuItem'),
 			documentTypeListItem('menu'),
-			documentTypeListItem('allergens'),
+			documentTypeListItem('allergen'),
 
 			divider(),
 			
 			documentTypeListItem('shopItem'),
+			documentTypeListItem('album'),
 			documentTypeListItem('vinylOfTheMonth'),
 			documentTypeListItem('vinylCategory'),
 
