@@ -41,6 +41,11 @@ export default {
 			}
 		},
 		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
+		},
+		{
 			title: 'Vinyl of the month',
 			name: 'month',
 			type: 'boolean'
