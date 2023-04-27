@@ -1,0 +1,6 @@
+.cart {
+	padding: 0.6rem 3rem;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	border-radius: 0.2rem;
+}
