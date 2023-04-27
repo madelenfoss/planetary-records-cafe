@@ -41,7 +41,7 @@ export default {
 			}
 		},
 		{
-			title: 'Vynil of the mounth',
+			title: 'Vinyl of the month',
 			name: 'month',
 			type: 'boolean'
 		}
