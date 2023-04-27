@@ -31,6 +31,19 @@ export default {
 			description: 'Price in NOK',
 			name: 'price',
 			type: 'number'
+		},
+		{
+			title: 'Album cover image',
+			name: 'albumCoverImage',
+			type: 'image',
+			options: {
+				hotspot: true
+			}
+		},
+		{
+			title: 'Vynil of the mounth',
+			name: 'month',
+			type: 'boolean'
 		}
 
 		

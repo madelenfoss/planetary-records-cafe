@@ -1,6 +1,4 @@
-// import shopItem from "./documents/shopItem.js";
-import vinylOfTheMonth from "./documents/vinylOfTheMonth.js";
-import vinylCategory from "./documents/vinylCategory.js";
+import genre from "./documents/genre.js";
 import settings from "./documents/settings.js";
 import menu from "./documents/menu.js";
 import menuItem from "./documents/menuItem.js";
@@ -9,13 +7,10 @@ import staff from "./documents/staff.js";
 import album from "./documents/album.js";
 import artist from "./documents/artist.js";
 import menuCategory from "./documents/menuCategory.js";
-
-
+import staffRole from "./documents/staffRole.js";
 
 export default [
-	// shopItem,
-	vinylOfTheMonth,
-	vinylCategory,
+	genre,
 	settings,
 	menu,
 	menuItem,
@@ -23,5 +18,7 @@ export default [
 	staff,
 	album,
 	artist,
-	menuCategory
+	menuCategory,
+	staffRole
+	
 ]
