@@ -1,0 +1,5 @@
+.cart {
+	padding: 0.5rem 2rem;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
