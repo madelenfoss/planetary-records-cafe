@@ -25,8 +25,16 @@ export default {
 		{
 			title: 'Role',
 			name: 'role',
-			type: 'string',
-			validation: rule => rule.required()
+			type: 'array',
+			of: [
+				{
+					type: 'reference',
+					to: {
+						type: 'role'
+					}
+				}
+
+			]
 		}
 
 	],
