@@ -17,9 +17,26 @@ export default {
 			}
 		},
 		{
+			title: 'Category',
+			name: 'category',
+			description: 'Starters, sides, burgers, salads etc',
+			type: 'array',
+			of: [
+				{
+				type: 'reference',
+				to: {
+					type: 'menuCategory'
+				}
+			}
+		]
+		},
+		{
 			title: 'Image',
 			name: 'image',
-			type: 'image'
+			type: 'image',
+			options: {
+				hotspot: true
+			}
 		},
 		{
 			title: 'Description',
