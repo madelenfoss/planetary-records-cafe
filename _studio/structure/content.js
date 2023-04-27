@@ -13,13 +13,13 @@ export default Structure => {
 			divider(),
 			
 			documentTypeListItem('album'),
-			documentTypeListItem('vinylOfTheMonth'),
-			documentTypeListItem('vinylCategory'),
+			documentTypeListItem('genre'),
 			documentTypeListItem('artist'),
 
 			divider(),
 
 			documentTypeListItem('staff'),
+			documentTypeListItem('role')
 			
 		])
 }
