@@ -22,15 +22,15 @@ export default {
 		},
 		{
 			title: 'Frontpage header',
-			name: 'frontPageHeader',
+			name: 'frontpageHeader',
 			type: 'string',
 			description: "E.g.: 'Welcome to Planetary Records Café'"
 		},
 		{
 			title: 'Description of the place',
 			name: 'placeDescription',
-			type: 'text',
 			description: 'Write a short introduction',
+			type: 'text',
 		},
 		{
 			title: 'Slideshow image info',
@@ -82,6 +82,28 @@ export default {
 			}
 			]
 			
+		},
+		{
+			title: 'Social media links',
+			name: 'socialMediaLinks',
+			type: 'array',
+			of: [
+				{
+					type: 'object',
+					fields: [
+						{
+							title: 'Name',
+							name: 'name',
+							type: 'string',
+						},
+						{
+							title: 'URL',
+							name: 'url',
+							type: 'url',
+						}
+					]
+				}
+			]
 		}
 
 	],
