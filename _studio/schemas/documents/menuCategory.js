@@ -7,6 +7,14 @@ export default {
 			title: 'Type of food',
 			name: 'foodType',
 			type: 'string',
+		},
+		{
+			title: 'Slug',
+			name: 'slug',
+			type: 'slug',
+			options: {
+				source: 'foodType'
+			}	
 		}
 	]
 }
