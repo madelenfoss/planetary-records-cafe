@@ -3,6 +3,7 @@
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
+	text-align: center;
 	justify-content: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
@@ -12,8 +13,78 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: 2rem auto;
+}
+
+.shop__container-items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 2rem;	
+}
+
+.shop__container-item {
+	display: flex;
+	flex-direction: column;
+	background: var(--tertiary-color)
+}
+
+.shop__container-item-image {
+	width: 80%;
 	margin: 0 auto;
+	padding: 1rem 2rem;
+}
+
+.shop__container-item-artist {
+
 }
 
 
+
+@media screen and (max-width: 1400px) {
+	.shop__container-items {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.shop__container-items {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(7, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.shop__container-items {
+		display: grid;
+		width: 96%;
+		margin: auto;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		gap: 1rem;
+	}
+
+	.shop__container-item-image {
+		width: 90%;
+		margin: 1rem auto;
+		padding: 0.5rem;
+	}
+
+	.yarn__purchase-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.yarn__price {
+		margin: 0.5rem 0;
+	}
+
+	.yarn__buy {
+		margin: 1rem auto;
+		width: 100%;
+		height: 3rem;
+		justify-content: center;
+	}
+}
 
