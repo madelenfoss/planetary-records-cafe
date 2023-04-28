@@ -1,6 +1,12 @@
-.cart {
-	padding: 0.6rem 3rem;
-	background: var(--secondary-color);
-	color: var(--primary-color);
-	border-radius: 0.2rem;
+.shop__cart {
+	display: flex;
+	margin: 1rem auto;
+	align-items: center;
+	justify-content: center;
+	width: 22rem;
+	height: 2.6rem;
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+	text-transform: uppercase;
+	font-size: 1rem;
 }
