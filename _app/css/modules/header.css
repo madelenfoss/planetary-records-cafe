@@ -78,7 +78,7 @@
 	width: 3rem;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 894px) {
 	.navbar__logo {
 		display: flex;
 		margin: 0 auto;
