@@ -1,0 +1,42 @@
+.shop__container-monthly-vinyl {
+	width: 60%;
+	margin: 2rem auto;
+	border: 2px solid var(--primary-color);
+}
+
+.shop__container-monthly-vinyl-header {
+	width: 100%;
+	text-align: center;
+	color: var(--primary-color);
+	margin: 0 auto;
+	padding: 1rem;
+	border-bottom: 2px solid var(--primary-color);
+}
+
+.shop__container-monthly-vinyl-img {
+	display: flex;
+	width: 60%;
+	margin: 2rem auto;
+	justify-content: center;
+	border: 1rem solid white;
+}
+
+.shop__container-monthly-vinyl-information {
+
+}
+
+.shop__container-monthly-vinyl-artist {
+
+}
+
+.shop__container-monthly-vinyl-album {
+
+}
+
+.shop__container-monthly-vinyl-description {
+
+}
+
+.shop__container-monthly-vinyl-link {
+
+}
