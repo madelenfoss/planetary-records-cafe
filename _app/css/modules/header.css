@@ -1,5 +1,5 @@
 .navbar {
-	background-color: rgb(38, 96, 121);
+	background-color: var(--primary-color);
 }
 
 .navbar__logo {
@@ -49,6 +49,7 @@
 .navbar__menu a {
 	text-decoration: none;
 	color: var(--secondary-color);
+	text-transform: uppercase;
 }
 
 .navbar__search-container {
@@ -100,7 +101,7 @@
 		display: flex;
 		color: var(--primary-color);
 		width: 100%;
-
+		text-transform: uppercase;
 	}
 
 	.navbar__menu--visible {
