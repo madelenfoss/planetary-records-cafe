@@ -14,7 +14,7 @@
 	flex-wrap: wrap;	
 	justify-content: center;
 	align-items: center;
-	background: var(--secondary-color)
+	background: var(--secondary-color);
 }
 
 .filter__button {
@@ -23,5 +23,6 @@
 	border-radius: 5rem;
 	border: 1.5px solid var(--primary-color);
 	font-size: 1rem;
-	background: var(--tertiary-color)
+	background: var(--tertiary-color);
+	color: var(--primary-color);
 }
