@@ -35,7 +35,6 @@
 
 .navbar__menu {
 	display: flex;
-	margin: 0.5rem 0;
 	justify-content: space-between;
 	white-space:nowrap;
 }
@@ -43,6 +42,13 @@
 .navbar__menu-link {
 	margin: 1rem;
 	list-style: none;
+}
+
+.navbar__menu-link-shop {
+	text-decoration: underline;
+	text-underline-offset: 20px;
+	text-decoration-color: var(--secondary-color);
+	text-decoration-thickness: 3px;
 }
 
 .navbar__menu a {
