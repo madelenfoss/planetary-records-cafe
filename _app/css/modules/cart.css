@@ -1,6 +1,6 @@
 .shop__cart {
 	display: flex;
-	margin: 1rem auto;
+	margin: 1rem;
 	align-items: center;
 	justify-content: center;
 	width: 22rem;
@@ -9,4 +9,5 @@
 	background-color: var(--primary-color);
 	text-transform: uppercase;
 	font-size: 1rem;
+	border-radius: 0.1rem;
 }
