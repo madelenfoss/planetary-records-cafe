@@ -43,16 +43,22 @@ export default {
 			type: 'number'
 		},
 		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
+		},
+		{
 			title: 'Album cover image',
 			name: 'albumCoverImage',
 			type: 'image',
 			options: {
 				hotspot: true
-			}
+			},
 		},
 		{
-			title: 'Description',
-			name: 'description',
+			title: 'Alternative text for album cover image',
+			name: 'altText',
+			description: 'For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
 			type: 'text'
 		},
 		{
