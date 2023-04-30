@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Planetary Records Café</title>
+
+		<meta name="theme-color" content="#266079">
+		
+		<link rel="stylesheet" href="/_app/css/main.css">
+		<script type="module" src="/_app/js/main.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav 
+				id="top" 
+				class="navbar">
+            <div 
+					class="navbar__logo" 
+					title="Planetary Records Café">
+					<a href="../index.html">Planetary Records</a>
+				</div>
+
+				<div class="navbar__mobile-icons">
+					<div class="navbar__mobile-menu-icon">
+						<div class="navbar__mobile-menu-icon-top"></div>
+						<div class="navbar__mobile-menu-icon-middle"></div>
+						<div class="navbar__mobile-menu-icon-bottom"></div>
+					</div>
+
+					<div class="navbar__mobile-search-container">
+						<input 
+							type="text" 
+							name="search" 
+							class="navbar__mobile-search-input"
+							placeholder="search">
+						<button class="navbar__mobile-search-button">
+							<img 
+								src="../_app/assets/icons/icons8-search-100.png" 
+								alt="Search button">
+						</button>
+					</div>
+
+				</div>
+
+            <section class="navbar__items">
+               <ul class="navbar__menu">
+                  <li class="navbar__menu-link">
+                     <a href="#">
+								About us
+							</a>      
+                  </li>
+                  <li class="navbar__menu-link">
+                     <a href="#">
+								Events
+							</a>
+                  </li>
+                  <li class="navbar__menu-link">
+                     <a href="#">
+								Menu
+							</a>
+                  </li>
+                  <li class="navbar__menu-link navbar__menu-link-shop">
+                     <a href="#">
+								The Shop
+							</a>
+                  </li>
+
+                  <li class="navbar__menu-link">
+                     <a href="#">
+								Contact
+							</a>
+                  </li>
+               </ul>
+
+					<div class="navbar__search-container">
+						<input 
+							type="text" 
+							name="search" 
+							class="navbar__search-input"
+							placeholder="search">
+						<button class="navbar__search-button">
+							<img 
+								src="../_app/assets/icons/icons8-search-100.png" 
+								alt="Click this button to search">
+						</button>
+					</div>
+
+            </section>
+         </nav>
+		</header>
+
+		<main>
+
+		<div class="to-top__bar">
+			<a href="#top">
+				<button class="to-top__button hidden">
+					<img 
+						src="../_app/assets/icons/icons8-slide-up-100.png" 
+						alt="Back to top">
+				</button>
+			</a>
+		</div>
+
+		<h1 class="shop__title">Limited edition vinyls</h1>
+
+		<div class="filter__buttons-and-shop__cart">
+			<section class="filter__buttons">
+				<button class="filter__button">all</button>
+				<button class="filter__button">space</button>
+				<button class="filter__button">space disco</button>
+				<button class="filter__button">space rock</button>
+				<button class="filter__button">space metal</button>
+				<button class="filter__button">space folk</button>
+				<button class="filter__button">instrumental</button>
+			</section>
+			<!-- Shop cart js function heavily inspired by frontend teacher Alejandro Rojas -->
+			<div class="shop__cart">
+				<div class="shop__cart-no-items">No items in cart</div>
+				<div class="shop__cart-total"></div>
+				<div class="shop__cart-content">
+					<div class="shop__cart-products">
+						<!-- Cart items inserted from shopCart.js -->
+
+						<!-- <div class="shop__cart-product">
+							<div>1</div>
+							<div>Album title 1</div>
+							<div>3000 NOK</div>
+						</div>
+
+						<div class="shop__cart__product">
+							<div>1</div>
+							<div>Album title 2</div>
+							<div>3500 NOK</div>
+						</div>
+
+						<div class="main-cart__product">
+							<div>1</div>
+							<div>Album title 3</div>
+							<div>3200</div>
+						</div> -->
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<section class="shop__container">
+
+		<!-- Shop items inserted from album.js -->
+
+			<div class="shop__container-monthly-vinyl">
+				<h2 class="shop__container-monthly-vinyl-header">
+					Vinyl of the Month
+				</h2>
+
+				<img 
+					class="shop__container-monthly-vinyl-image" 
+					src="../_app/assets/images/vinyl_of-the-month.jpg" 
+					alt="A vinyl cover with a photo of a pink poodle standing on a simplistic table with plants in the background">
+
+				<div class="shop__container-monthly-vinyl-information">
+					<div class="shop__container-monthly-vinyl-artist">
+						Artist name
+					</div>
+					<div class="shop__container-monthly-vinyl-album">
+						Album name
+					</div>
+					<div class="shop__container-monthly-vinyl-description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+						Delectus possimus esse, placeat vitae accusantium sapiente
+						rem assumenda sed ratione, iste adipisci natus recusandae
+						porro doloribus iusto omnis. Non, vel ab?
+					</div>
+					<a 
+						aria-label="Click to read more about this months chosen album"
+						class="shop__container-monthly-vinyl-link"
+						href="/">Read more...
+					</a> <!-- Fetch slug here -->
+				</div>
+
+				<div class="shop__container-monthly-vinyl-price-cart">
+					<div class="shop__container-monthly-vinyl-price">4500 NOK</div>
+					<button 
+						class="shop__container-monthly-vinyl-buy"
+						aria-label="Click button to add product to shopping cart">
+						Add to cart
+					</button>
+				</div>
+			</div>
+
+			<div class="shop__container-items">
+
+				<a href="/" class="shop__container-item">
+					<img 
+						class="shop__container-item-image"
+						src="../_app/assets/images/vinyl_of-the-month.jpg" 
+						alt="A vinyl cover with a photo of a pink poodle standing on a simplistic table with plants in the background">
+					<div class="shop__container-item-artist">Artist name</div>
+					<div class="shop__container-item-album">Album name</div>
+					<div class="shop__container-item-price-buy">
+						<div class="shop__container-item-price">4000 NOK</div>
+						<button class="shop__container-item-buy">BUY</button>
+					</div>
+				</a>	
+
+				<a href="/" class="shop__container-item">
+					<img 
+						class="shop__container-item-image"
+						src="../_app/assets/images/vinyl_of-the-month.jpg" 
+						alt="A vinyl cover with a photo of a pink poodle standing on a simplistic table with plants in the background">
+					<div class="shop__container-item-artist">Artist name</div>
+					<div class="shop__container-item-album">Album name</div>
+					<div class="shop__container-item-price-buy">
+						<div class="shop__container-item-price">4000 NOK</div>
+						<button class="shop__container-item-buy">BUY</button>
+					</div>
+				</a>	
+				
+				<a href="/" class="shop__container-item">
+					<img 
+						class="shop__container-item-image"
+						src="../_app/assets/images/vinyl_of-the-month.jpg" 
+						alt="A vinyl cover with a photo of a pink poodle standing on a simplistic table with plants in the background">
+					<div class="shop__container-item-artist">Artist name</div>
+					<div class="shop__container-item-album">Album name</div>
+					<div class="shop__container-item-price-buy">
+						<div class="shop__container-item-price">4000 NOK</div>
+						<button class="shop__container-item-buy">BUY</button>
+					</div>
+				</a>
+
+				<a href="/" class="shop__container-item">
+					<img 
+						class="shop__container-item-image"
+						src="../_app/assets/images/vinyl_of-the-month.jpg" 
+						alt="A vinyl cover with a photo of a pink poodle standing on a simplistic table with plants in the background">
+					<div class="shop__container-item-artist">Artist name</div>
+					<div class="shop__container-item-album">Album name</div>
+					<div class="shop__container-item-price-buy">
+						<div class="shop__container-item-price">4000 NOK</div>
+						<button class="shop__container-item-buy">BUY</button>
+					</div>
+				</a>
+
+			</div>
+
+		</section>
+
+		</main>
+		<footer>
+			<section class="footer__section">
+
+				<ul class="footer__section-links">
+					<li class="footer__section-links-li">
+						<a 
+							href="#"
+							target="_blank"
+							title="Contact">
+							<img 
+								src="../_app/assets/icons/icons8-mail-100.png" 
+								alt="Contact icon">
+						</a>
+					</li>
+
+					<li class="footer__section-links-li">
+						<a 
+							href="#"
+							target="_blank"
+							title="Facebook">
+							<img 
+								src="../_app/assets/icons/icons8-instagram-100.png" 
+								alt="Facebook icon">
+						</a>
+					</li>
+
+					<li class="footer__section-links-li">
+						<a 
+							href="#"
+							target="_blank"
+							title="Twitter">
+							<img 
+								src="../_app/assets/icons/icons8-twitter-100.png" 
+								alt="Twitter icon">
+						</a>
+					</li>
+
+					<li class="footer__section-links-li">
+						<a 
+							href="#"
+							target="_blank"
+							title="Facebook">
+							<img 
+								src="../_app/assets/icons/icons8-facebook-100.png" 
+								alt="Facebook icon">
+						</a>
+					</li>
+				</ul>
+				<div class="footer__copyright">
+					© 2023 Madelen Foss
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

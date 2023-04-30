@@ -2,9 +2,13 @@
 @import './fonts.css';
 @import './base.css';
 @import './variables.css';
+@import './grid-system.css';
 
 @import './modules/header.css';
 @import './modules/footer.css';
 @import './modules/to-top-button.css';
 @import './modules/slideshow.css';
+@import './modules/shop-products.css';
 @import './modules/cart.css';
+@import './modules/vinyl-of-the-month.css';
+@import './modules/filter-buttons.css';

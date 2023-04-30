@@ -23,6 +23,12 @@ export default {
 			type: 'image',
 		},
 		{
+			title: 'Alternative image description',
+			name: 'altText',
+			description: 'For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+			type: 'text'
+		},
+		{
 			title: 'Role',
 			name: 'role',
 			type: 'array',

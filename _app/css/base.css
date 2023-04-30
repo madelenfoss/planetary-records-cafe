@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: #BBD8E8;
+	background-color: var(--secondary-color);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
