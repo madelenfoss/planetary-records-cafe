@@ -57,7 +57,7 @@
 
 .shop__container-monthly-vinyl-price-cart {
 	display: flex;
-	margin: 2rem auto 4rem auto;
+	margin: 2rem auto 3rem auto;
 	width: 80%;
 	justify-content: space-between;
 	align-items: center;
@@ -87,8 +87,8 @@
 		margin: 1rem auto;
 	}
 
-	.shop__container-monthly-vinyl-price-cart {
-		flex-direction: column;
+	.shop__container-monthly-vinyl-price {
+		margin-bottom: 1rem;
 	}
 
 

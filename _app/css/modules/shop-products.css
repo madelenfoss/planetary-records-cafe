@@ -14,6 +14,7 @@
 	flex-direction: column;
 	justify-content: center;
 	margin: 2rem auto;
+	justify-content: center;
 }
 
 .shop__container-items {
@@ -21,25 +22,50 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, 1fr);
 	gap: 2rem;	
+	padding: 0 1rem;
 }
 
 .shop__container-item {
 	display: flex;
 	flex-direction: column;
-	background: var(--tertiary-color)
+	background: var(--tertiary-color);
+	text-decoration: none;
+	color: var(--primary-color);
+	justify-content: center;
+	width: 100%;
 }
 
 .shop__container-item-image {
 	width: 80%;
-	margin: 0 auto;
-	padding: 1rem 2rem;
+	margin: 0.5rem auto;
+	padding: 1rem;
 }
 
 .shop__container-item-artist {
-
+	text-align: center;
+	margin-bottom: 0.5rem;
 }
 
+.shop__container-item-album {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
 
+.shop__container-item-price-buy {
+	margin: 1rem auto 2rem auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shop__container-item-buy {
+	width: 50%;
+	padding: 0.8rem;
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	border: none;
+}
 
 @media screen and (max-width: 1400px) {
 	.shop__container-items {
@@ -63,27 +89,29 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(12, 1fr);
 		gap: 1rem;
+		padding: 0;
 	}
 
 	.shop__container-item-image {
 		width: 90%;
-		margin: 1rem auto;
-		padding: 0.5rem;
+		margin: 0.6rem auto;
+		padding: 1rem;
 	}
 
-	.yarn__purchase-info {
+	.shop__container-item-price-buy {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 2rem auto;
 	}
 
-	.yarn__price {
-		margin: 0.5rem 0;
+	.shop__container-item-price {
+		margin-bottom: 1rem;
 	}
 
-	.yarn__buy {
-		margin: 1rem auto;
+	.shop__container-item-buy {
+		margin: 0 auto;
 		width: 100%;
-		height: 3rem;
+		padding: 0.8rem;
 		justify-content: center;
 	}
 }
