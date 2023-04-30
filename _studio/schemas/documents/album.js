@@ -27,6 +27,14 @@ export default {
 			]
 		},
 		{
+			title: 'Release date',
+			name: 'releaseDate',
+			type: 'date',
+			options: {
+				dateFormat: 'DD-MM-YYYY'
+			}
+		},
+		{
 			title: 'Genre',
 			name: 'genre',
 			type: 'reference',

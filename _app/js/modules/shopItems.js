@@ -2,11 +2,12 @@ import { sanity } from "../sanity.js";
 
 export default async function shopItems() {
 	const query = 
-	`*[_type == "album"] {
+	`*[_type == "album"] | order(releaseDate desc) {
 		_id,
 		"artist": artist->name,
 		"genre": genre->musicGenre,
 		albumName,
+		releaseDate,
 		"image": albumCoverImage.asset->url,
 		altText,
 		description,
@@ -14,8 +15,6 @@ export default async function shopItems() {
 		"slug": slug.current,
 	  	month
 	 }`
-
-	 console.log(query);
 	
 	const vinyls = await sanity.fetch(query);
 	const shopContainer = document.querySelector('.shop__container');
@@ -55,7 +54,7 @@ export default async function shopItems() {
 
 			// vinylImage.getElementsByClassName('shop__container-item-image');
 			// setMultipleAttributes(vinylImage, imageAttributes);
-
+			vinylItem.setAttribute('href', vinyl.slug);
 			vinylImage.setAttribute('src', vinyl.image);
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
