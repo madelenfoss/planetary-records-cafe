@@ -5,7 +5,9 @@
 	--tertiary-color: #D5E6F0;
 	--quaternary-color: #EAF4FA;
 	--quinary-color: white;
-	--senary-color: rgba(28, 74, 94, 0.5);
+	--senary-color: #1c4a5e80;
+
+	/* Box-shadow variables */
 	--primary-shadow: 0 0.5rem 1rem rgba(28, 74, 94, 0.5);
 	--secondary-shadow: 0 0.2rem 0.6rem rgba(28, 74, 94, 0.5);
 
@@ -29,6 +31,4 @@
 	/* Gaps */
 	--gap-column: ;
 	--gap-row: ;
-
-
 }
