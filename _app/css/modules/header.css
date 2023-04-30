@@ -44,7 +44,13 @@
 	list-style: none;
 }
 
-.navbar__menu-link-shop {
+/* Remember to add these on each page */ 
+.navbar__menu-link-shop,
+.navbar__menu-link-about-us,
+.navbar__menu-link-events,
+.navbar__menu-link-menu,
+.navbar__menu-link-contact
+ {
 	text-decoration: underline;
 	text-underline-offset: 20px;
 	text-decoration-color: var(--secondary-color);
