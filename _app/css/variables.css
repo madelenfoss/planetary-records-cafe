@@ -1,11 +1,12 @@
 :root {
 	/* Color variables */
-	--primary-color: #1C4A5E;
+	--primary-color: #1c4a5e;
 	--secondary-color: #BBD8E8;
 	--tertiary-color: #D5E6F0;
 	--quaternary-color: #EAF4FA;
 	--quinary-color: white;
-	--senary-color: #1C4A5E;
+	--senary-color: rgba(28, 74, 94, 0.5);
+	--primary-shadow: 0 0.5rem 1rem rgba(28, 74, 94, 0.5);
 
 	/* Font styles */
 	--header-font-family: 'Aladin', sans-serif;

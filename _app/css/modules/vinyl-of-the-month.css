@@ -4,6 +4,7 @@
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 	background-color: var(--tertiary-color);
+	box-shadow: var(--primary-shadow);
 }
 
 .shop__container-monthly-vinyl-header {
