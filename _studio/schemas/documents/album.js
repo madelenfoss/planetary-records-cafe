@@ -58,7 +58,7 @@ export default {
 		{
 			title: 'Alternative text for album cover image',
 			name: 'altText',
-			description: 'For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+			description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
 			type: 'text'
 		},
 		{
