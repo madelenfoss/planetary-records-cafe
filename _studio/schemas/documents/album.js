@@ -27,6 +27,16 @@ export default {
 			]
 		},
 		{
+			title: 'Genre',
+			name: 'genre',
+			type: 'reference',
+			to: [
+				{
+					type: 'genre'
+				}
+			]
+		},
+		{
 			title: 'Price',
 			description: 'Price in NOK',
 			name: 'price',

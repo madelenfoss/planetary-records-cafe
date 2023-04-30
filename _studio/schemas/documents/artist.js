@@ -25,6 +25,16 @@ export default {
 					type: 'album'
 				}
 			]
+		},
+		{
+			title: 'Genre',
+			name: 'genre',
+			type: 'reference',
+			to: [
+				{
+					type: 'genre'
+				}
+			]
 		}
 	]
 }
