@@ -7,6 +7,7 @@
 	--quinary-color: white;
 	--senary-color: rgba(28, 74, 94, 0.5);
 	--primary-shadow: 0 0.5rem 1rem rgba(28, 74, 94, 0.5);
+	--secondary-shadow: 0 0.2rem 0.6rem rgba(28, 74, 94, 0.5);
 
 	/* Font styles */
 	--header-font-family: 'Aladin', sans-serif;

@@ -33,6 +33,7 @@
 	color: var(--primary-color);
 	justify-content: center;
 	width: 100%;
+	box-shadow: var(--secondary-shadow);
 }
 
 .shop__container-item-image {
