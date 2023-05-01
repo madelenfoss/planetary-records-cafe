@@ -17,8 +17,34 @@ export default async function shopItems() {
 	 }`
 	
 	const vinyls = await sanity.fetch(query);
+	
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
+	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
+	
+	function renderVinylOfTheMonth() {
+		const vinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === true);
+		console.log(vinylOfTheMonth.genre);
+
+		const monthlyVinylImage = document.createElement('img');
+		const monthlyVinylTitle = document.createElement('div');
+		const monthlyVinylArtist = document.createElement('div');
+		const monthlyVinylDesription = document.createElement('div');
+		const monthlyVinylReadMore = document.createElement('a');
+		const monthlyVinylPriceAndCart = document.createElement('div');
+		const monthlyVinylPrice = document.createElement('div');
+		const monthlyVinylAddToCart = document.createElement('button');
+
+		monthlyVinylImage.classList.add();
+		monthlyVinylTitle.classList.add();
+		monthlyVinylArtist.classList.add();
+		monthlyVinylDesription.classList.add();
+		monthlyVinylReadMore.classList.add();
+		monthlyVinylPriceAndCart.classList.add();
+		monthlyVinylPrice.classList.add();
+		monthlyVinylAddToCart.classList.add();
+
+	}
 
 	function renderHTML() {
 		for (const vinyl of vinyls) {
@@ -52,10 +78,11 @@ export default async function shopItems() {
 			// 	alt: `${vinyl.altText}`,
 			// };
 
-			// vinylImage.getElementsByClassName('shop__container-item-image');
-			// setMultipleAttributes(vinylImage, imageAttributes);
-			vinylItem.setAttribute('href', vinyl.slug);
-			vinylImage.setAttribute('src', vinyl.image);
+			// const image = document.getElementsByClassName('shop__container-item-image');
+			// setMultipleAttributes(image, imageAttributes);
+
+			vinylItem.setAttribute('href', vinyl.slug); 
+			vinylImage.setAttribute('src', vinyl.image); // Multiple attributes object
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
 			vinylPrice.innerText = `${vinyl.price} NOK`;
@@ -67,14 +94,15 @@ export default async function shopItems() {
 			vinylPriceAndBuyButtonContainer.append(vinylPrice, vinylBuyButton);
 			vinylItem.append(
 				vinylImage,
-				vinylTitle,
 				vinylArtist,
+				vinylTitle,
 				vinylPriceAndBuyButtonContainer,
 			)
 
 		}
 	}
 
+	renderVinylOfTheMonth()
 	renderHTML();
 
 }
