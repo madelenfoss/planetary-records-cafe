@@ -1,3 +1,9 @@
+
+.shop__cart-wrapper {
+	position: relative;
+	width: 100%;
+}
+
 .shop__cart {
 	display: flex;
 	margin: 1rem;
@@ -11,4 +17,9 @@
 	text-align: center;
 	font-size: 1rem;
 	border-radius: 0.1rem;
+}
+
+.shop__cart-product-details {
+	position: absolute;
+	right: 0;
 }
