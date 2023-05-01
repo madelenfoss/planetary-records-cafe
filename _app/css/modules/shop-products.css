@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width: 768px) {
+	.shop__container {
+		margin: 1rem auto 4rem auto;
+	}
+
 	.shop__container-items {
 		display: grid;
 		width: 96%;

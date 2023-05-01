@@ -1,6 +1,6 @@
 .shop__container-monthly-vinyl {
 	width: 60%;
-	margin: 2rem auto 4rem auto;
+	margin: 2rem auto 5rem auto;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 	background-color: var(--tertiary-color);
@@ -46,7 +46,8 @@
 }
 
 .shop__container-monthly-vinyl-description {
-	margin: 1rem auto;
+	width: 80%;
+	margin: 2rem auto 3rem auto;
 }
 
 .shop__container-monthly-vinyl-link {
@@ -58,7 +59,7 @@
 
 .shop__container-monthly-vinyl-price-cart {
 	display: flex;
-	margin: 2rem auto 3rem auto;
+	margin: 2rem auto 4rem auto;
 	width: 80%;
 	justify-content: space-between;
 	align-items: center;
@@ -77,10 +78,22 @@
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1400px) {
+	.shop__container-monthly-vinyl {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.shop__container-monthly-vinyl {
+		width: 85%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.shop__container-monthly-vinyl {
 		width: 96%;
-		margin: 2rem auto;
+		margin: 2rem auto 3rem auto;
 	}
 
 	.shop__container-monthly-vinyl-image {
@@ -92,5 +105,17 @@
 		margin-bottom: 1rem;
 	}
 
+	@media screen and (max-width: 520px) {
+		.shop__container-monthly-vinyl-price-cart {
+			flex-direction: column;
+			width: 100%;
+			margin: 1rem auto 2rem auto;
+		}
+
+		.shop__container-monthly-vinyl-buy {
+			width: 80%;
+			margin: 1rem auto;
+		}
+	}
 
 }
