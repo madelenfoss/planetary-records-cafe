@@ -51,6 +51,8 @@ export default async function shopItems() {
 		monthlyVinylArtist.innerText = `${vinylOfTheMonth.artist}`;
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
 		monthlyVinylDesription.innerText = `${vinylOfTheMonth.description}`;
+		monthlyVinylReadMore.innerText = "Read more...";
+		monthlyVinylReadMore.setAttribute('href', vinylOfTheMonth.slug)
 		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
 		monthlyVinylAddToCartButton.innerText = "ADD TO CART";
 
@@ -66,6 +68,7 @@ export default async function shopItems() {
 			monthlyVinylArtist,
 			monthlyVinylTitle,
 			monthlyVinylDesription,
+			monthlyVinylReadMore,
 			monthlyVinylPriceAndCart,
 		)
 	}
