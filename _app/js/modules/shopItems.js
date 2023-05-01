@@ -26,24 +26,48 @@ export default async function shopItems() {
 		const vinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === true);
 		console.log(vinylOfTheMonth.genre);
 
+		const monthlyVinylHeader = document.createElement('H2');
 		const monthlyVinylImage = document.createElement('img');
-		const monthlyVinylTitle = document.createElement('div');
 		const monthlyVinylArtist = document.createElement('div');
+		const monthlyVinylTitle = document.createElement('div');
 		const monthlyVinylDesription = document.createElement('div');
 		const monthlyVinylReadMore = document.createElement('a');
 		const monthlyVinylPriceAndCart = document.createElement('div');
 		const monthlyVinylPrice = document.createElement('div');
-		const monthlyVinylAddToCart = document.createElement('button');
+		const monthlyVinylAddToCartButton = document.createElement('button');
 
-		monthlyVinylImage.classList.add();
-		monthlyVinylTitle.classList.add();
-		monthlyVinylArtist.classList.add();
-		monthlyVinylDesription.classList.add();
-		monthlyVinylReadMore.classList.add();
-		monthlyVinylPriceAndCart.classList.add();
-		monthlyVinylPrice.classList.add();
-		monthlyVinylAddToCart.classList.add();
+		monthlyVinylHeader.classList.add('shop__container-monthly-vinyl-header');
+		monthlyVinylImage.classList.add('shop__container-monthly-vinyl-image');
+		monthlyVinylArtist.classList.add('shop__container-monthly-vinyl-artist');
+		monthlyVinylTitle.classList.add('shop__container-monthly-vinyl-album');
+		monthlyVinylDesription.classList.add('shop__container-monthly-vinyl-description');
+		monthlyVinylReadMore.classList.add('shop__container-monthly-vinyl-link');
+		monthlyVinylPriceAndCart.classList.add('shop__container-monthly-vinyl-price-cart');
+		monthlyVinylPrice.classList.add('shop__container-monthly-vinyl-price');
+		monthlyVinylAddToCartButton.classList.add('shop__container-monthly-vinyl-buy');
 
+		monthlyVinylHeader.innerText = "VINYL OF THE MONTH";
+		monthlyVinylImage.setAttribute('src', vinylOfTheMonth.image); // Todo: create multiple attributes object
+		monthlyVinylArtist.innerText = `${vinylOfTheMonth.artist}`;
+		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
+		monthlyVinylDesription.innerText = `${vinylOfTheMonth.description}`;
+		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
+		monthlyVinylAddToCartButton.innerText = "ADD TO CART";
+
+		shopContainer.appendChild(monthlyVinylContainer);
+
+		monthlyVinylPriceAndCart.append(
+			monthlyVinylPrice,
+			monthlyVinylAddToCartButton
+		)
+		monthlyVinylContainer.append(
+			monthlyVinylHeader,
+			monthlyVinylImage,
+			monthlyVinylArtist,
+			monthlyVinylTitle,
+			monthlyVinylDesription,
+			monthlyVinylPriceAndCart,
+		)
 	}
 
 	function renderHTML() {
