@@ -27,10 +27,33 @@ export default {
 			]
 		},
 		{
+			title: 'Release date',
+			name: 'releaseDate',
+			type: 'date',
+			options: {
+				dateFormat: 'DD-MM-YYYY'
+			}
+		},
+		{
+			title: 'Genre',
+			name: 'genre',
+			type: 'reference',
+			to: [
+				{
+					type: 'genre'
+				}
+			]
+		},
+		{
 			title: 'Price',
 			description: 'Price in NOK',
 			name: 'price',
 			type: 'number'
+		},
+		{
+			title: 'Description',
+			name: 'description',
+			type: 'text'
 		},
 		{
 			title: 'Album cover image',
@@ -38,11 +61,12 @@ export default {
 			type: 'image',
 			options: {
 				hotspot: true
-			}
+			},
 		},
 		{
-			title: 'Description',
-			name: 'description',
+			title: 'Alternative text for album cover image',
+			name: 'altText',
+			description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
 			type: 'text'
 		},
 		{

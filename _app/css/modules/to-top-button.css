@@ -2,13 +2,13 @@
 	position: fixed;
 	background:none;
 	border: none;
-	right: 0.6rem;
+	right: 0;
 	bottom: 3rem;
 	cursor: pointer;
 }
 
 .to-top__button img {
-	width: 5rem;
+	width: 4.5rem;
 }
 
 .hidden {
