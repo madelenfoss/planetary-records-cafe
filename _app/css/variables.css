@@ -7,9 +7,15 @@
 	--quinary-color: white;
 	--senary-color: #1c4a5e80;
 
+	/* Hover variables */
+	--shop-button-hover: #36667b;
+
 	/* Box-shadow variables */
 	--primary-shadow: 0 0.5rem 1rem rgba(28, 74, 94, 0.5);
 	--secondary-shadow: 0 0.2rem 0.6rem rgba(28, 74, 94, 0.5);
+	--shop-item-button: 0 0.2rem 0.2rem rgba(28, 74, 94, 0.5);
+	--shop-item-button-hover: 0 0.1rem 0.2rem rgba(28, 74, 94, 0.5);
+	--shop-item-button-active: 0 0.05rem 0.05rem rgba(28, 74, 94, 0.5);
 
 	/* Font styles */
 	--header-font-family: 'Aladin', sans-serif;

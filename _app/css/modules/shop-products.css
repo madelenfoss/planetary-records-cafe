@@ -65,7 +65,21 @@
 	background: var(--primary-color);
 	color: var(--secondary-color);
 	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	box-shadow: var(--shop-item-button);
 }
+
+.shop__container-item-buy:hover {
+	background: var(--shop-button-hover);
+	color: var(--quinary-color);
+	box-shadow: var(--shop-item-button-hover);
+}
+
+.shop__container-item-buy:active {
+	box-shadow: var(--shop-item-button-active);
+}
+
 
 @media screen and (max-width: 1400px) {
 	.shop__container-items {
