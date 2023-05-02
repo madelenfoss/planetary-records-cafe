@@ -22,9 +22,14 @@ export default async function shopItems() {
 	const shopContainerItems = document.querySelector('.shop__container-items');
 	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
 	
+	if (shopContainer) {
+		renderVinylOfTheMonth();
+		renderHTML();
+		handleVinylShopItemClick();
+	}
+
 	function renderVinylOfTheMonth() {
 		const vinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === true);
-		console.log(vinylOfTheMonth.genre);
 
 		const monthlyVinylHeader = document.createElement('H2');
 		const monthlyVinylImage = document.createElement('img');
@@ -52,7 +57,7 @@ export default async function shopItems() {
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
 		monthlyVinylDesription.innerText = `${vinylOfTheMonth.description}`;
 		monthlyVinylReadMore.innerText = "Read more...";
-		monthlyVinylReadMore.setAttribute('href', vinylOfTheMonth.slug)
+		monthlyVinylReadMore.setAttribute('href', `/shop/product-preview.html?vinyl=${vinylOfTheMonth.slug}`);
 		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
 		monthlyVinylAddToCartButton.innerText = "ADD TO CART";
 
@@ -108,7 +113,7 @@ export default async function shopItems() {
 			// const image = document.getElementsByClassName('shop__container-item-image');
 			// setMultipleAttributes(image, imageAttributes);
 
-			vinylItem.setAttribute('href', vinyl.slug); 
+			vinylItem.setAttribute('href', `/shop/product-preview.html?vinyl=${vinyl.slug}`); 
 			vinylImage.setAttribute('src', vinyl.image); // Multiple attributes object
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
@@ -127,9 +132,14 @@ export default async function shopItems() {
 			)
 
 		}
+	
 	}
 
-	renderVinylOfTheMonth()
-	renderHTML();
+	function renderShopItemPreview() {
+
+	}
+
+
+	
 
 }

@@ -1,3 +1,8 @@
+
+.shop__cart-wrapper {
+	width: 100%;
+}
+
 .shop__cart {
 	display: flex;
 	margin: 1rem;
@@ -11,4 +16,9 @@
 	text-align: center;
 	font-size: 1rem;
 	border-radius: 0.1rem;
+}
+
+.shop__cart-details-page {
+	display: flex;
+	justify-items: right;
 }

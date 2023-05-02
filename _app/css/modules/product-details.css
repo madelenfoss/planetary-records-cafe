@@ -1,0 +1,24 @@
+.product-details__container {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	width: 100vw;
+	justify-content: center;
+}
+
+.vinyl__details-card {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 2rem auto;
+	padding: 5rem;
+	background: var(--tertiary-color);
+	color: var(--primary-color);
+	justify-content: center;
+	border: 2px solid var(--primary-color);
+}
+
+.vinyl__details-artist {
+	text-transform: uppercase;
+}
+
