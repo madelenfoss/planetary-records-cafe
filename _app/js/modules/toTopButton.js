@@ -3,7 +3,6 @@ export default function toTopButton() {
 	const showButtonOnPx = 100;
 	const backToTopButton = document.querySelector('.to-top__button');
 
-
 	const scrollContainer = () => {
 		return document.documentElement || document.body;
 	};
