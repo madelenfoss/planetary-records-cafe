@@ -1,3 +1,15 @@
+.back-to-shop__cart-container {
+	display: flex;
+	margin: 2rem auto;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.back-to-shop {
+	margin: 1rem;
+}
+
 .product-details__container {
 	display: flex;
 	flex-direction: column;
@@ -11,7 +23,7 @@
 	flex-direction: column;
 	width: 80%;
 	margin: 2rem auto;
-	padding: 5rem;
+	padding: 1rem;
 	background: var(--tertiary-color);
 	color: var(--primary-color);
 	justify-content: center;
@@ -19,6 +31,36 @@
 }
 
 .vinyl__details-artist {
+	margin: 2rem auto;
 	text-transform: uppercase;
+}
+
+.vinyl__details-image {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.vinyl__details-title {
+	margin: 1rem auto;
+}
+
+.vinyl__details-description {
+	width: 60%;
+	margin: 1rem auto;
+}
+
+.vinyl__details-genre {
+	margin: 1rem;
+}
+
+.vinyl__details-edition {
+	margin: 1rem;
+}
+
+.vinyl__details-price-cart-wrapper {
+	width: 90%;
+	margin: 1rem;
+	display: flex;
+	justify-content: space-between;
 }
 
