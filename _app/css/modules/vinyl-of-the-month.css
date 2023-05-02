@@ -26,15 +26,15 @@
 	justify-content: center;
 	border: 1rem solid white;
 }
-
+/* 
 .shop__container-monthly-vinyl-information {
 	width: 80%;
-	margin: 2rem auto;
-}
+	margin: 1rem auto;
+} */
 
 .shop__container-monthly-vinyl-artist {
 	width: 100%;
-	margin: 1rem auto;
+	margin: 0 auto 1rem auto;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.8rem;
@@ -50,7 +50,7 @@
 
 .shop__container-monthly-vinyl-description {
 	width: 80%;
-	margin: 2rem auto 3rem auto;
+	margin: 2rem auto;
 }
 
 .shop__container-monthly-vinyl-link {
