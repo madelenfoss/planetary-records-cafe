@@ -35,6 +35,11 @@ export default {
 			}
 		},
 		{
+			title: 'Stock',
+			name: 'stock',
+			type: 'number'
+		},
+		{
 			title: 'Genre',
 			name: 'genre',
 			type: 'reference',
