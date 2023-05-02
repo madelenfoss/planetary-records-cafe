@@ -1,6 +1,5 @@
 
 .shop__cart-wrapper {
-	position: relative;
 	width: 100%;
 }
 
@@ -19,7 +18,7 @@
 	border-radius: 0.1rem;
 }
 
-.shop__cart-product-details {
-	position: absolute;
-	right: 0;
+.shop__cart-details-page {
+	display: flex;
+	justify-items: right;
 }

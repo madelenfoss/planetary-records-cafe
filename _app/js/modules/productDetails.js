@@ -43,7 +43,7 @@ export default async function productDetails() {
 		const vinylDetailsAddToCartButton = document.createElement('button');
 
 		vinylDetailsCard.classList.add('vinyl__details-card');
-		vinylDetailsArtist.classList.add('vinly__details-artist');
+		vinylDetailsArtist.classList.add('vinyl__details-artist');
 		vinylDetailsImage.classList.add('vinyl__details-image');
 		vinylDetailsTitle.classList.add('vinyl__details-title');
 		vinylDetailsDescription.classList.add('vinyl__details-description');
@@ -78,8 +78,6 @@ export default async function productDetails() {
 			vinylDetailsEdition,
 			vinylDetailsPriceAndCart
 		)
-
-		console.log(currentVinyl);
 	}
 
 }
