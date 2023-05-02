@@ -2,7 +2,7 @@ import { sanity } from "../sanity.js";
 
 export default async function productDetails() {
 	const query = 
-	`*[_type == "album"] | order(releaseDate desc) {
+	`*[_type == "album"] {
 		_id,
 		"artist": artist->name,
 		"genre": genre->musicGenre,
@@ -57,7 +57,7 @@ export default async function productDetails() {
 		vinylDetailsImage.setAttribute('src', currentVinyl.image);
 		vinylDetailsTitle.innerText = `${currentVinyl.albumName}`;
 		vinylDetailsDescription.innerText = `${currentVinyl.description}`;
-		vinylDetailsGenre.innerText = `${currentVinyl.genre}`;
+		vinylDetailsGenre.innerText = `Genre: ${currentVinyl.genre}`;
 		vinylDetailsEdition.innerText = `Edition of: ${currentVinyl.stock}`;
 		vinylDetailsPrice.innerText = `${currentVinyl.price} NOK`;
 		vinylDetailsAddToCartButton.innerText = "ADD TO CART";
