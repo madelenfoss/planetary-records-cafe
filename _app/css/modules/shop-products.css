@@ -44,6 +44,7 @@
 .shop__container-item-artist {
 	text-align: center;
 	margin-bottom: 0.5rem;
+	text-transform: uppercase;
 }
 
 .shop__container-item-album {

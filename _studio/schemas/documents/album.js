@@ -31,7 +31,7 @@ export default {
 			name: 'releaseDate',
 			type: 'date',
 			options: {
-				dateFormat: 'DD-MM-YYYY'
+				dateFormat: 'DD.MM.YY'
 			}
 		},
 		{
