@@ -9,7 +9,7 @@ export default async function productDetails() {
 		albumName,
 		releaseDate,
 		"image": albumCoverImage.asset->url,
-		altText,
+		'altText': albumCoverImage.alternative,
 		description,
 		stock,
 		price,
@@ -37,6 +37,7 @@ export default async function productDetails() {
 		const vinylDetailsTitle = document.createElement('h3');
 		const vinylDetailsDescription = document.createElement('div');
 		const vinylDetailsGenre = document.createElement('div');
+		const vinylDetailsReleaseDate = document.createElement('div');
 		const vinylDetailsEdition = document.createElement('div');
 		const vinylDetailsPriceAndCart = document.createElement('div');
 		const vinylDetailsPrice = document.createElement('div');
@@ -48,6 +49,7 @@ export default async function productDetails() {
 		vinylDetailsTitle.classList.add('vinyl__details-title');
 		vinylDetailsDescription.classList.add('vinyl__details-description');
 		vinylDetailsGenre.classList.add('vinyl__details-genre');
+		vinylDetailsReleaseDate.classList.add('vinyl__details-release-date');
 		vinylDetailsEdition.classList.add('vinyl__details-edition');
 		vinylDetailsPriceAndCart.classList.add('vinyl__details-price-cart-wrapper');
 		vinylDetailsPrice.classList.add('vinyl__details-price');
@@ -58,6 +60,8 @@ export default async function productDetails() {
 		vinylDetailsTitle.innerText = `${currentVinyl.albumName}`;
 		vinylDetailsDescription.innerText = `${currentVinyl.description}`;
 		vinylDetailsGenre.innerText = `Genre: ${currentVinyl.genre}`;
+		// Fix date format:
+		vinylDetailsReleaseDate.innerText = `Released: ${currentVinyl.releaseDate}`;
 		vinylDetailsEdition.innerText = `Edition of: ${currentVinyl.stock}`;
 		vinylDetailsPrice.innerText = `${currentVinyl.price} NOK`;
 		vinylDetailsAddToCartButton.innerText = "ADD TO CART";
@@ -75,6 +79,7 @@ export default async function productDetails() {
 			vinylDetailsTitle,
 			vinylDetailsDescription,
 			vinylDetailsGenre,
+			vinylDetailsReleaseDate,
 			vinylDetailsEdition,
 			vinylDetailsPriceAndCart
 		)
