@@ -1,7 +1,7 @@
 .back-to-shop__cart-container {
 	display: flex;
 	margin: 2rem auto;
-	width: 100vw;
+	width: 100%;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -13,8 +13,7 @@
 .product-details__container {
 	display: flex;
 	flex-direction: column;
-	margin: 2rem auto;
-	width: 100vw;
+	width: 100%;
 	justify-content: center;
 }
 
