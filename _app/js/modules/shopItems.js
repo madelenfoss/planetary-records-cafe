@@ -36,7 +36,7 @@ export default async function shopItems() {
 		const monthlyVinylImage = document.createElement('img');
 		const monthlyVinylArtist = document.createElement('div');
 		const monthlyVinylTitle = document.createElement('div');
-		const monthlyVinylDesccription = document.createElement('div');
+		const monthlyVinylDescription = document.createElement('div');
 		const monthlyVinylReadMore = document.createElement('a');
 		const monthlyVinylPriceAndCart = document.createElement('div');
 		const monthlyVinylPrice = document.createElement('div');
@@ -45,7 +45,7 @@ export default async function shopItems() {
 		monthlyVinylImage.classList.add('shop__container-monthly-vinyl-image');
 		monthlyVinylArtist.classList.add('shop__container-monthly-vinyl-artist');
 		monthlyVinylTitle.classList.add('shop__container-monthly-vinyl-album');
-		monthlyVinylDesccription.classList.add('shop__container-monthly-vinyl-description');
+		monthlyVinylDescription.classList.add('shop__container-monthly-vinyl-description');
 		monthlyVinylReadMore.classList.add('shop__container-monthly-vinyl-link');
 		monthlyVinylPriceAndCart.classList.add('shop__container-monthly-vinyl-price-cart');
 		monthlyVinylPrice.classList.add('shop__container-monthly-vinyl-price');
@@ -56,7 +56,7 @@ export default async function shopItems() {
 		monthlyVinylImage.setAttribute('alt', vinylOfTheMonth.altText);
 		monthlyVinylArtist.innerText = `${vinylOfTheMonth.artist}`;
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
-		monthlyVinylDesccription.innerText = `${vinylOfTheMonth.description}`;
+		monthlyVinylDescription.innerText = `${vinylOfTheMonth.description}`;
 		monthlyVinylReadMore.innerText = "Read more...";
 		monthlyVinylReadMore.setAttribute('href', `/vinyl/?vinyl=${vinylOfTheMonth.slug}`);
 		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
@@ -69,13 +69,12 @@ export default async function shopItems() {
 			monthlyVinylAddToCartButton
 		)
 
-
 		monthlyVinylContainer.append(
 			monthlyVinylHeader,
 			monthlyVinylImage,
 			monthlyVinylArtist,
 			monthlyVinylTitle,
-			monthlyVinylDesccription,
+			monthlyVinylDescription,
 			monthlyVinylReadMore,
 			monthlyVinylPriceAndCart,
 		)
