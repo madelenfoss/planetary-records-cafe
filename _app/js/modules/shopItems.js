@@ -9,7 +9,7 @@ export default async function shopItems() {
 		albumName,
 		releaseDate,
 		"image": albumCoverImage.asset->url,
-		'altText': albumCoverImage.alternative,
+		"altText": albumCoverImage.alternative,
 		description,
 		price,
 		"slug": slug.current,
