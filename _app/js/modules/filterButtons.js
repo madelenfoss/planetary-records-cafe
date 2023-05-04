@@ -19,89 +19,103 @@ export default async function filterButtons(items) {
 	
 	const vinyls = await sanity.fetch(query);
 
-	// const shopContainer = document.querySelector('.shop__container');
-	// const shopContainerItems = document.querySelector('.shop__container-items');
-	// const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	// const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons');
+	// const filterButtonSection = document.querySelector('.shop__container-filter-buttons');
+   // const vinylItemsContainer = document.querySelector('.shop__container-items');
 
-	// if (shopContainer) {
-	// 	renderHTML();
-	// 	createFilterButtons(); /////////////////
-	// }
+   // const filterButtons = [
+   //    {
+   //       category: 'all'
+   //    },
+   //    {
+   //       category: 'space disco'
+   //    },
+   //    {
+   //       category: 'space rock'
+   //    },
+   //    {
+   //       category: 'space metal'
+   //    },
+   //    {
+   //       category: 'space'
+   //    },
+   //    {
+   //       category: 'space folk'
+   //    },
+   //    {
+   //       category: 'instrumental'
+   //    },
+   // ];
 
 
-	// 	/// Her starter filter buttons-fuksjonen ///
-	
-	// 	function createFilterButtons() {
-	// 		// Using the spread operator to create a new array of genres, 
-	// 		// the Set() function to create a new collection of unique values, 
-	// 		// and map() to iterate through each elements of the vinyls array.
-	// 		// By doing this, the client can add new genres in Sanity and they will
-	// 		// be added to the array.
-	// 		const genres = [...new Set(vinyls.map(vinyl => vinyl.genre))];
-	
-	// 		const allGenresButton = document.createElement('button');
-	// 		allGenresButton.innerText = 'all';
-	// 		allGenresButton.classList.add('shop__container-filter-button');
-	// 		filterButtonsContainer.appendChild(allGenresButton);
-	
-	// 		allGenresButton.addEventListener('click', () => {
-	// 			// Removes filtered vinyls before rendering all vinyls
-	// 			shopContainerItems.innerHTML = '';
-	// 			renderHTML();
-	// 		});
-	
-	// 		for (const genre of genres) {
-	// 			const filterButton = document.createElement('button');
-	// 			filterButton.innerText = genre;
-	// 			filterButton.classList.add('shop__container-filter-button');
-	// 			filterButtonsContainer.appendChild(filterButton);
-	
-	// 			filterButton.addEventListener('click', () => {
-	// 				const filteredVinyls = vinyls.filter(vinyl => vinyl.genre === genre);
-	// 				renderFilteredHTML(filteredVinyls);
-	// 			});
-	// 		}
-	// 	}
-	
-	// 	function renderFilteredHTML(vinyls) {
-	// 		shopContainerItems.innerHTML = '';
-	
-	// 		for (const vinyl of vinyls) {
-	// 			const vinylItem = document.createElement('a');
-	// 			const vinylImage = document.createElement('img');
-	// 			const vinylTitle = document.createElement('div');
-	// 			const vinylArtist = document.createElement('div');
-	// 			const vinylPriceAndBuyButtonContainer = document.createElement('div');
-	// 			const vinylPrice = document.createElement('div');
-	// 			const vinylBuyButton = document.createElement('button');
-	
-	// 			vinylItem.classList.add('shop__container-item');
-	// 			vinylImage.classList.add('shop__container-item-image');
-	// 			vinylTitle.classList.add('shop__container-item-album');
-	// 			vinylArtist.classList.add('shop__container-item-artist');
-	// 			vinylPriceAndBuyButtonContainer.classList.add('shop__container-item-price-buy');
-	// 			vinylPrice.classList.add('shop__container-item-price');
-	// 			vinylBuyButton.classList.add('shop__container-item-buy');
-	
-	// 			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
-	// 			vinylImage.setAttribute('src', vinyl.image);
-	// 			vinylImage.setAttribute('alt', vinyl.altText);
-	// 			vinylTitle.innerText = `${vinyl.albumName}`;
-	// 			vinylArtist.innerText = `${vinyl.artist}`;
-	// 			vinylPrice.innerText = `${vinyl.price} NOK`;
-	// 			vinylBuyButton.innerText = "BUY";
-	
-	// 			shopContainer.appendChild(shopContainerItems);
-	// 			shopContainerItems.appendChild(vinylItem);
-	// 			vinylPriceAndBuyButtonContainer.append(vinylPrice, vinylBuyButton);
-	// 			vinylItem.append(
-	// 				vinylImage,
-	// 				vinylArtist,
-	// 				vinylTitle,
-	// 				vinylPriceAndBuyButtonContainer,
-	// 			)
-	
-	// 		}
-	// 	}
+   // if (filterButtonSection) {
+   //    renderFilterButtons(vinyls)
+   // }
+
+   // function buttonDOMElement(button) {
+   //    const genreButton = document.createElement('button');
+   //    genreButton.classList.add('.shop__container-filter-button');
+   //    genreButton.textContent = button.category;
+   //    genreButton.dataset.filterCategory = button.category;
+
+   //    genreButton.addEventListener('click', handleGenreButtonClick);
+   //    return genreButton;
+   // }
+
+   // function handleGenreButtonClick(event) {
+   //    let currentVinyl = event.target.innerText;
+   //    const clickedButton = event.target;
+   //    const allGenreButtons = event.target.parentElement.querySelectorAll('button');
+
+   //    filterVinyls(currentVinyl);
+   // }
+
+   // function filterVinyls(currentVinyl) {
+
+   //    // Finne ut av denne - hente inn alt men ikke Vinyl of the month
+   //    // const filterVinylsButNotVinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === false);
+
+
+   //    let filteredVinyls = [];
+
+   //    switch (currentVinyl) {
+   //       case 'all':
+   //          filteredVinyls = vinyls;
+   //             break;
+
+   //       case 'space disco':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'space disco');
+   //             break;
+         
+   //       case 'space rock':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'space rock');
+   //             break;
+         
+   //       case 'space metal':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'space metal');
+   //             break;
+
+   //       case 'space':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'space');
+   //             break;
+
+   //       case 'space folk':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'space folk');
+   //             break;
+
+   //       case 'instrumental':
+   //          filteredVinyls = vinyls.filter(vinyl => vinyl.genre === 'instrumental');
+   //             break;      
+   //    }
+
+   //    vinylItemsContainer.innerHTML = '';
+   //    shopItems(filteredVinyls);
+   // }
+
+   // function renderFilterButtons() {
+   //    for (let i = 0; i < filterButtons.length; i++) {
+   //       const buttonElement = buttonDOMElement(filterButtons[i]);
+   //       filterButtonSection.appendChild(buttonElement);
+   //    }
+   // }
+
 }

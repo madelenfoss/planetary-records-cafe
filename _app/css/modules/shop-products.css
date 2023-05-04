@@ -39,6 +39,12 @@
 	width: 80%;
 	margin: 0.5rem auto;
 	padding: 1rem;
+	transition: 0.5s ease-in-out;
+}
+
+.shop__container-item-image:hover {
+	transition-delay: 0.1s;
+	transform: scale(1.05);
 }
 
 .shop__container-item-artist {
