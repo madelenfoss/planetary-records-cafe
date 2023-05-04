@@ -24,4 +24,5 @@
 	font-size: 1rem;
 	background: var(--tertiary-color);
 	color: var(--primary-color);
+	cursor: pointer;
 }

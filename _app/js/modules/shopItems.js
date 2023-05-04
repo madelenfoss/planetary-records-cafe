@@ -1,4 +1,5 @@
 import { sanity } from "../sanity.js";
+// import fetchData her
 
 export default async function shopItems() {
 	const query = 
@@ -25,6 +26,7 @@ export default async function shopItems() {
 	if (shopContainer) {
 		renderVinylOfTheMonth();
 		renderHTML();
+	
 	}
 
 	function renderVinylOfTheMonth() {
@@ -39,7 +41,6 @@ export default async function shopItems() {
 		const monthlyVinylPriceAndCart = document.createElement('div');
 		const monthlyVinylPrice = document.createElement('div');
 		const monthlyVinylAddToCartButton = document.createElement('button');
-
 		monthlyVinylHeader.classList.add('shop__container-monthly-vinyl-header');
 		monthlyVinylImage.classList.add('shop__container-monthly-vinyl-image');
 		monthlyVinylArtist.classList.add('shop__container-monthly-vinyl-artist');
@@ -51,7 +52,8 @@ export default async function shopItems() {
 		monthlyVinylAddToCartButton.classList.add('shop__container-monthly-vinyl-buy');
 
 		monthlyVinylHeader.innerText = "VINYL OF THE MONTH";
-		monthlyVinylImage.setAttribute('src', vinylOfTheMonth.image); // Todo: create multiple attributes object
+		monthlyVinylImage.setAttribute('src', vinylOfTheMonth.image);
+		monthlyVinylImage.setAttribute('alt', vinylOfTheMonth.altText);
 		monthlyVinylArtist.innerText = `${vinylOfTheMonth.artist}`;
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
 		monthlyVinylDesription.innerText = `${vinylOfTheMonth.description}`;
@@ -95,25 +97,8 @@ export default async function shopItems() {
 			vinylPrice.classList.add('shop__container-item-price');
 			vinylBuyButton.classList.add('shop__container-item-buy');
 
-			// vinylImage.setAttribute('src', vinyl.image);  + alt text. Set multiple attributes with object here.
-			// Source: https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element
-			
-			// function setMultipleAttributes(element, imageAttributes) {
-			// 	Object.keys(imageAttributes).forEach(attr => {
-			// 		element.setMultipleAttributes(attr, imageAttributes[attr]);
-			// 	});
-			// }
-
-			// const imageAttributes = {
-			// 	src: `${vinyl.image}`,
-			// 	alt: `${vinyl.altText}`,
-			// };
-
-			// const image = document.getElementsByClassName('shop__container-item-image');
-			// setMultipleAttributes(image, imageAttributes);
-
 			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
-			vinylImage.setAttribute('src', vinyl.image); // Multiple attributes object
+			vinylImage.setAttribute('src', vinyl.image);
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
 			vinylPrice.innerText = `${vinyl.price} NOK`;
@@ -133,12 +118,4 @@ export default async function shopItems() {
 		}
 	
 	}
-
-	function renderShopItemPreview() {
-
-	}
-
-
-	
-
 }
