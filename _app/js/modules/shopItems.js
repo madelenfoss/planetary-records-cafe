@@ -21,12 +21,12 @@ export default async function shopItems() {
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
 	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons');//////////// 
+	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons');// Filter
 	
 	if (shopContainer) {
 		renderVinylOfTheMonth();
 		renderHTML();
-		createFilterButtons(); /////////////////
+		createFilterButtons(); // Filter
 	}
 
 	function renderVinylOfTheMonth() {
@@ -121,14 +121,16 @@ export default async function shopItems() {
 	
 	}
 
-	/// Her starter filter buttons-fuksjonen ///
+	/* Her starter filter buttons-fuksjonen */
 	
 	function createFilterButtons() {
-		// Using the spread ... operator to create a new array of genres, 
-		// the Set() function to create a new collection of unique values, 
-		// and map() to iterate through each element of the vinyls array.
-		// By doing this, the client can add new genres in Sanity and they will
-		// be added to the array.
+		/* 
+		Using the spread ... operator to create a new array of genres, 
+		the Set() function to create a new collection of unique values, 
+		and map() to iterate through each element of the vinyls array.
+		By doing this, the client can add new genres in Sanity and they will
+		be added to the array. 
+		*/
 		const genres = [...new Set(vinyls.map(vinyl => vinyl.genre))];
 
 		const allGenresButton = document.createElement('button');
