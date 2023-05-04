@@ -36,6 +36,7 @@ export default async function productDetails() {
 		const vinylDetailsImage = document.createElement('img');
 		const vinylDetailsTitle = document.createElement('h3');
 		const vinylDetailsDescription = document.createElement('div');
+		const vinylDetailsInfo = document.createElement('div');
 		const vinylDetailsGenre = document.createElement('div');
 		const vinylDetailsReleaseDate = document.createElement('div');
 		const vinylDetailsEdition = document.createElement('div');
@@ -48,6 +49,7 @@ export default async function productDetails() {
 		vinylDetailsImage.classList.add('vinyl__details-image');
 		vinylDetailsTitle.classList.add('vinyl__details-title');
 		vinylDetailsDescription.classList.add('vinyl__details-description');
+		vinylDetailsInfo.classList.add('vinyl__details-info');
 		vinylDetailsGenre.classList.add('vinyl__details-genre');
 		vinylDetailsReleaseDate.classList.add('vinyl__details-release-date');
 		vinylDetailsEdition.classList.add('vinyl__details-edition');
@@ -73,14 +75,18 @@ export default async function productDetails() {
 			vinylDetailsAddToCartButton
 		)
 
+		vinylDetailsInfo.append(
+			vinylDetailsGenre,
+			vinylDetailsReleaseDate,
+			vinylDetailsEdition,
+		)
+
 		vinylDetailsCard.append(
 			vinylDetailsArtist,
 			vinylDetailsImage,
 			vinylDetailsTitle,
 			vinylDetailsDescription,
-			vinylDetailsGenre,
-			vinylDetailsReleaseDate,
-			vinylDetailsEdition,
+			vinylDetailsInfo,
 			vinylDetailsPriceAndCart
 		)
 	}
