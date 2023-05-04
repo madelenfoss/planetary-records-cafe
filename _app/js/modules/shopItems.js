@@ -9,7 +9,7 @@ export default async function shopItems() {
 		albumName,
 		releaseDate,
 		"image": albumCoverImage.asset->url,
-		altText,
+		'altText': albumCoverImage.alternative,
 		description,
 		price,
 		"slug": slug.current,
@@ -25,7 +25,6 @@ export default async function shopItems() {
 	if (shopContainer) {
 		renderVinylOfTheMonth();
 		renderHTML();
-		handleVinylShopItemClick();
 	}
 
 	function renderVinylOfTheMonth() {
@@ -57,7 +56,7 @@ export default async function shopItems() {
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
 		monthlyVinylDesription.innerText = `${vinylOfTheMonth.description}`;
 		monthlyVinylReadMore.innerText = "Read more...";
-		monthlyVinylReadMore.setAttribute('href', `/shop/product-preview.html?vinyl=${vinylOfTheMonth.slug}`);
+		monthlyVinylReadMore.setAttribute('href', `/vinyl/?vinyl=${vinylOfTheMonth.slug}`);
 		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
 		monthlyVinylAddToCartButton.innerText = "ADD TO CART";
 
@@ -113,7 +112,7 @@ export default async function shopItems() {
 			// const image = document.getElementsByClassName('shop__container-item-image');
 			// setMultipleAttributes(image, imageAttributes);
 
-			vinylItem.setAttribute('href', `/shop/product-preview.html?vinyl=${vinyl.slug}`); 
+			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
 			vinylImage.setAttribute('src', vinyl.image); // Multiple attributes object
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;

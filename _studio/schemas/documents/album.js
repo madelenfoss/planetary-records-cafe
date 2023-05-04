@@ -31,7 +31,7 @@ export default {
 			name: 'releaseDate',
 			type: 'date',
 			options: {
-				dateFormat: 'DD-MM-YYYY'
+				dateFormat: 'DD.MM.YY'
 			}
 		},
 		{
@@ -64,23 +64,28 @@ export default {
 			title: 'Album cover image',
 			name: 'albumCoverImage',
 			type: 'image',
+			fields: [
+				{
+					name: 'alternative',
+					title: 'Alternative',
+					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+					type: 'string',
+				},
+				{
+					type: 'string',
+					name: 'credits',
+					title: 'Credits'
+				},
+			],
 			options: {
 				hotspot: true
 			},
-		},
-		{
-			title: 'Alternative text for album cover image',
-			name: 'altText',
-			description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
-			type: 'text'
 		},
 		{
 			title: 'Vinyl of the month',
 			name: 'month',
 			type: 'boolean'
 		}
-
-		
 	],
 
 	

@@ -7,8 +7,8 @@
 
 	<meta name="theme-color" content="#266079">
 		
-	<link rel="stylesheet" href="/_app/css/main.css">
-	<script type="module" src="/_app/js/main.js"></script>
+	<link rel="stylesheet" href="../_app/css/main.css">
+	<script type="module" src="../_app/js/main.js"></script>
 </head>
 <body>
 	<header>
@@ -61,7 +61,7 @@
 						</a>
 					</li>
 					<li class="navbar__menu-link navbar__menu-link-shop">
-						<a href="../shop/index.html">
+						<a href="../shop/">
 							The Shop
 						</a>
 					</li>
@@ -104,7 +104,14 @@
 
 		<h1 class="shop__title">Limited edition vinyls</h1>
 
-		<div class="shop__cart-wrapper">
+		<div class="back-to-shop__cart-container">
+			<a 
+				class="back-to-shop" 
+				aria-label="Go back to shop to view all vinyls"
+				href="../shop/">
+				BACK TO PRODUCTS
+			</a>
+				
 			<div class="shop__cart shop__cart-details-page shop__cart-product-details">
 				<div class="shop__cart-no-items">No items in cart</div>
 				<div class="shop__cart-total"></div>
@@ -133,6 +140,7 @@
 					</div>
 				</div>
 			</div>
+		</div>	
 		<section class="product-details__container">
 			<!-- Product details inserted from productDetails.js -->
 		</section>
