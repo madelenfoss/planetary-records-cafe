@@ -18,5 +18,5 @@
 	
 // 	const vinyls = await sanity.fetch(query);
 
-// 	return vinyls;
+// 	return vinyls
 // }
