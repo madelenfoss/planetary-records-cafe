@@ -59,6 +59,7 @@ export default async function productDetails() {
 
 		vinylDetailsArtist.innerText = `${currentVinyl.artist}`;
 		vinylDetailsImage.setAttribute('src', currentVinyl.image);
+		vinylDetailsImage.setAttribute('alt', currentVinyl.altText);
 		vinylDetailsTitle.innerText = `${currentVinyl.albumName}`;
 		vinylDetailsDescription.innerText = `${currentVinyl.description}`;
 		vinylDetailsGenre.innerText = `Genre: ${currentVinyl.genre}`;
