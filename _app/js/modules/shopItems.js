@@ -99,6 +99,7 @@ export default async function shopItems() {
 
 			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
 			vinylImage.setAttribute('src', vinyl.image);
+			vinylImage.setAttribute('alt', vinyl.altText);
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
 			vinylPrice.innerText = `${vinyl.price} NOK`;
