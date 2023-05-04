@@ -1,0 +1,61 @@
+.about__us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto 4rem auto;
+	justify-content: center;
+}
+
+.about__us-title {
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+.about__us-paragraph {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
+	color: var(--primary-color);
+}
+
+.about__us-staff-container {
+	margin: 1rem 3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;	
+	padding: 0 1rem;
+}
+
+.about__us-staff-container-person {
+	display: flex;
+	flex-direction: column;
+	background: var(--tertiary-color);
+	text-decoration: none;
+	color: var(--primary-color);
+	justify-content: center;
+	width: 100%;
+	box-shadow: var(--secondary-shadow);
+}
+
+.about__us-staff-container-person-img {
+	width: 80%;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.about__us-staff-container-person-name {
+	text-align: center;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+.about__us-staff-container-person-role {
+	text-align: center;
+	margin-bottom: 4rem;
+}
