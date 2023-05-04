@@ -4,7 +4,7 @@
 	justify-content: center;
 	width: 60%;
 	margin: 2rem auto 5rem auto;
-	border: 2px solid var(--primary-color);
+	border: 0.1rem solid var(--primary-color);
 	color: var(--primary-color);
 	background-color: var(--tertiary-color);
 	box-shadow: var(--primary-shadow);
@@ -15,7 +15,7 @@
 	text-align: center;
 	margin: 0 auto;
 	padding: 1rem;
-	border-bottom: 2px solid var(--primary-color);
+	border-bottom: 0.1rem solid var(--primary-color);
 	font-size: 2rem;
 }
 
