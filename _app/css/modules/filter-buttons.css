@@ -28,4 +28,15 @@
 	background: var(--tertiary-color);
 	color: var(--primary-color);
 	cursor: pointer;
+	box-shadow: 0.1rem 0.1rem 0 var(--primary-color);
+	}
+
+.shop__container-filter-button:hover {
+	box-shadow: 0.06rem 0.06rem 0 var(--primary-color);
+	background-color: var(--quaternary-color);
+}
+
+.shop__container-filter-button:active {
+	box-shadow: none;
+	background-color: var(--quinary-color);
 }
