@@ -9,4 +9,4 @@ menuToggle();
 toTopButton();
 shopItems(); // fetchData
 productDetails(); // fetchData
-filterButtons(); // fetchData
+// filterButtons(); // fetchData

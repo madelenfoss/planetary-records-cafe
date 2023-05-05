@@ -21,7 +21,7 @@ export default async function shopItems() {
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
 	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons');// Filter
+	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); // Filter
 	
 	if (shopContainer) {
 		renderVinylOfTheMonth();
@@ -81,6 +81,10 @@ export default async function shopItems() {
 	}
 
 	function renderHTML() {
+		renderCards(vinyls)
+	}
+
+	function renderCards(vinyls) {
 		for (const vinyl of vinyls) {
 			const vinylItem = document.createElement('a');
 			const vinylImage = document.createElement('img');
@@ -106,7 +110,6 @@ export default async function shopItems() {
 			vinylPrice.innerText = `${vinyl.price} NOK`;
 			vinylBuyButton.innerText = "BUY";
 
-
 			shopContainer.appendChild(shopContainerItems);
 			shopContainerItems.appendChild(vinylItem);
 			vinylPriceAndBuyButtonContainer.append(vinylPrice, vinylBuyButton);
@@ -118,7 +121,6 @@ export default async function shopItems() {
 			)
 
 		}
-	
 	}
 
 	/* Her starter filter buttons-fuksjonen */
@@ -145,9 +147,10 @@ export default async function shopItems() {
 		});
 
 		for (const genre of genres) {
-			const filterButton = document.createElement('button');
+			const filterButton = document.createElement('a');
 			filterButton.innerText = genre;
 			filterButton.classList.add('shop__container-filter-button');
+			filterButton.setAttribute('href', '#vinyl-cards');
 			filterButtonsContainer.appendChild(filterButton);
 
 			filterButton.addEventListener('click', () => {
@@ -158,43 +161,8 @@ export default async function shopItems() {
 	}
 
 	function renderFilteredHTML(vinyls) {
-		shopContainerItems.innerHTML = '';
+		shopContainerItems.innerText = '';
 
-		for (const vinyl of vinyls) {
-			const vinylItem = document.createElement('a');
-			const vinylImage = document.createElement('img');
-			const vinylTitle = document.createElement('div');
-			const vinylArtist = document.createElement('div');
-			const vinylPriceAndBuyButtonContainer = document.createElement('div');
-			const vinylPrice = document.createElement('div');
-			const vinylBuyButton = document.createElement('button');
-
-			vinylItem.classList.add('shop__container-item');
-			vinylImage.classList.add('shop__container-item-image');
-			vinylTitle.classList.add('shop__container-item-album');
-			vinylArtist.classList.add('shop__container-item-artist');
-			vinylPriceAndBuyButtonContainer.classList.add('shop__container-item-price-buy');
-			vinylPrice.classList.add('shop__container-item-price');
-			vinylBuyButton.classList.add('shop__container-item-buy');
-
-			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
-			vinylImage.setAttribute('src', vinyl.image);
-			vinylImage.setAttribute('alt', vinyl.altText);
-			vinylTitle.innerText = `${vinyl.albumName}`;
-			vinylArtist.innerText = `${vinyl.artist}`;
-			vinylPrice.innerText = `${vinyl.price} NOK`;
-			vinylBuyButton.innerText = "BUY";
-
-			shopContainer.appendChild(shopContainerItems);
-			shopContainerItems.appendChild(vinylItem);
-			vinylPriceAndBuyButtonContainer.append(vinylPrice, vinylBuyButton);
-			vinylItem.append(
-				vinylImage,
-				vinylArtist,
-				vinylTitle,
-				vinylPriceAndBuyButtonContainer,
-			)
-
-		}
+		renderCards(vinyls)
 	}
 }
