@@ -21,12 +21,19 @@ export default {
 			title: 'Image',
 			name: 'image',
 			type: 'image',
-		},
-		{
-			title: 'Alternative image description',
-			name: 'altText',
-			description: 'For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
-			type: 'text'
+			fields: [
+				{
+					title: 'Alternative text',
+					name: 'alternative',
+					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+					type: 'string',
+				},
+				{
+					type: 'string',
+					name: 'credits',
+					title: 'Credits'
+				},
+			],
 		},
 		{
 			title: 'Role',

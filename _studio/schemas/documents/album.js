@@ -66,8 +66,8 @@ export default {
 			type: 'image',
 			fields: [
 				{
+					title: 'Alternative text',
 					name: 'alternative',
-					title: 'Alternative',
 					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
 					type: 'string',
 				},
