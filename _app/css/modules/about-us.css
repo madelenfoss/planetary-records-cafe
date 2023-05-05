@@ -4,6 +4,7 @@
 	justify-content: center;
 	margin: 0 auto 4rem auto;
 	justify-content: center;
+	font-family: var(--navbar-font-family)
 }
 
 .about__us-title {

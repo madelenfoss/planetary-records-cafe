@@ -6,6 +6,7 @@ footer {
 	width: 100%;
 	padding: 1rem 3rem;
 	justify-content: center;
+	font-family: var(--navbar-font-family);
 }
 
 .footer__section-links {

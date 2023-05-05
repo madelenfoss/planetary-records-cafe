@@ -4,6 +4,7 @@
 	width: 95%;
 	justify-content: space-between;
 	align-items: center;
+	font-family: var(--navbar-font-family)
 }
 
 .back-to-shop {
@@ -15,6 +16,7 @@
 	flex-direction: column;
 	width: 100%;
 	justify-content: center;
+	font-family: var(--navbar-font-family)
 }
 
 .vinyl__details-card {
