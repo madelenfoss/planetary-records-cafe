@@ -21,12 +21,12 @@ export default async function shopItems() {
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
 	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); // Filter
+	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); 
 	
 	if (shopContainer) {
 		renderVinylOfTheMonth();
 		renderHTML();
-		createFilterButtons(); // Filter
+		createFilterButtons();
 	}
 
 	function renderVinylOfTheMonth() {
@@ -122,8 +122,6 @@ export default async function shopItems() {
 
 		}
 	}
-
-	/* Her starter filter buttons-fuksjonen */
 	
 	function createFilterButtons() {
 		/* 
@@ -135,14 +133,15 @@ export default async function shopItems() {
 		*/
 		const genres = [...new Set(vinyls.map(vinyl => vinyl.genre))];
 
-		const allGenresButton = document.createElement('button');
+		const allGenresButton = document.createElement('a');
 		allGenresButton.innerText = 'all';
 		allGenresButton.classList.add('shop__container-filter-button');
+		allGenresButton.setAttribute('href', '#vinyl-cards');
 		filterButtonsContainer.appendChild(allGenresButton);
 
 		allGenresButton.addEventListener('click', () => {
 			// Removes filtered vinyls before rendering all vinyls
-			shopContainerItems.innerHTML = '';
+			shopContainerItems.innerText = '';
 			renderHTML();
 		});
 
