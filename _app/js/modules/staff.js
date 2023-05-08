@@ -12,4 +12,8 @@ export default async function staffPersons() {
 		"credits": image.credits 
 	 }`
 
+	const persons = await sanity.fetch(query);
+
+	const staffContainer = document.querySelector()
+
 }
