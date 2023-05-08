@@ -18,6 +18,14 @@ export default {
 			}
 		},
 		{
+			title: 'Start date',
+			name: 'startDate',
+			type: 'date',
+			options: {
+				dateFormat: 'DD.MM.YY'
+			}
+		},
+		{
 			title: 'Image',
 			name: 'image',
 			type: 'image',
