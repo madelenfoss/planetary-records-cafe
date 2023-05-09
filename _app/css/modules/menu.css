@@ -34,7 +34,20 @@
 }
 
 .menu__aside-link {
-	margin: 1rem;
+	display: flex;
+	padding: 1rem 2rem;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	align-items: center;
+	border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.menu__aside-link:first-child {
+	padding-top: 1.5rem;
+}
+
+.menu__aside-link:hover {
+	background-color: var(--tertiary-color);
 }
 
 .menu__aside-link a {
