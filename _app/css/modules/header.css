@@ -45,6 +45,7 @@
 }
 
 /* Remember to add these on each page */ 
+.navbar__menu-link-home,
 .navbar__menu-link-shop,
 .navbar__menu-link-about-us,
 .navbar__menu-link-events,
