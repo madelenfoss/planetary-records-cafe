@@ -129,6 +129,7 @@
 		background-color: var(--secondary-color);
 		justify-content: center;
 		border: 1.5px solid var(--primary-color);
+		z-index: 50;
 	}
 
 	.navbar__search-container {

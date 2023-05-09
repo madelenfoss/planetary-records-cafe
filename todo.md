@@ -1,0 +1,8 @@
+- Fikse :hover og :active på product details
+- Filter buttons mobilversjon - toggle buttons
+- Shoppingcart
+- Slideshow m/ sanity
+- Staff
+- hente SoMe fra sanity
+- Lage events sortert etter dato?
+- meny m/ id
