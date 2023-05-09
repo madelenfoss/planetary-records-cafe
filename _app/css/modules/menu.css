@@ -1,5 +1,14 @@
 .menu {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 4rem auto;
+	justify-content: center;
+	font-family: var(--navbar-font-family)
+}
 
+.menu__aside {
+	display: flex;
+	flex-direction: column;
 }
 
 .menu__title {
