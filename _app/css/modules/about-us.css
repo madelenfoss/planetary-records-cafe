@@ -25,6 +25,18 @@
 	color: var(--primary-color);
 }
 
+.about__us-staff {
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
 .about__us-staff-container {
 	margin: 1rem 3rem;
 	display: grid;
@@ -42,12 +54,13 @@
 	justify-content: center;
 	width: 100%;
 	box-shadow: var(--secondary-shadow);
+	border: 0.1rem solid var(--primary-color);
 }
 
 .about__us-staff-container-person-img {
 	width: 80%;
-	margin: 1rem auto;
-	padding: 1rem;
+	margin: 2rem auto;
+	border: 0.5rem solid var(--quinary-color);
 }
 
 .about__us-staff-container-person-name {
@@ -57,6 +70,8 @@
 }
 
 .about__us-staff-container-person-role {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	margin-bottom: 2rem;
 }
