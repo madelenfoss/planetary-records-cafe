@@ -110,7 +110,23 @@
 	}
 
 	.menu__aside-link {
+		padding: 0;
+		font-size: 1.1rem;
 		margin: 0.5rem;
+	}
+
+	.menu__aside-link:hover {
+		background: none;
+	}
+
+	.menu__aside-link:first-child {
+		padding: 0;
+	}
+
+
+	.menu__container {
+		margin: 1rem auto;
+		width: 90%;
 	}
 
 
