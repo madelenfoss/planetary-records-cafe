@@ -58,11 +58,22 @@
 	margin: 0 3vw;
 	width: 80%;
 	border: 0.1rem solid var(--primary-color);
+	border-top: 0;
 }
 
 .menu__container-section {
 	background-color: var(--tertiary-color);
 }
+
+.menu__container-section-title {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	text-align: center;
+	border-bottom: 0.1rem solid var(--primary-color);
+	border-top: 0.1rem solid var(--primary-color);
+}
+
 
 .menu__container-section-item {
 	display: flex;
