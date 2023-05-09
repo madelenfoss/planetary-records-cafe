@@ -74,10 +74,11 @@
 	border-top: 0.1rem solid var(--primary-color);
 }
 
-
 .menu__container-section-item {
+	margin: 0 auto;
+	padding: 2rem;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .menu__container-section-item-image {
