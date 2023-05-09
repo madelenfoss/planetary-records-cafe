@@ -3,7 +3,6 @@
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
-	text-align: center;
 	justify-content: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
@@ -22,9 +21,8 @@
 .menu__aside {
 	margin: 0 auto;
 	width: 20%;
-	padding: 1rem 3rem;
-	background-color: var(--tertiary-color);
 	text-transform: uppercase;
+	border-right: 0.1rem solid var(--primary-color);
 }
 
 .menu__aside-links {
@@ -57,9 +55,9 @@
 }
 
 .menu__container {
-	margin: 0 auto;
-	padding: 1rem 3rem;
+	margin: 0 3vw;
 	width: 80%;
+	border: 0.1rem solid var(--primary-color);
 }
 
 .menu__container-section {
@@ -72,7 +70,7 @@
 }
 
 .menu__container-section-item-image {
-	width: 20%;
+	width: 18%;
 	border: 0.4rem solid var(--quinary-color);
 	object-fit: cover;
 }
@@ -106,7 +104,6 @@
 	.menu__aside-links {
 		display: flex;
 		flex-wrap: wrap;
-
 	}
 
 	.menu__aside-link {
