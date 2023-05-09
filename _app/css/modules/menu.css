@@ -95,7 +95,11 @@
 	}
 
 	.menu__aside {
-		width: 100%;
+		width: 98%;
+		position:sticky;
+		z-index: 40;
+		top: 0;
+		padding: 0.5rem;
 	
 	}	
 
