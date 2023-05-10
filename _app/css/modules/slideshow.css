@@ -45,11 +45,18 @@
 	object-fit: contain;
 }
 
+.main__slideshow-controls {
+	position: relative;
+	z-index: 60;
+	height: 5rem;
+}
+
 .main__slideshow-next {
 	position: absolute;
 	top: 50%;
 	right: 0;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 .main__slideshow-previous {
@@ -57,6 +64,7 @@
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -69,18 +77,17 @@
 	}
 
 	.main__slideshow {
+		display: flex;
+		flex-direction: column;
 		position: relative;
-		height: auto;
+		margin: 0 auto;
 		top: 0%;
 		left: 0%;
 		transform: translate(0%);
-		display: flex;
-		margin: 0 auto;
-		flex-direction: column;
 		width: 100%;
 	}
 
-	.main__slideshow--controls,
+	.main__slideshow-controls,
 	.main__slideshow-previous,
 	.main__slideshow-next,
 	.main__slideshow-dots {
@@ -92,10 +99,8 @@
 	}
 
 	.main__slideshow-slide-image {
-		width: 100%;
 	}
 
 	.main__slideshow-slide-caption {
-		width: 100;
 	}
 }
