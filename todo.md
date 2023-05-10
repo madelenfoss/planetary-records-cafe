@@ -1,4 +1,5 @@
 - Fikse :hover og :active på product details
+- Product details page mobile version
 - Filter buttons mobilversjon - toggle buttons
 - Shoppingcart
 - Slideshow m/ sanity
