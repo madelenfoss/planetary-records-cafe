@@ -1,0 +1,17 @@
+.main__header {
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	justify-content: center;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	font-family: var(--navbar-font-family)
+}
+
+.main__paragraph {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
+	color: var(--primary-color);
+}
