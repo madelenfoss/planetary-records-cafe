@@ -2,7 +2,7 @@
 - Filter buttons mobilversjon - toggle buttons
 - Shoppingcart
 - Slideshow m/ sanity
-- Staff
 - hente SoMe fra sanity
 - Lage events sortert etter dato?
 - meny m/ id
+- fikse grid på mobilversjonen av staff, ha to personer på hver linje istedenfor en.

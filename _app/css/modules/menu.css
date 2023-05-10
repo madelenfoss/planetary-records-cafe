@@ -1,0 +1,142 @@
+.menu__title {
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	justify-content: center;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 4rem auto;
+	width: 100%;
+	justify-content: center;
+	font-family: var(--navbar-font-family);
+	color: var(--primary-color);
+}
+
+.menu__aside {
+	margin: 0 auto;
+	width: 20%;
+	text-transform: uppercase;
+	border-right: 0.1rem solid var(--primary-color);
+}
+
+.menu__aside-links {
+	list-style: none;
+	position: sticky;
+	top: 0;
+}
+
+.menu__aside-link {
+	display: flex;
+	padding: 1rem 2rem;
+	margin: 0 auto;
+	font-size: 1.3rem;
+	align-items: center;
+	border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.menu__aside-link:first-child {
+	padding-top: 1.5rem;
+}
+
+.menu__aside-link:hover {
+	background-color: var(--tertiary-color);
+}
+
+.menu__aside-link a {
+	text-decoration: none;
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.menu__container {
+	margin: 0 3vw;
+	width: 80%;
+	border: 0.1rem solid var(--primary-color);
+	border-top: 0;
+}
+
+.menu__container-section {
+	background-color: var(--tertiary-color);
+}
+
+.menu__container-section-title {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5rem;
+	text-align: center;
+	border-bottom: 0.1rem solid var(--primary-color);
+	border-top: 0.1rem solid var(--primary-color);
+}
+
+.menu__container-section-item {
+	margin: 0 auto;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu__container-section-item-image {
+	width: 18%;
+	height: 18%;
+	border: 0.4rem solid var(--quinary-color);
+	object-fit: cover;
+}
+
+.menu__container-section-item-info {
+	width: 70%;
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		flex-direction: column;
+	}
+
+	.menu__aside {
+		width: 98%;
+		position:sticky;
+		z-index: 40;
+		top: 0;
+		padding: 0.5rem;
+		background-color: var(--secondary-color);
+	}	
+
+	.menu__aside-links {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.menu__aside-link {
+		padding: 0;
+		font-size: 1.1rem;
+		margin: 0.5rem;
+		border: none;
+	}
+
+	.menu__aside-link:hover {
+		background: none;
+	}
+
+	.menu__aside-link:first-child {
+		padding: 0;
+	}
+
+
+	.menu__container {
+		margin: 1rem auto;
+		width: 90%;
+	}
+}
