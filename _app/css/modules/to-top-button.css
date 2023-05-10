@@ -5,6 +5,7 @@
 	right: 0;
 	bottom: 3rem;
 	cursor: pointer;
+	z-index: 100;
 }
 
 .to-top__button img {

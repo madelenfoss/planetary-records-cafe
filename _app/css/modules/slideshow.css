@@ -23,8 +23,12 @@
 }
 
 .main__slideshow {
-	margin: 1rem auto;
-	width: 60%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60vw;
+	height: 60vw;
 }
 
 .main__slideshow-slides {
@@ -33,15 +37,20 @@
 }
 
 @media screen and (max-width: 768px) {
-.main {
-	width: 95%;
-}
+	.main {
+		width: 95%;
+	}
 
 	.main__paragraph {
 		width: 95%;
 	}
 
 	.main__slideshow {
+		position: relative;
+		height: auto;
+		top: 0%;
+		left: 0%;
+		transform: translate(0%);
 		display: flex;
 		margin: 0 auto;
 		flex-direction: column;
