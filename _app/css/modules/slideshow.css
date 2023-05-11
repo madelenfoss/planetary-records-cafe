@@ -48,7 +48,7 @@
 .main__slideshow-controls {
 	position: relative;
 	z-index: 60;
-	height: 5rem;
+	height: 100%;
 }
 
 .main__slideshow-next {
@@ -57,6 +57,9 @@
 	right: 0;
 	transform: translateY(-50%);
 	cursor: pointer;
+	background: var(--secondary-color);
+	border: none;
+	padding: 0.2rem;
 }
 
 .main__slideshow-previous {
@@ -65,6 +68,10 @@
 	left: 0;
 	transform: translateY(-50%);
 	cursor: pointer;
+	background: var(--secondary-color);
+	border: none;
+	padding: 0.2rem;
+}
 }
 
 @media screen and (max-width: 768px) {
