@@ -28,7 +28,7 @@
 	transform: translate(-50%, -50%);
 	width: 60%;
 	height: 60%;
-	background-color: black;
+	background: black;
 }
 
 .main__slideshow-slide {
@@ -43,6 +43,10 @@
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+
+.main__slideshow-slide-caption {
+	background: white;
 }
 
 .main__slideshow-controls {
@@ -129,9 +133,4 @@
 		position: relative;
 	}
 
-	.main__slideshow-slide-image {
-	}
-
-	.main__slideshow-slide-caption {
-	}
 }
