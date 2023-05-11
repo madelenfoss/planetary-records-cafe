@@ -37,6 +37,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	display: none;
+}
+
+.main__slideshow-slide--active {
+	display: block;
 }
 
 .main__slideshow-slide-image {
@@ -46,7 +51,11 @@
 }
 
 .main__slideshow-slide-caption {
-	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: var(--secondary-color);
 }
 
 .main__slideshow-controls {
@@ -80,17 +89,18 @@
 .main__slideshow-dots {
 	display: flex;
 	position: absolute;
-	bottom: -2rem;
+	bottom: -1.2rem;
 	left: 0;
 	width: 100%;
 	justify-content: center;
 	z-index: 70;
+	background-color: black;
 }
 
 .main__slideshow-dot {
 	margin: 0.3rem;
-	width: 0.8rem;
-	height: 0.8rem;
+	width: 0.6rem;
+	height: 0.6rem;
 	border-radius: 100%;
 	background: var(--primary-color);
 	cursor: pointer;
