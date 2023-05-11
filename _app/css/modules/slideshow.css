@@ -72,6 +72,30 @@
 	border: none;
 	padding: 0.2rem;
 }
+
+.main__slideshow-dots {
+	display: flex;
+	position: absolute;
+	bottom: -2rem;
+	left: 0;
+	width: 100%;
+	justify-content: center;
+	z-index: 70;
+}
+
+.main__slideshow-dot {
+	margin: 0.3rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 100%;
+	background: var(--primary-color);
+	cursor: pointer;
+	border: 0.1rem solid var(--primary-color);
+}
+
+.main__slideshow-dot:hover,
+.main__slideshow-dot:active {
+	background: var(--secondary-color);
 }
 
 @media screen and (max-width: 768px) {
