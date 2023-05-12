@@ -24,6 +24,7 @@
 .main__slideshow {
 	position: relative;
 	margin: 3rem auto 5rem auto;
+	width: 95%;
 	max-width: 60rem;
 	height: 100vh;
 	background: var(--tertiary-color);
