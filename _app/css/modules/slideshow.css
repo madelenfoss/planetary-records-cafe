@@ -71,7 +71,7 @@
 	height: 100%;
 }
 
-.main__slideshow-next {
+.main__slideshow-next-button {
 	position: absolute;
 	top: 50%;
 	right: 0;
@@ -80,14 +80,22 @@
 	border: none;
 }
 
-.main__slideshow-previous {
+.main__slideshow-next-button img {
+	max-width: 6vw;
+}
+
+
+.main__slideshow-previous-button {
 	position: absolute;
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
 	background: transparent;
 	border: none;
-	padding: 0.2rem;
+}
+
+.main__slideshow-previous-button img {
+	max-width: 6vw;
 }
 
 .main__slideshow-dots {
