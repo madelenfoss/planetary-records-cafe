@@ -1,8 +1,9 @@
 export default async function slideshow() {
 
+	const slideshow = document.querySelector('.main__slideshow');
 	const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
-	const buttonPrevious = document.querySelector('.main__slideshow-previous');
-	const buttonNext = document.querySelector('.main__slideshow-next');
+	const buttonPrevious = document.querySelector('.main__slideshow-previous-button');
+	const buttonNext = document.querySelector('.main__slideshow-next-button');
 	const buttonDots = document.querySelectorAll('.main__slideshow-dot');
 
 	/* event listeners */
@@ -11,10 +12,12 @@ export default async function slideshow() {
 
 	/* event handlers */
 	function handleButtonPreviousClick(event) {
-		previousSlide()
+		previousSlide();
+		updateSlideshowHTML();
 	}
 	function handleButtonNextClick(event) {
-		nextSlide()
+		nextSlide();
+		updateSlideshowHTML();
 	}
 
 	/* variables */
@@ -25,25 +28,25 @@ export default async function slideshow() {
 		if(currentSlideIndex > 0) {
 			currentSlideIndex -= 1;
 		} else {
-			currentSlideIndex = slideshowSlides.length -1;
+			currentSlideIndex = slideshowSlides.length - 1;
 		}
-
-		// console.log(`gå til slide index: ${currentSlideIndex}`)
-
 	}
 
 	function nextSlide() {
-		if(currentSlideIndex < slideshowSlides.length -1) {
+		if(currentSlideIndex < slideshowSlides.length - 1) {
 			currentSlideIndex += 1;
 		} else {
 			currentSlideIndex = 0;
 		}
-
-		// console.log(`gå til slide index: ${currentSlideIndex}`)
 	}
 
 	function updateSlideshowHTML() {
-		slideshowSlides
+		for (const slide of slideshowSlides) {
+			slide.classList.remove('main__slideshow-slide--active');
+		}
+
+		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
 	}
+
 
 }
