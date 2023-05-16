@@ -6,7 +6,7 @@
 - Hente SoMe fra sanity
 - Lage events sortert etter dato?
 - Meny m/ id
-- Fikse clickbar flate på meny-linker:
+- Fikse klikkbar flate på meny-linker:
 
 		<li>
 			<a 
