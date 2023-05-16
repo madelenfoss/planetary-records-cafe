@@ -22,8 +22,8 @@
 .shop__container-items {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 2rem;	
-	padding: 0 1rem;
+	gap: 2.5rem;	
+	margin: 1rem;
 }
 
 .shop__container-item {
@@ -112,7 +112,7 @@
 		width: 96%;
 		margin: auto;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
+		gap: 1.2rem;
 		padding: 0;
 	}
 
