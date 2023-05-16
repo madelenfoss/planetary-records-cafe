@@ -25,7 +25,7 @@
 .vinyl__details-card {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 75%;
 	margin: 1rem auto 5rem auto;
 	background: var(--tertiary-color);
 	color: var(--primary-color);
@@ -85,7 +85,7 @@
 }
 
 .vinyl__details-price {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .vinyl__details-cart-button {
@@ -99,8 +99,7 @@
 
 @media screen and (max-width: 1000px) {
 	.vinyl__details-card {
-		width: 93%;
-
+		width: 92%;
 	}
 
 	.vinyl__details-image {
@@ -123,7 +122,7 @@
 	}
 
 	.vinyl__details-image {
-		width: 80%;
+		width: 70%;
 	}
 
 	.vinyl__details-price-cart-wrapper {
