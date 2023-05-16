@@ -38,19 +38,23 @@ export default async function slideshow() {
 
 			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
 
+			slideSlides.appendChild(
+				slideshowSlide
+			)
+
 			slideshowSlide.append(
 				slideshowSlideImage,
 				slideshowSlideCaption
 			)
 
-			slideSlides.appendChild(
-				slideshowSlide
-			)
+			
 		}
 	}
 
 
 	function renderSlideshow() {
+
+	const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');	
 	/* event listeners */
 	buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 	buttonNext.addEventListener('click', handleButtonNextClick);
@@ -73,12 +77,12 @@ export default async function slideshow() {
 		if(currentSlideIndex > 0) {
 			currentSlideIndex -= 1;
 		} else {
-			currentSlideIndex = slideshowSlide.length - 1;
+			currentSlideIndex = slideshowSlides.length - 1;
 		}
 	}
 
 	function nextSlide() {
-		if(currentSlideIndex < slideshowSlide.length - 1) {
+		if(currentSlideIndex < slideshowSlides.length - 1) {
 			currentSlideIndex += 1;
 		} else {
 			currentSlideIndex = 0;
@@ -86,7 +90,7 @@ export default async function slideshow() {
 	}
 
 	function updateSlideshowHTML() {
-		for (const slide of slideshowSlide) {
+		for (const slide of slideshowSlides) {
 			slide.classList.remove('main__slideshow-slide--active');
 		}
 
@@ -94,8 +98,7 @@ export default async function slideshow() {
 			dot.classList.remove('main__slideshow-dot--active');
 		}
 
-
-		slideshowSlide[currentSlideIndex].classList.add('main__slideshow-slide--active');
+		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
 		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
 }
