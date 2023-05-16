@@ -16,6 +16,7 @@
 .product-details__container {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
 	width: 100%;
 	justify-content: center;
 	font-family: var(--navbar-font-family)
@@ -96,3 +97,45 @@
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	.vinyl__details-card {
+		width: 95%;
+
+	}
+
+	.vinyl__details-price-cart-wrapper {
+		flex-direction: column;
+		width: 100%;
+		margin: 1rem auto 3rem auto;
+	}
+
+	.vinyl__details-price {
+		width: 80%;
+		margin-bottom: 1rem;
+	}
+
+	.vinyl__details-cart-button {
+		width: 80%;
+		margin: 1rem;
+	}
+
+	.vinyl__details-info,
+	.vinyl__details-description {
+		width: 80%;
+	}
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+}
