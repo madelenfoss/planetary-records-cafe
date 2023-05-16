@@ -94,9 +94,14 @@
 }
 
 @media screen and (max-width: 768px) {
-	.about__us-staff-container {
-		margin: 1rem auto;
-		grid-template-columns: repeat(1, 1fr);
+	.about__us-paragraph {
+		width: 95%;
+		margin: 0 auto;
 	}
 
+	.about__us-staff-container {
+		margin: 1rem auto;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;	
+	}
 }
