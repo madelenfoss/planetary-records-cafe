@@ -118,8 +118,9 @@
 }
 
 .main__slideshow-dot:hover,
-.main__slideshow-dot:active {
-	background: var(--secondary-color);
+.main__slideshow-dot--active {
+	background: var(--quinary-color);
+	border: 0.06rem solid var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {
