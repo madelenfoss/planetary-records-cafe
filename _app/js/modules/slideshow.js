@@ -19,11 +19,11 @@ export default async function slideshow() {
 	const buttonDots = document.querySelectorAll('.main__slideshow-dot');
 
 	if (slideshow) {
-		renderSlides();
+		renderSanitySlides();
 		renderSlideshow();
 	}
 
-	function renderSlides() {
+	function renderSanitySlides() {
 		for (const slideElement of slideElements) {
 			const slideshowSlide = document.createElement('figure');
 			const slideshowSlideImage = document.createElement('img');
