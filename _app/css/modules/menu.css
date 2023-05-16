@@ -97,7 +97,10 @@
 }
 
 @media screen and (max-width: 1000px) {
-
+	.menu__aside-link {
+		font-size: 1rem;
+;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -112,6 +115,7 @@
 		top: 0;
 		padding: 0.5rem;
 		background-color: var(--secondary-color);
+		border: none;
 	}	
 
 	.menu__aside-links {
