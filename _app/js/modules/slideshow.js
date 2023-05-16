@@ -1,11 +1,56 @@
+import { sanity } from "../sanity.js";
+
 export default async function slideshow() {
+	const query = `*[_type == 'settings'] {
+		slideshowImages[] {
+		  'image': image.asset->url,
+		  'alt': altText,
+		  'description': description,
+		  'photographer': photographer
+		}
+	 }`
+
+	const slideElements = await sanity.fetch(query);
 
 	const slideshow = document.querySelector('.main__slideshow');
-	const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
+	const slideSlides = document.querySelector('.main__slideshow-slides');
 	const buttonPrevious = document.querySelector('.main__slideshow-previous-button');
 	const buttonNext = document.querySelector('.main__slideshow-next-button');
 	const buttonDots = document.querySelectorAll('.main__slideshow-dot');
 
+	if (slideshow) {
+		renderSlides();
+		renderSlideshow();
+	}
+
+	function renderSlides() {
+		for (const slideElement of slideElements) {
+			const slideshowSlide = document.createElement('figure');
+			const slideshowSlideImage = document.createElement('img');
+			const slideshowSlideCaption = document.createElement('figcaption');
+
+			slideshowSlide.classList.add('main__slideshow-slide');
+			slideshowSlideImage.classList.add('main__slideshow-slide-image');
+			slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
+
+			slideshowSlideImage.setAttribute('src', slideElement.image);
+			slideshowSlideImage.setAttribute('alt', slideElement.alt);
+
+			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
+
+			slideshowSlide.append(
+				slideshowSlideImage,
+				slideshowSlideCaption
+			)
+
+			slideSlides.appendChild(
+				slideshowSlide
+			)
+		}
+	}
+
+
+	function renderSlideshow() {
 	/* event listeners */
 	buttonPrevious.addEventListener('click', handleButtonPreviousClick);
 	buttonNext.addEventListener('click', handleButtonNextClick);
@@ -28,12 +73,12 @@ export default async function slideshow() {
 		if(currentSlideIndex > 0) {
 			currentSlideIndex -= 1;
 		} else {
-			currentSlideIndex = slideshowSlides.length - 1;
+			currentSlideIndex = slideshowSlide.length - 1;
 		}
 	}
 
 	function nextSlide() {
-		if(currentSlideIndex < slideshowSlides.length - 1) {
+		if(currentSlideIndex < slideshowSlide.length - 1) {
 			currentSlideIndex += 1;
 		} else {
 			currentSlideIndex = 0;
@@ -41,7 +86,7 @@ export default async function slideshow() {
 	}
 
 	function updateSlideshowHTML() {
-		for (const slide of slideshowSlides) {
+		for (const slide of slideshowSlide) {
 			slide.classList.remove('main__slideshow-slide--active');
 		}
 
@@ -50,9 +95,10 @@ export default async function slideshow() {
 		}
 
 
-		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
+		slideshowSlide[currentSlideIndex].classList.add('main__slideshow-slide--active');
 		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
+}
 
 
 }
