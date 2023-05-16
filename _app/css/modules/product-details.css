@@ -16,6 +16,7 @@
 .product-details__container {
 	display: flex;
 	flex-direction: column;
+	margin: 0 auto;
 	width: 100%;
 	justify-content: center;
 	font-family: var(--navbar-font-family)
@@ -24,7 +25,7 @@
 .vinyl__details-card {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 75%;
 	margin: 1rem auto 5rem auto;
 	background: var(--tertiary-color);
 	color: var(--primary-color);
@@ -84,7 +85,7 @@
 }
 
 .vinyl__details-price {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .vinyl__details-cart-button {
@@ -96,3 +97,53 @@
 	cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+	.vinyl__details-card {
+		width: 92%;
+	}
+
+	.vinyl__details-image {
+		width: 60%;
+	}
+
+	.vinyl__details-info,
+	.vinyl__details-description {
+		width: 80%;
+	}
+
+	.vinyl__details-price-cart-wrapper {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.vinyl__details-card {
+		width: 96%;
+	}
+
+	.vinyl__details-image {
+		width: 70%;
+	}
+
+	.vinyl__details-price-cart-wrapper {
+		flex-direction: column;
+		width: 100%;
+		margin: 1rem auto 3rem auto;
+	}
+
+	.vinyl__details-price {
+		width: 85%;
+		margin-bottom: 1rem;
+	}
+
+	.vinyl__details-cart-button {
+		width: 85%;
+		margin: 1rem;
+	}
+
+	.vinyl__details-info,
+	.vinyl__details-description {
+		width: 85%;
+	}
+
+}
