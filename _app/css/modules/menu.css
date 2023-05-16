@@ -82,14 +82,25 @@
 }
 
 .menu__container-section-item-image {
+	margin: 1rem;
 	width: 18%;
 	height: 18%;
 	border: 0.4rem solid var(--quinary-color);
 	object-fit: cover;
+
 }
 
 .menu__container-section-item-info {
 	width: 70%;
+	margin: 1rem;
+}
+
+.menu__container-section-item-description {
+	margin: 1rem auto;
+}
+
+.menu__container-section-item-allergens {
+	margin: 1rem auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -133,9 +144,35 @@
 		padding: 0;
 	}
 
-
 	.menu__container {
 		margin: 1rem auto;
 		width: 90%;
+	}
+
+	.menu__container-section-item-image {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.menu__container {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.menu__container-section-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu__container-section-item-image {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.menu__container-section-item-info {
+		width: 100%;
+		margin: 1rem auto;
+		text-align: center;
 	}
 }
