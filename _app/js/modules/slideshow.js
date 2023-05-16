@@ -45,7 +45,13 @@ export default async function slideshow() {
 			slide.classList.remove('main__slideshow-slide--active');
 		}
 
+		for (const dot of buttonDots) {
+			dot.classList.remove('main__slideshow-dot--active');
+		}
+
+
 		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
+		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
 
 
