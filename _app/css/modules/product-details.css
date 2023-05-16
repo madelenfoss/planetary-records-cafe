@@ -25,7 +25,7 @@
 .vinyl__details-card {
 	display: flex;
 	flex-direction: column;
-	width: 60%;
+	width: 80%;
 	margin: 1rem auto 5rem auto;
 	background: var(--tertiary-color);
 	color: var(--primary-color);
@@ -97,18 +97,33 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1400px) {
-
-}
-
 @media screen and (max-width: 1000px) {
+	.vinyl__details-card {
+		width: 93%;
 
+	}
+
+	.vinyl__details-image {
+		width: 60%;
+	}
+
+	.vinyl__details-info,
+	.vinyl__details-description {
+		width: 80%;
+	}
+
+	.vinyl__details-price-cart-wrapper {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.vinyl__details-card {
-		width: 95%;
+		width: 96%;
+	}
 
+	.vinyl__details-image {
+		width: 80%;
 	}
 
 	.vinyl__details-price-cart-wrapper {
@@ -118,24 +133,18 @@
 	}
 
 	.vinyl__details-price {
-		width: 80%;
+		width: 85%;
 		margin-bottom: 1rem;
 	}
 
 	.vinyl__details-cart-button {
-		width: 80%;
+		width: 85%;
 		margin: 1rem;
 	}
 
 	.vinyl__details-info,
 	.vinyl__details-description {
-		width: 80%;
+		width: 85%;
 	}
-
-
-}
-
-
-@media screen and (max-width: 520px) {
 
 }
