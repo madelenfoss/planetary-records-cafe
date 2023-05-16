@@ -92,14 +92,9 @@
 	width: 70%;
 }
 
-@media screen and (max-width: 1400px) {
-
-}
-
 @media screen and (max-width: 1000px) {
 	.menu__aside-link {
 		font-size: 1rem;
-;
 	}
 }
 
