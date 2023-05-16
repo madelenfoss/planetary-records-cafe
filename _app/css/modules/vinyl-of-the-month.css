@@ -26,11 +26,6 @@
 	justify-content: center;
 	border: 1rem solid white;
 }
-/* 
-.shop__container-monthly-vinyl-information {
-	width: 80%;
-	margin: 1rem auto;
-} */
 
 .shop__container-monthly-vinyl-artist {
 	width: 100%;
@@ -59,6 +54,7 @@
 	color: var(--primary-color);
 	font-weight: 600;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .shop__container-monthly-vinyl-link:hover {
