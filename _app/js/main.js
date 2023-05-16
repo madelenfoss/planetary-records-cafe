@@ -3,9 +3,11 @@ import toTopButton from "./modules/toTopButton.js";
 import shopItems from "./modules/shopItems.js"; 
 import productDetails from "./modules/productDetails.js";
 import staffPersons from "./modules/staff.js";
+import slideshow from "./modules/slideshow.js";
 
 menuToggle();
 toTopButton();
 shopItems(); // fetchData
 productDetails(); // fetchData
 staffPersons();
+slideshow();

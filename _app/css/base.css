@@ -8,4 +8,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	-webkit-font-smoothing: antialiased;
+	font-family: var(--navbar-font-family);
+}
+
+button {
+	cursor: pointer;
 }

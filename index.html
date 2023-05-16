@@ -7,6 +7,7 @@
 		<title>Planetary Records Café</title>
 
 		<meta name="description" content="Website for Planetary Records Café and record store, with menu, events and online vinyl shop">
+		<meta name="theme-color" content="#BBD8E8"/>
 		
 		<link rel="stylesheet" href="./_app/css/main.css">
 		<script type="module" src="./_app/js/main.js"></script>
@@ -29,20 +30,6 @@
 						<div class="navbar__mobile-menu-icon-middle"></div>
 						<div class="navbar__mobile-menu-icon-bottom"></div>
 					</div>
-
-					<div class="navbar__mobile-search-container">
-						<input 
-							type="text" 
-							name="search" 
-							class="navbar__mobile-search-input"
-							placeholder="search">
-						<button class="navbar__mobile-search-button">
-							<img 
-								src="./_app/assets/icons/icons8-search-100.png" 
-								alt="Search button">
-						</button>
-					</div>
-
 				</div>
 
             <section class="navbar__items">
@@ -77,20 +64,6 @@
 							</a>
                   </li>
                </ul>
-
-					<div class="navbar__search-container">
-						<input 
-							type="text" 
-							name="search" 
-							class="navbar__search-input"
-							placeholder="search">
-						<button class="navbar__search-button">
-							<img 
-								src="./_app/assets/icons/icons8-search-100.png" 
-								alt="Search button">
-						</button>
-					</div>
-
             </section>
          </nav>
 		</header>
@@ -108,6 +81,88 @@
 				</button>
 			</a>
 		</div>
+
+			<h1 class="main__header">Welcome to Planetary Records</h1>
+
+			<p class="main__paragraph">
+				Three floors of music, space, drinks and food, including the best
+				vinyl shop in the world for space related music, selling limited 
+				edition vinyls only. Feel free to have a look around.
+			</p>
+
+			<section class="main__slideshow">
+
+				<div class="main__slideshow-controls">
+					<button 
+						aria-label="Click button to see previous image"
+						class="main__slideshow-previous-button">
+						<img 
+							src="./_app/assets/icons/icons8-arrow-left.png" 
+							alt="">
+					</button>
+					<button
+						aria-label="Click button to see next image" 
+						class="main__slideshow-next-button">
+						<img 
+							src="./_app/assets/icons/icons8-arrow-right.png" 
+							alt="">
+					</button>
+				</div>
+
+				<div class="main__slideshow-slides">
+
+					<!-- <figure class="main__slideshow-slide  main__slideshow-slide--active">
+						<img 
+							class="main__slideshow-slide-image"
+							src="./_app/assets/images/space_age_cafe_room.jpg" 
+							alt="Photo of cafe">
+						<figcaption class="main__slideshow-slide-caption">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Cum beatae quis quidem, odio unde assumenda dicta
+							necessitatibus nisi eveniet.
+						</figcaption>
+					</figure>
+
+					<figure class="main__slideshow-slide">
+						<img
+							class="main__slideshow-slide-image" 
+							src="./_app/assets/images/space_age_cafe.jpg" 
+							alt="Photo of cafe">
+						<figcaption class="main__slideshow-slide-caption">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Cum beatae quis quidem, odio unde assumenda dicta
+							necessitatibus nisi eveniet.
+						</figcaption>
+					</figure>
+
+					<figure class="main__slideshow-slide">
+						<img 
+							class="main__slideshow-slide-image"
+							src="./_app/assets/images/space_age_dancefloor.jpg" 
+							alt="Photo of cafe">
+						<figcaption class="main__slideshow-slide-caption">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Cum beatae quis quidem, odio unde assumenda dicta
+							necessitatibus nisi eveniet.
+						</figcaption>
+					</figure> -->
+
+
+				</div>
+
+				<div class="main__slideshow-dots">
+					<button 
+						class="main__slideshow-dot main__slideshow-dot--active" 
+						aria-label="bilde 1 av 3"
+						aria-current="true"></button>
+					<button class="main__slideshow-dot"
+						aria-label="bilde 2 av 3"></button>
+					<button class="main__slideshow-dot"
+					aria-label="bilde 3 av 3"></button>
+				</div>
+
+			</section>
+
 
 		</main>
 		<footer>
