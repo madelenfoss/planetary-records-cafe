@@ -38,6 +38,8 @@
 	font-size: 1.3rem;
 	align-items: center;
 	border-bottom: 0.1rem solid var(--primary-color);
+	color: var(--primary-color);
+	text-decoration: none;
 }
 
 .menu__aside-link:first-child {
@@ -51,7 +53,6 @@
 .menu__aside-link a {
 	text-decoration: none;
 	color: var(--primary-color);
-	font-weight: 600;
 }
 
 .menu__container {
@@ -82,24 +83,30 @@
 }
 
 .menu__container-section-item-image {
+	margin: 1rem;
 	width: 18%;
 	height: 18%;
 	border: 0.4rem solid var(--quinary-color);
 	object-fit: cover;
+
 }
 
 .menu__container-section-item-info {
 	width: 70%;
+	margin: 1rem;
 }
 
-@media screen and (max-width: 1400px) {
+.menu__container-section-item-description {
+	margin: 1rem auto;
+}
 
+.menu__container-section-item-allergens {
+	margin: 1rem auto;
 }
 
 @media screen and (max-width: 1000px) {
 	.menu__aside-link {
 		font-size: 1rem;
-;
 	}
 }
 
@@ -138,9 +145,35 @@
 		padding: 0;
 	}
 
-
 	.menu__container {
 		margin: 1rem auto;
 		width: 90%;
+	}
+
+	.menu__container-section-item-image {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.menu__container {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.menu__container-section-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.menu__container-section-item-image {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.menu__container-section-item-info {
+		width: 100%;
+		margin: 1rem auto;
+		text-align: center;
 	}
 }
