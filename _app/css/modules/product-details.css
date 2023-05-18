@@ -94,7 +94,18 @@
 	color: var(--tertiary-color);
 	padding: 1rem 2rem;
 	border: none;
-	cursor: pointer;
+	box-shadow: var(--shop-item-button);
+	font-size: 1.1rem;
+}
+
+.vinyl__details-cart-button:hover {
+	background: var(--shop-button-hover);
+	color: var(--quinary-color);
+	box-shadow: var(--shop-item-button-hover);
+}
+
+.vinyl__details-cart-button:active {
+	box-shadow: var(--shop-item-button-active);
 }
 
 @media screen and (max-width: 1000px) {

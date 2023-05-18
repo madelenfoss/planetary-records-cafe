@@ -1,4 +1,3 @@
-- Fikse :hover og :active på product details
 - Filter buttons mobilversjon - toggle buttons
 - Shoppingcart
 - Slideshow m/ sanity
@@ -7,3 +6,4 @@
 - Fikse role document, kun mulig med en rolle
 - Fikse image navn - kalle det Portait istedenfor? (staff)
 - Try catch
+- Fix image hover effects on product page

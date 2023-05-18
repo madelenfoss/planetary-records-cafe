@@ -44,10 +44,11 @@
 	transition: 0.5s ease-in-out;
 }
 
-.shop__container-item-image:hover {
+/* .shop__container-item-image:hover {
 	transition-delay: 0.1s;
 	transform: scale(1.05);
-}
+	object-fit:cover;
+} */
 
 .shop__container-item-artist {
 	text-align: center;
@@ -74,7 +75,6 @@
 	background: var(--primary-color);
 	color: var(--secondary-color);
 	border: none;
-	cursor: pointer;
 	font-weight: 700;
 	box-shadow: var(--shop-item-button);
 }

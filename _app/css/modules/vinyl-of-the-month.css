@@ -79,7 +79,6 @@
 	padding: 1rem 4rem;
 	background: var(--primary-color);
 	font-size: 1.1rem;
-	cursor: pointer;
 	font-weight: 500;
 	box-shadow: var(--shop-item-button);
 }
@@ -88,6 +87,10 @@
 	background: var(--shop-button-hover);
 	color: var(--quinary-color);
 	box-shadow: var(--shop-item-button-hover);
+}
+
+.shop__container-monthly-vinyl-buy:active {
+	box-shadow: var(--shop-item-button-active);
 }
 
 @media screen and (max-width: 1400px) {
