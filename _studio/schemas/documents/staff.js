@@ -46,17 +46,11 @@ export default {
 		{
 			title: 'Role',
 			name: 'role',
-			type: 'array',
-			of: [
-				{
-					type: 'reference',
-					to: {
-						type: 'role'
+			type: 'reference',
+			to: {
+				type: 'role'
 					}
-				}
-
-			]
-		}
+		},
 
 	],
 }

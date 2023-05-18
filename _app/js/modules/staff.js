@@ -8,7 +8,7 @@ export default async function staffPersons() {
 		"started": startDate,
 		"image": image.asset->url,
 		"altText": image.alternative,
-		"role": role[]->roleName,
+		"role": role->roleName,
 		"credits": image.credits 
 	 }`
 
