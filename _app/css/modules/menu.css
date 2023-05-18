@@ -38,6 +38,8 @@
 	font-size: 1.3rem;
 	align-items: center;
 	border-bottom: 0.1rem solid var(--primary-color);
+	color: var(--primary-color);
+	text-decoration: none;
 }
 
 .menu__aside-link:first-child {
