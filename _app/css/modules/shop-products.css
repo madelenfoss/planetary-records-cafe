@@ -140,7 +140,7 @@
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
 	.shop__container-items {
 		grid-template-columns: repeat(1, 1fr);
 	}
