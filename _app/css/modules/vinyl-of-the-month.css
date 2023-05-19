@@ -105,6 +105,12 @@
 	}
 }
 
+@media screen and (max-width: 894px) {
+	.shop__container-monthly-vinyl {
+		margin: 0 auto 2rem auto;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.shop__container-monthly-vinyl {
 		width: 96%;
