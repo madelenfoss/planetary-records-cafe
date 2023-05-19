@@ -34,9 +34,19 @@ export default {
 			title: 'Image',
 			name: 'image',
 			type: 'image',
-			options: {
-				hotspot: true
-			}
+			fields: [
+				{
+					title: 'Alternative text',
+					name: 'alternative',
+					description: 'Important! For accessibility. Keep it short and descriptive. Keep field blank if image is purely decorative',
+					type: 'string',
+				},
+				{
+					type: 'string',
+					name: 'credits',
+					title: 'Credits'
+				},
+			],
 		},
 		{
 			title: 'Description',
