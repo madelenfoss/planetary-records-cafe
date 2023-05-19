@@ -1,4 +1,3 @@
-- Filter buttons mobilversjon - toggle buttons
 - Shoppingcart
 - Slideshow m/ sanity
 - Hente SoMe fra sanity
