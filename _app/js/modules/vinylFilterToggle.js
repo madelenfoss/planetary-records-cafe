@@ -12,11 +12,11 @@ export default function vinylFilterToggle() {
 	}
 
 	function toggleFilterMenu() {
-		menuVisible = !menuVisible;
+		filterVisible = !filterVisible;
 	}
 
 	function renderHTML() {
-		if (menuVisible === true) {
+		if (filterVisible === true) {
 			filterMenu.classList.add('shop__container-filter-buttons--visible');
 		} else {
 			filterMenu.classList.remove('shop__container-filter-buttons--visible');
