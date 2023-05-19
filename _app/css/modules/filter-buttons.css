@@ -51,6 +51,7 @@
 	.shop__container-filter-buttons-mobile-container {
 		display: flex;
 		width: 50%;
+		justify-content: center;
 	}
 
 	.shop__container-filter-buttons-mobile {
@@ -71,22 +72,22 @@
 		display: none;
 	}
 
-	.shop__container-filter-button {
-		margin: 0.3rem;
-		padding: 0.5rem;
-
-	}
-
 	.shop__container-filter-buttons--visible {
 		display: flex;
 		margin: 4rem auto;
 		padding: 1rem;
 		position: absolute;
 		flex-wrap: wrap;
-		width: 100%;
+		width: 50%;
 		background-color: var(--secondary-color);
-		justify-content: space-evenly;
+		justify-content: center;
 		z-index: 50;
+	}
+
+
+	.shop__container-filter-button {
+		margin: 0.3rem;
+		padding: 0.5rem 1rem;
 	}
 }
 
@@ -104,5 +105,14 @@
 	.shop__container-filter-buttons-mobile {
 		width: 100%;
 		border: 0.1rem solid var(--primary-color);
+	}
+
+	.shop__container-filter-buttons--visible {
+		width: 100%;
+	}
+
+	.shop__container-filter-button {
+		margin: 0.3rem;
+		padding: 0.5rem 1rem;
 	}
 }
