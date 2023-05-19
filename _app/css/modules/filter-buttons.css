@@ -42,3 +42,36 @@
 	box-shadow: none;
 	background-color: var(--quinary-color);
 }
+
+.shop__container-filter-buttons-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 894px) {
+	.shop__container-filter-buttons-mobile {
+		display: flex;
+		margin: 1rem;
+		width: 50%;
+		background: var(--secondary-color);
+		color: var(--primary-color);
+		text-transform: uppercase;
+		border: 0.1rem solid var(--primary-color);
+		padding: 0.6rem;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.shop__container-filter-buttons {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.filter__buttons-and-shop__cart {
+		flex-direction: column-reverse;
+	}
+
+	.shop__container-filter-buttons-mobile {
+		width: 95%;
+	}
+}
