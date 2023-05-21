@@ -47,7 +47,7 @@ export default async function menuItems() {
 
 	function renderMenuItems() {
 		const menuCategorySectionTitles = [...new Set(foodItems.map(foodItem => foodItem.category))];
-		
+		// FIKSE
 
 		for (const foodItem of foodItems) {
 					
