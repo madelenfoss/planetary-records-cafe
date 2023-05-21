@@ -4,10 +4,10 @@ export default async function menuItems() {
 	const query = `*[_type == 'menuItem'] {
 		name,
 		'slug': slug.current,
-		description,
-		price,
-		allergen[]->{allergenName},
-		category[]->{foodType} 
+		'description': description,
+		'price': price,
+		'allergen': allergen[]->allergenName,
+		'category': category[]->foodType 
 	 }
 	 `
 
@@ -33,7 +33,16 @@ export default async function menuItems() {
 			const menutItemDescription = document.createElement('div');
 			const menuItemAllergens = document.createElement('div');
 
+			menuItemsCategory.classList.add('menu__container-section');
+			menuItemsCategoryName.classList.add('menu__container-section-title');
+			menuItem.classList.add('menu__container-section-item');
+			menuItemImage.classList.add('menu__container-section-item-image');
+			menuItemInfo.classList.add('menu__container-section-item-info');
+			menuItemTitle.classList.add('menu__container-section-item-title');
+			menutItemDescription.classList.add('menu__container-section-item-description');
+			menuItemAllergens.classList.add('menu__container-section-item-allergens');
 
+			menuItemsCategory.setAttribute('id', `${foodItem.}`)
 		}
 	}
 
