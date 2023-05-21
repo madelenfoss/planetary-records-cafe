@@ -15,6 +15,12 @@ export default {
 			options: {
 				source: 'foodType'
 			}	
-		}
+		},
+		{
+			title: 'Order number',
+			name: 'orderNumber',
+			type: 'number',
+			description: 'Give each category a number starting at 1, where number 1 is the first category listed on the menu, i.e. "starters"'
+		},
 	]
 }
