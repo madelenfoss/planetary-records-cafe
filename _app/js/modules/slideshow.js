@@ -13,7 +13,6 @@ export default async function slideshow() {
 	const slideElementsSanity = await sanity.fetch(query);
 
 	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data? 
-
 	console.log(slideElementsSanity); // Lage eget slideshow-dokument for å løse problem?
 	
 	const slideshow = document.querySelector('.main__slideshow');
@@ -108,7 +107,7 @@ export default async function slideshow() {
 
 			slideshowSlideImage.setAttribute('src', slideElement.image);
 			slideshowSlideImage.setAttribute('alt', slideElement.alt);
-			buttonDots.setAttribute('aria-label', `Bilde ${slideElement.currentSlideIndex} av ${slideElements.length}`);
+			buttonDots.setAttribute('aria-label', `Bilde ${slideElements.currentSlideIndex} av ${slideElements.length}`);
 
 			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
 
@@ -158,6 +157,7 @@ export default async function slideshow() {
 	function updateSlideshowHTML() {
 		const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
 		const buttonDots = document.querySelectorAll('.main__slideshow-dot');
+
 		for (const slide of slideshowSlides) {
 			slide.classList.remove('main__slideshow-slide--active');
 		}
