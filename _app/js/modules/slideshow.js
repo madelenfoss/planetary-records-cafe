@@ -12,23 +12,93 @@ export default async function slideshow() {
 
 	const slideElementsSanity = await sanity.fetch(query);
 
-	const slideElements = slideElementsSanity[1].slideshowImages;
+	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data 
 
-	console.log(slideElements)
+	console.log(slideElementsSanity);
 	
 	const slideshow = document.querySelector('.main__slideshow');
 	const slideSlides = document.querySelector('.main__slideshow-slides');
-	const buttonPrevious = document.querySelector('.main__slideshow-previous-button');
-	const buttonNext = document.querySelector('.main__slideshow-next-button');
+	const buttonsContainer = document.querySelector('.main__slideshow-controls');
 	const buttonDotsContainer = document.querySelector('.main__slideshow-dots');
 
-	if (slideshow) {
+	if (window.innerWidth > 768) {
 		renderSanitySlides();
+		showFirstSlide();
+	} else {
+		renderMobileImage();
+	}
+
+	/**
+	 * variabler
+	 * queryselector
+	 * eventlisteners
+	 * handlers
+	 * resten
+	 * 
+	 * renderHTML
+	 */
+
+		/* event handlers */
+		function handleButtonPreviousClick(event) {
+			previousSlide();
+			updateSlideshowHTML();
+			}
+	
+		function handleButtonNextClick(event) {
+			nextSlide();
+			updateSlideshowHTML();
+		}
+
+	function renderMobileImage() {
+		for (const image of slideElements) {
+		const mobileImageFigure = createMobileFigureDOM(image); 
+
+		slideSlides.appendChild(mobileImageFigure);
+
+		}
+	}
+
+	function createMobileFigureDOM(image) {
+		const mobileImageFigure = document.createElement('figure');
+		const mobileImage = document.createElement('img');
+		const mobileImageFigCaption = document.createElement('figcaption');
+
+		mobileImageFigure.className = 'main__slideshow-slide';
+		mobileImage.className = 'main__slideshow-slide-image';
+		mobileImageFigCaption.className = 'main__slideshow-slide-caption';
+
+		mobileImage.src = image.image;
+		mobileImageFigCaption.innerText = image.description;
+
+		mobileImageFigure.append(
+			mobileImage,
+			mobileImageFigCaption
+		)
+
+		return mobileImageFigure
+	}
+
+	function showFirstSlide() {
+		const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
+		const buttonDots = document.querySelectorAll('.main__slideshow-dot');
+
+		slideshowSlides[0].classList.add('main__slideshow-slide--active');
+		buttonDots[0].classList.add('main__slideshow-dot--active');
 	}
 
 	function renderSanitySlides() {
+		const previousButton = document.createElement('button');
+		const previousButtonImage = document.createElement('img');
+		const nextButton = document.createElement('button');
+		const nextButtonImage = document.createElement('img');
+
+		previousButton.className = 'main__slideshow-previous-button';
+		nextButton.className = 'main__slideshow-next-button';
+
+		previousButtonImage.src = './_app/assets/icons/icons8-arrow-left.png';
+		nextButtonImage.src = './_app/assets/icons/icons8-arrow-right.png';
+
 		for (const slideElement of slideElements) {
-			console.log(slideElement.image)
 			const slideshowSlides = document.createElement('figure');
 			const slideshowSlideImage = document.createElement('img');
 			const slideshowSlideCaption = document.createElement('figcaption');
@@ -45,34 +115,33 @@ export default async function slideshow() {
 
 			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
 
-			slideSlides.appendChild(
-				slideshowSlides
-			)
+			buttonDotsContainer.appendChild(buttonDots);
 
 			slideshowSlides.append(
 				slideshowSlideImage,
 				slideshowSlideCaption
 			)
 
-			buttonDotsContainer.appendChild(buttonDots);
+			slideSlides.append(
+				buttonDotsContainer,
+				slideshowSlides
+			)
+		}
 
-			buttonPrevious.addEventListener('click', handleButtonPreviousClick);
-			buttonNext.addEventListener('click', handleButtonNextClick);
-			}
+			previousButton.addEventListener('click', handleButtonPreviousClick);
+			nextButton.addEventListener('click', handleButtonNextClick);
 
+			previousButton.appendChild(previousButtonImage);
+
+			nextButton.appendChild(nextButtonImage);
+
+			buttonsContainer.append(
+				previousButton,
+				nextButton
+			);
 		}
 
 
-	/* event handlers */
-	function handleButtonPreviousClick(event) {
-		previousSlide();
-		updateSlideshowHTML();
-		}
-
-	function handleButtonNextClick(event) {
-		nextSlide();
-		updateSlideshowHTML();
-	}
 
 	/* variables */
 	let currentSlideIndex = 0;
@@ -95,7 +164,9 @@ export default async function slideshow() {
 	}
 
 	function updateSlideshowHTML() {
-		for (const slide of slideElements) {
+		const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
+		const buttonDots = document.querySelectorAll('.main__slideshow-dot');
+		for (const slide of slideshowSlides) {
 			slide.classList.remove('main__slideshow-slide--active');
 		}
 
@@ -103,7 +174,7 @@ export default async function slideshow() {
 			dot.classList.remove('main__slideshow-dot--active');
 		}
 
-		slideElements[currentSlideIndex].classList.add('main__slideshow-slide--active');
+		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
 		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
 }
