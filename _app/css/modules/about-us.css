@@ -61,6 +61,7 @@
 	width: 80%;
 	margin: 2rem auto;
 	border: 0.5rem solid var(--quinary-color);
+	object-fit:cover;
 }
 
 .about__us-staff-container-person-name {
@@ -101,7 +102,32 @@
 
 	.about__us-staff-container {
 		margin: 1rem auto;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 1.5rem;	
+	}
+
+	.about__us-staff-container-person-img {
+		width: 95%;
+		margin: 0.5rem auto;
+	}
+
+	@media screen and (max-width: 430px) {
+		.about__us-staff-container {
+			gap: 1rem;
+			grid-template-columns: repeat(1, 1fr);
+
+		}
+		.about__us-staff-container-person-img {
+			width: 94%;
+			margin: 0.5rem auto;
+		}
+
+		.about__us-staff-container-person-name {
+			margin: 1rem auto;
+		}
+
+		.about__us-staff-container-person-credits {
+			margin: 1rem auto 2rem auto;
+		}
 	}
 }
