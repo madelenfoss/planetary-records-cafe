@@ -17,6 +17,7 @@ the cursor on desktop version, and when clicking on mobile version.
 
 
 Important links:
+
 Github repository:
 https://github.com/madelenfoss/planetary-records-cafe
 
@@ -27,7 +28,6 @@ Sanity studio deploy:
 
 Netlify:
 https://planetaryrecords.netlify.app/index.html
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a93bc08d-0c64-4116-aabf-26da4657c8d9/deploy-status)](https://app.netlify.com/sites/planetaryrecords/deploys)
 
 Sources:
