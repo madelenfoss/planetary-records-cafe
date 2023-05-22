@@ -26,6 +26,9 @@ https://github.com/users/madelenfoss/projects/5
 Sanity studio deploy:
 
 Netlify:
+https://planetaryrecords.netlify.app/index.html
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a93bc08d-0c64-4116-aabf-26da4657c8d9/deploy-status)](https://app.netlify.com/sites/planetaryrecords/deploys)
 
 Sources:
 All icons from:
