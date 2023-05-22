@@ -14,18 +14,16 @@ export default async function slideshow() {
 
 	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data? 
 
-	console.log(slideElementsSanity);
+	console.log(slideElementsSanity); // Lage eget slideshow-dokument for å løse problem?
 	
 	const slideshow = document.querySelector('.main__slideshow');
 	const slideSlides = document.querySelector('.main__slideshow-slides');
-	const buttonsContainer = document.querySelector('.main__slideshow-controls');
+	const controlButtonsContainer = document.querySelector('.main__slideshow-controls');
 	const buttonDotsContainer = document.querySelector('.main__slideshow-dots');
 
-	if (window.innerWidth > 768) {
-		renderSanitySlides();
-		showFirstSlide();
-	} else {
-		renderMobileImage();
+	if (slideshow) {
+		renderSanitySlides(),
+		showFirstSlide()
 	}
 
 	/**
