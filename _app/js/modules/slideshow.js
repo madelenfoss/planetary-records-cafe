@@ -26,6 +26,43 @@ export default async function slideshow() {
 		renderSanitySlides();
 	}
 
+	function renderSanitySlides() {
+		for (const slideElement of slideElements) {
+			console.log(slideElement.image)
+			const slideshowSlides = document.createElement('figure');
+			const slideshowSlideImage = document.createElement('img');
+			const slideshowSlideCaption = document.createElement('figcaption');
+			const buttonDots = document.createElement('button');
+
+			slideshowSlides.classList.add('main__slideshow-slide');
+			slideshowSlideImage.classList.add('main__slideshow-slide-image');
+			slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
+			buttonDots.classList.add('main__slideshow-dot');
+
+			slideshowSlideImage.setAttribute('src', slideElement.image);
+			slideshowSlideImage.setAttribute('alt', slideElement.alt);
+			buttonDots.setAttribute('aria-label', `Bilde ${slideElement.currentSlideIndex} av ${slideElement.length}`);
+
+			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
+
+			slideSlides.appendChild(
+				slideshowSlides
+			)
+
+			slideshowSlides.append(
+				slideshowSlideImage,
+				slideshowSlideCaption
+			)
+
+			buttonDotsContainer.appendChild(buttonDots);
+
+			buttonPrevious.addEventListener('click', handleButtonPreviousClick);
+			buttonNext.addEventListener('click', handleButtonNextClick);
+			}
+
+		}
+
+
 	/* event handlers */
 	function handleButtonPreviousClick(event) {
 		previousSlide();
@@ -69,41 +106,5 @@ export default async function slideshow() {
 		slideElements[currentSlideIndex].classList.add('main__slideshow-slide--active');
 		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
-
-	function renderSanitySlides() {
-		for (const slideElement of slideElements) {
-			console.log(slideElement.image)
-			const slideshowSlides = document.createElement('figure');
-			const slideshowSlideImage = document.createElement('img');
-			const slideshowSlideCaption = document.createElement('figcaption');
-			const buttonDots = document.createElement('button');
-
-			slideshowSlides.classList.add('main__slideshow-slide');
-			slideshowSlideImage.classList.add('main__slideshow-slide-image');
-			slideshowSlideCaption.classList.add('main__slideshow-slide-caption');
-			buttonDots.classList.add('main__slideshow-dot');
-
-			slideshowSlideImage.setAttribute('src', slideElement.image);
-			slideshowSlideImage.setAttribute('alt', slideElement.alt);
-			buttonDots.setAttribute('aria-label', `Bilde ${slideElement.currentSlideIndex} av ${slideElement.length}`);
-
-			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
-
-			slideSlides.appendChild(
-				slideshowSlides
-			)
-
-			slideshowSlides.append(
-				slideshowSlideImage,
-				slideshowSlideCaption
-			)
-
-			buttonDotsContainer.appendChild(buttonDots);
-
-			buttonPrevious.addEventListener('click', handleButtonPreviousClick);
-			buttonNext.addEventListener('click', handleButtonNextClick);
-			}
-
-		}
-	}
+}
 
