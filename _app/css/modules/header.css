@@ -44,7 +44,6 @@
 	list-style: none;
 }
 
-/* Remember to add these on each page */ 
 .navbar__menu-link-home,
 .navbar__menu-link-shop,
 .navbar__menu-link-about-us,
@@ -181,5 +180,10 @@
 		border-radius: 1rem;
 	}
 
+	@media screen and (max-width: 495px) {
+		.navbar__logo {
+			padding: 2rem;
+		}
+	}
 
 }
