@@ -9,10 +9,11 @@ import menuItems from "./modules/menuItems.js";
 
 menuToggle();
 toTopButton();
+slideshow();
 shopItems(); 
 productDetails(); 
 staffPersons();
-slideshow();
 menuItems();
 vinylFilterToggle();
+
 
