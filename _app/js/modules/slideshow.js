@@ -72,11 +72,6 @@ export default async function slideshow() {
 
 	function renderSanitySlides() {
 		for (const slideElement of slideElements) {
-			// const image = document.createElement('img');
-			
-			// image.setAttribute('src', slideElement.image);
-
-			// slideSlides.appendChild(image);
 			console.log(slideElement.image)
 			const slideshowSlides = document.createElement('figure');
 			const slideshowSlideImage = document.createElement('img');
