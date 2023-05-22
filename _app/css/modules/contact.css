@@ -1,12 +1,10 @@
 .contact__title,
 .contact__location,
 .contact__opening-hours {
-	display: flex;
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
 	text-align: center;
-	justify-content: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
 }

@@ -9,13 +9,14 @@
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
+	text-align: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
-	text-align: center;
 }
 
 .main__paragraph {
 	margin: 1rem auto;
+	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
 }

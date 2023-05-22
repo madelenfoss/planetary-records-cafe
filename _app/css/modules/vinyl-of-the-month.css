@@ -20,10 +20,8 @@
 }
 
 .shop__container-monthly-vinyl-image {
-	display: flex;
 	width: 60%;
 	margin: 2rem auto;
-	justify-content: center;
 	border: 1rem solid white;
 }
 

@@ -1,10 +1,8 @@
 .shop__title {
-	display: flex;
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
 	text-align: center;
-	justify-content: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
 	font-family: var(--navbar-font-family)

@@ -1,9 +1,8 @@
 .menu__title {
-	display: flex;
 	margin: 1rem auto;
 	padding: 1rem;
 	width: 100%;
-	justify-content: center;
+	text-align: center;
 	color: var(--primary-color);
 	text-transform: uppercase;
 }
