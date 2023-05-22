@@ -1,5 +1,6 @@
 .contact__title,
-.contact__location {
+.contact__location,
+.contact__opening-hours {
 	display: flex;
 	margin: 1rem auto;
 	padding: 1rem;
@@ -31,11 +32,12 @@
 }
 
 .contact__address {
-	width: 80%;
+	width: 50%;
 	margin: 1rem auto 5rem auto;
 }
 
 .contact__map {
-	
+	width: 100%;
+	margin: 1rem auto;
 }
 
