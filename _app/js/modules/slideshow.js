@@ -12,7 +12,7 @@ export default async function slideshow() {
 
 	const slideElementsSanity = await sanity.fetch(query);
 
-	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data 
+	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data? 
 
 	console.log(slideElementsSanity);
 	
