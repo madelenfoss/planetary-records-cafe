@@ -16,12 +16,12 @@ export default async function slideshow() {
 
 	console.log(slideElements)
 	
-
 	const slideshow = document.querySelector('.main__slideshow');
 	const slideSlides = document.querySelector('.main__slideshow-slides');
 	const buttonPrevious = document.querySelector('.main__slideshow-previous-button');
 	const buttonNext = document.querySelector('.main__slideshow-next-button');
 	const buttonDotsContainer = document.querySelector('.main__slideshow-dots');
+
 	if (slideshow) {
 		renderSanitySlides();
 	}
