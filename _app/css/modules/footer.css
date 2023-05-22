@@ -34,3 +34,17 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+	.footer__section-links {
+		width: 50%;
+	}
+
+	.footer__section-links-li {
+		padding: 0.2rem;
+	}
+	
+	.footer__section-links-li img {
+		width: 3rem;
+	}
+}
