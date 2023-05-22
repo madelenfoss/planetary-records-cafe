@@ -36,7 +36,7 @@ export default async function slideshow() {
 	// function renderMobileImage() {
 	// 	for (const image of slideElements) {
 	// 	const mobileImageFigure = createMobileFigureDOM(image); 
-	
+
 	// 	slideSlides.appendChild(mobileImageFigure);
 
 	// 	}
@@ -62,14 +62,17 @@ export default async function slideshow() {
 	// 	return mobileImageFigure
 	// }
 
-		mobileImageFigure.append(
-			mobileImage,
-			mobileImageFigCaption
-		)
+	function handleButtonPreviousClick(event) {
+		previousSlide();
+		updateSlideshowHTML();
+		}
 
-		return mobileImageFigure
+	function handleButtonNextClick(event) {
+		nextSlide();
+		updateSlideshowHTML();
 	}
 
+	// To make sure first image is active and displayed when entering page
 	function showFirstSlide() {
 		const slideshowSlides = document.querySelectorAll('.main__slideshow-slide');
 		const buttonDots = document.querySelectorAll('.main__slideshow-dot');
@@ -84,11 +87,13 @@ export default async function slideshow() {
 		const nextButton = document.createElement('button');
 		const nextButtonImage = document.createElement('img');
 
-		previousButton.className = 'main__slideshow-previous-button';
-		nextButton.className = 'main__slideshow-next-button';
+		previousButton.classList.add('main__slideshow-previous-button');
+		nextButton.classList.add('main__slideshow-next-button');
 
-		previousButtonImage.src = './_app/assets/icons/icons8-arrow-left.png';
-		nextButtonImage.src = './_app/assets/icons/icons8-arrow-right.png';
+		previousButtonImage.setAttribute('src', './_app/assets/icons/icons8-arrow-left.png');
+		previousButtonImage.setAttribute('aria-label', 'click button to go to previous slide');
+		nextButtonImage.setAttribute('src', './_app/assets/icons/icons8-arrow-right.png');
+		nextButtonImage.setAttribute('aria-label', 'click button to go to next slide');
 
 		for (const slideElement of slideElements) {
 			const slideshowSlides = document.createElement('figure');
@@ -103,7 +108,7 @@ export default async function slideshow() {
 
 			slideshowSlideImage.setAttribute('src', slideElement.image);
 			slideshowSlideImage.setAttribute('alt', slideElement.alt);
-			buttonDots.setAttribute('aria-label', `Bilde ${slideElement.currentSlideIndex} av ${slideElement.length}`);
+			buttonDots.setAttribute('aria-label', `Bilde ${slideElement.currentSlideIndex} av ${slideElements.length}`);
 
 			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
 
@@ -120,25 +125,20 @@ export default async function slideshow() {
 			)
 		}
 
-			previousButton.addEventListener('click', handleButtonPreviousClick);
-			nextButton.addEventListener('click', handleButtonNextClick);
-
 			previousButton.appendChild(previousButtonImage);
-
 			nextButton.appendChild(nextButtonImage);
 
-			buttonsContainer.append(
+			controlButtonsContainer.append(
 				previousButton,
 				nextButton
 			);
+
+			previousButton.addEventListener('click', handleButtonPreviousClick);
+			nextButton.addEventListener('click', handleButtonNextClick);
 		}
 
-
-
-	/* variables */
 	let currentSlideIndex = 0;
 
-	/* methods */
 	function previousSlide() {
 		if(currentSlideIndex > 0) {
 			currentSlideIndex -= 1;
