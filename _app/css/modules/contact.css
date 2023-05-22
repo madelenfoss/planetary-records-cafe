@@ -1,0 +1,37 @@
+.contact__title,
+.contact__location {
+	display: flex;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+.contact__paragraph,
+.contact__address {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
+	color: var(--primary-color);
+}
+
+.contact__email {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
+	color: var(--primary-color);
+}
+
+.contact__email a {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+.contact__address {
+	width: 80%;
+	margin: 1rem auto 5rem auto;
+}
+
