@@ -26,47 +26,41 @@ export default async function slideshow() {
 		showFirstSlide()
 	}
 
-	/**
-	 * variabler
-	 * queryselector
-	 * eventlisteners
-	 * handlers
-	 * resten
-	 * 
-	 * renderHTML
-	 */
+	// if (window.innerWidth > 768) {
+	// 	renderSanitySlides();
+	// 	showFirstSlide();
+	// } else {
+	// 	renderMobileImage();
+	// }
 
-		/* event handlers */
-		function handleButtonPreviousClick(event) {
-			previousSlide();
-			updateSlideshowHTML();
-			}
+	// function renderMobileImage() {
+	// 	for (const image of slideElements) {
+	// 	const mobileImageFigure = createMobileFigureDOM(image); 
 	
-		function handleButtonNextClick(event) {
-			nextSlide();
-			updateSlideshowHTML();
-		}
+	// 	slideSlides.appendChild(mobileImageFigure);
 
-	function renderMobileImage() {
-		for (const image of slideElements) {
-		const mobileImageFigure = createMobileFigureDOM(image); 
+	// 	}
+	// }
 
-		slideSlides.appendChild(mobileImageFigure);
+	// function createMobileFigureDOM(image) {
+	// 	const mobileImageFigure = document.createElement('figure');
+	// 	const mobileImage = document.createElement('img');
+	// 	const mobileImageFigCaption = document.createElement('figcaption');
 
-		}
-	}
+	// 	mobileImageFigure.classList.add('main__slideshow-slide');
+	// 	mobileImage.classList.add('main__slideshow-slide-image');
+	// 	mobileImageFigCaption.classList.add('main__slideshow-slide-caption');
 
-	function createMobileFigureDOM(image) {
-		const mobileImageFigure = document.createElement('figure');
-		const mobileImage = document.createElement('img');
-		const mobileImageFigCaption = document.createElement('figcaption');
+	// 	mobileImage.setAttribute('src', image.image);
+	// 	mobileImageFigCaption.innerText = image.description;
 
-		mobileImageFigure.className = 'main__slideshow-slide';
-		mobileImage.className = 'main__slideshow-slide-image';
-		mobileImageFigCaption.className = 'main__slideshow-slide-caption';
+	// 	mobileImageFigure.append(
+	// 		mobileImage,
+	// 		mobileImageFigCaption
+	// 	)
 
-		mobileImage.src = image.image;
-		mobileImageFigCaption.innerText = image.description;
+	// 	return mobileImageFigure
+	// }
 
 		mobileImageFigure.append(
 			mobileImage,
