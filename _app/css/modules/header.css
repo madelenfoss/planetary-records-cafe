@@ -4,7 +4,7 @@
 
 .navbar__logo {
 	margin: 0 auto;
-	padding: 5rem;
+	padding: 4rem 5rem;
 	width: 100%;
 	text-align: center;
 	font-family: var(--header-font-family);
