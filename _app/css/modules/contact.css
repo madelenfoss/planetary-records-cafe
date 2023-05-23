@@ -46,7 +46,7 @@
 }
 
 .contact__map {
-	width: 100%;
+	width: 50%;
 	margin: 3rem auto;
 }
 
@@ -58,6 +58,10 @@
 	.contact__address {
 		width: 100%;
 		margin: 0 auto;
+	}
+
+	.contact__map {
+		width: 90%;
 	}
 
 }
