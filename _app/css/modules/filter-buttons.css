@@ -99,6 +99,7 @@
 
 	.filter__buttons-and-shop__cart {
 		flex-direction: column-reverse;
+		position: relative;
 	}
 
 	.shop__container-filter-buttons-mobile {
