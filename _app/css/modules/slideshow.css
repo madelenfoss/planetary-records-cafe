@@ -50,15 +50,15 @@
 }
 
 .main__slideshow-slide-image {
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 	object-fit: cover;
 	border: 1rem solid var(--quinary-color); 
 }
 
 .main__slideshow-slide-caption {
 	position: absolute;
-	bottom: 1.8rem;
+	bottom: 2rem;
 	left: 50%;
 	transform: translate(-50%);
 	width: 70%;
@@ -100,7 +100,7 @@
 .main__slideshow-dots {
 	display: flex;
 	position: relative;
-	bottom: 2.6rem;
+	bottom: 9.5rem;
 	left: 0;
 	width: 100%;
 	justify-content: center;
