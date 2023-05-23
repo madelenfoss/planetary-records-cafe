@@ -1,3 +1,11 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
 .contact__title,
 .contact__location,
 .contact__opening-hours {
@@ -29,14 +37,17 @@
 	font-weight: 600;
 }
 
-.contact__address {
-	width: 50%;
-	margin: 1rem auto 5rem auto;
+.contact_opening-hours-container {
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
+	color: var(--primary-color);
+
 }
 
 .contact__map {
 	width: 100%;
-	margin: 1rem auto;
+	margin: 2rem auto;
 }
 
 @media screen and (max-width: 768px) {
