@@ -26,7 +26,7 @@ export default {
 			}
 		},
 		{
-			title: 'Image',
+			title: 'Staff portrait',
 			name: 'image',
 			type: 'image',
 			fields: [
