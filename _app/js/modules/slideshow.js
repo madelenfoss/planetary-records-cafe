@@ -16,7 +16,7 @@ export default async function slideshow() {
 	console.log(slideElementsSanity); // Lage eget slideshow-dokument for å løse problem?
 	
 	const slideshow = document.querySelector('.main__slideshow');
-	const slideSlides = document.querySelector('.main__slideshow-slides');
+	const allSlides = document.querySelector('.main__slideshow-slides');
 	const controlButtonsContainer = document.querySelector('.main__slideshow-controls');
 	const buttonDotsContainer = document.querySelector('.main__slideshow-dots');
 
@@ -118,7 +118,7 @@ export default async function slideshow() {
 				slideshowSlideCaption
 			)
 
-			slideSlides.append(
+			allSlides.append(
 				buttonDotsContainer,
 				slideshowSlides
 			)
