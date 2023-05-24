@@ -11,7 +11,8 @@ import shoppingCart from "./modules/shoppingCart.js";
 menuToggle();
 toTopButton();
 slideshow();
-shopItems(); 
+// await to fetch the products from sanity before shoppingCart runs:
+await shopItems(); 
 productDetails(); 
 staffPersons();
 menuItems();
