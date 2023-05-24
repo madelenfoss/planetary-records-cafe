@@ -51,6 +51,9 @@ export default async function shopItems() {
 		monthlyVinylPrice.classList.add('shop__container-monthly-vinyl-price');
 		monthlyVinylAddToCartButton.classList.add('shop__container-monthly-vinyl-buy');
 
+		monthlyVinylContainer.setAttribute('data-id', vinylOfTheMonth._id);
+		monthlyVinylContainer.setAttribute('data-name', vinylOfTheMonth.albumName);
+		monthlyVinylContainer.setAttribute('data-price', vinylOfTheMonth.price);
 		monthlyVinylHeader.innerText = "VINYL OF THE MONTH";
 		monthlyVinylImage.setAttribute('src', vinylOfTheMonth.image);
 		monthlyVinylImage.setAttribute('alt', vinylOfTheMonth.altText);
@@ -103,9 +106,12 @@ export default async function shopItems() {
 			vinylBuyButton.classList.add('shop__container-item-buy');
 
 			vinylItem.setAttribute('href', `/vinyl/?vinyl=${vinyl.slug}`); 
+			vinylItem.setAttribute('data-id', vinyl._id);
+			vinylItem.setAttribute('data-name', vinyl.albumName);
+			vinylItem.setAttribute('data-price', vinyl.price);
 			vinylImage.setAttribute('src', vinyl.image);
 			vinylImage.setAttribute('alt', vinyl.altText);
-			
+
 			vinylTitle.innerText = `${vinyl.albumName}`;
 			vinylArtist.innerText = `${vinyl.artist}`;
 			vinylPrice.innerText = `${vinyl.price} NOK`;
