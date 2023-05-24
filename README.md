@@ -1,5 +1,7 @@
 # planetary records cafe
 
+Under construction
+
 This project is a café and vinyl shop concept to showcase everything we have learnt during the year of studying frontend development at Fagskolen Kristiania 22/23.
 
 MVP - Minimum Viable Product:
