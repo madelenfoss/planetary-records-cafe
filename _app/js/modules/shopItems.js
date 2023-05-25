@@ -89,7 +89,7 @@ export default async function shopItems() {
 
 	function renderCards(vinyls) {
 		for (const vinyl of vinyls) {
-			const vinylItem = document.createElement('a');
+			const vinylItem = document.createElement('div'); // Div for now, but swap to a
 			const vinylImage = document.createElement('img');
 			const vinylTitle = document.createElement('div');
 			const vinylArtist = document.createElement('div');
