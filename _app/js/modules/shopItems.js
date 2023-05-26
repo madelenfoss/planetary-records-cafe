@@ -49,7 +49,7 @@ export default async function shopItems() {
 		monthlyVinylReadMore.classList.add('shop__container-monthly-vinyl-link');
 		monthlyVinylPriceAndCart.classList.add('shop__container-monthly-vinyl-price-cart');
 		monthlyVinylPrice.classList.add('shop__container-monthly-vinyl-price');
-		monthlyVinylAddToCartButton.classList.add('shop__container-monthly-vinyl-buy');
+		monthlyVinylAddToCartButton.classList.add('shop__container-monthly-vinyl-buy','shop__container-item-buy');
 
 		monthlyVinylContainer.setAttribute('data-id', vinylOfTheMonth._id);
 		monthlyVinylContainer.setAttribute('data-name', vinylOfTheMonth.albumName);
@@ -89,7 +89,7 @@ export default async function shopItems() {
 
 	function renderCards(vinyls) {
 		for (const vinyl of vinyls) {
-			const vinylItem = document.createElement('div'); // Div for now, but swap to a
+			const vinylItem = document.createElement('a'); 
 			const vinylImage = document.createElement('img');
 			const vinylTitle = document.createElement('div');
 			const vinylArtist = document.createElement('div');
