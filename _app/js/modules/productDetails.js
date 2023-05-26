@@ -55,15 +55,17 @@ export default async function productDetails() {
 		vinylDetailsEdition.classList.add('vinyl__details-edition');
 		vinylDetailsPriceAndCart.classList.add('vinyl__details-price-cart-wrapper');
 		vinylDetailsPrice.classList.add('vinyl__details-price');
-		vinylDetailsAddToCartButton.classList.add('vinyl__details-cart-button');
+		vinylDetailsAddToCartButton.classList.add('vinyl__details-cart-button','shop__container-item-buy');
 
+		vinylDetailsCard.setAttribute('data-id', currentVinyl._id);
+		vinylDetailsCard.setAttribute('data-name', currentVinyl.albumName);
+		vinylDetailsCard.setAttribute('data-price', currentVinyl.price);
 		vinylDetailsArtist.innerText = `${currentVinyl.artist}`;
 		vinylDetailsImage.setAttribute('src', currentVinyl.image);
 		vinylDetailsImage.setAttribute('alt', currentVinyl.altText);
 		vinylDetailsTitle.innerText = `${currentVinyl.albumName}`;
 		vinylDetailsDescription.innerText = `${currentVinyl.description}`;
 		vinylDetailsGenre.innerText = `Genre: ${currentVinyl.genre}`;
-		// Fix date format:
 		vinylDetailsReleaseDate.innerText = `Released: ${currentVinyl.releaseDate}`;
 		vinylDetailsEdition.innerText = `Edition of: ${currentVinyl.stock}`;
 		vinylDetailsPrice.innerText = `${currentVinyl.price} NOK`;
