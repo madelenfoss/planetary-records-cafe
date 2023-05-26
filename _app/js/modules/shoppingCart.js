@@ -1,6 +1,10 @@
 export default function shoppingCart() {
 
 	// Created by following Kristiania teacher and frontend expert Alejandro Rojas' tutorial
+
+	// Works with vinyls on main page and vinyl of the month, needs to be fixed so that it also works
+	// with details page buttons and filtered vinyls buttons
+
 	let cartProducts = [];
 	const shoppingCart = document.querySelector('.shop__cart');
 	const shopCartContentProducts = document.querySelector('.shop__cart-products');
@@ -8,7 +12,6 @@ export default function shoppingCart() {
 	const shopCartEmptyButton = document.querySelector('.shop__cart-empty-button');
 	const shoppingCartTotal = document.querySelector('.shop__cart-total');
 	const addToCartButtons = document.querySelectorAll('.shop__container-item-buy');
-	const monthlyVinylAddToCartButtons = document.querySelector('.shop__container-monthly-vinyl-buy');
 
 	if (shoppingCart) {
 
@@ -18,6 +21,9 @@ export default function shoppingCart() {
 
 		function handleAddToCartButtonClick(event) {
 			const button = event.currentTarget;
+
+			// To make the buttons work inside link tags:
+			event.preventDefault();
 
 			addToCart(button);
 			render();
@@ -56,7 +62,6 @@ export default function shoppingCart() {
 				shopCartItemQuantity.innerText = `${cartProduct.quantity}`;
 				shopCartItemTitle.innerText = `${cartProduct.name}`;
 				shopCartItemPrice.innerText = `${cartProduct.price} NOK`;
-	
 	
 				shopCartContentProducts.append(
 					shopCartProduct,
