@@ -1,5 +1,7 @@
 # planetary records cafe
 
+Under construction
+
 This project is a café and vinyl shop concept to showcase everything we have learnt during the year of studying frontend development at Fagskolen Kristiania 22/23.
 
 MVP - Minimum Viable Product:
@@ -42,3 +44,5 @@ fonts.google.com
 
 What I will do next:
 Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
+
+Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - vinyl details page and filtered vinyls.

@@ -1,0 +1,135 @@
+.shop__cart {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	align-items: center;
+	justify-content: center;
+	width: 22rem;
+	min-width: 22rem;
+	color: var(--quinary-color);
+	background-color: var(--primary-color);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 0.1rem;
+	cursor: pointer;
+}
+
+.shop__cart-no-items {
+	display: none;
+}
+
+.shop__cart-content {
+	display: none;
+}
+
+.shop__cart:hover .shop__cart-content {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1rem;
+	background: var(--primary-color);
+	width: 22rem;
+	top: 1rem;
+	border-radius: 0.1rem;
+}
+
+.shop__cart--empty {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.shop__cart--empty:hover .shop__cart-content,
+.shop__cart--empty .shop__cart-content,
+.shop__cart--empty .shop__cart-total {
+	display: none;
+}
+
+.shop__cart--empty .shop__cart-no-items {
+	display: block;
+}
+
+.shop__cart-no-items {
+	margin: 1rem auto;
+}
+
+.shop__cart-total {
+	margin: 1rem auto;
+}
+
+.shop__cart-products {
+	margin: 0.5rem auto;
+	width: 100%;
+}
+
+.shop__cart-product {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.shop__cart-product-quantity {
+	margin: 0.5rem;
+}
+
+.shop__cart-product-title {
+	width: 100%;
+	flex-wrap: wrap;
+	margin: 0.5rem;
+}
+
+.shop__cart-product-price {
+	width: 100%;
+	margin: 0.5rem;
+}
+
+.shop__cart-checkout-button {
+	width: 100%;
+	margin: 1rem auto 0.5rem auto;
+	padding: 0.5rem 1rem;
+	background: var(--secondary-color);
+	text-transform: uppercase;
+	border: 0.1rem solid var(--quinary-color);
+	color: var(--primary-color);
+}
+
+.shop__cart-checkout-button:hover {
+	background: var(--tertiary-color);
+}
+
+.shop__cart-empty-button {
+	width: 100%;
+	margin: 0.5rem auto;
+	padding: 0.5rem 1rem;
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	text-transform: uppercase;
+}
+
+.shop__cart-empty-button:hover {
+	color: black;
+	background: rgb(150, 148, 148);
+}
+
+@media screen and (max-width: 894px) {
+	.shop__cart {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.shop__cart {
+		width: 100%;
+		margin: 0.5 auto;
+	}
+
+	.shop__cart:hover .shop__cart-content {
+		width: 95%;
+		margin: auto;
+	}
+
+
+}
+

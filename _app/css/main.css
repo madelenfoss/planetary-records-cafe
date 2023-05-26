@@ -7,11 +7,11 @@
 @import './modules/footer.css';
 @import './modules/to-top-button.css';
 @import './modules/slideshow.css';
-@import './modules/shop-products.css';
-@import './modules/cart.css';
+@import './modules/shop-items.css';
+@import './modules/shopping-cart.css';
 @import './modules/vinyl-of-the-month.css';
 @import './modules/filter-buttons.css';
 @import './modules/product-details.css';
-@import './modules/about-us.css';
-@import './modules/menu.css';
+@import './modules/staff.css';
+@import './modules/menu-items.css';
 @import './modules/contact.css';
