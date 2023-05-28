@@ -19,7 +19,7 @@ export default function shoppingCart() {
 	const shopCartEmptyButton = document.querySelector('.shop__cart-empty-button');
 	const shoppingCartTotal = document.querySelector('.shop__cart-total');
 
-	if (addToCartButtons) {
+	if (shoppingCart) {
 
 		addToCartButtons.forEach(button => {
 			button.addEventListener('click', handleAddToCartButtonClick);
