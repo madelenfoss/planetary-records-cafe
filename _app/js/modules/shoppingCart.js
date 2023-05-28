@@ -6,7 +6,9 @@ export default function shoppingCart() {
 	* Works with vinyls on main page and vinyl of the month, needs to be fixed so that it also works
 	* with details page buttons and filtered vinyls buttons.
 	*
-	* TODO: Make cart clickable for mobile instead of using :hover
+	* TODO: 
+	* Make cart clickable for mobile instead of using :hover
+	* Make cart accessible using tabs
 	*
 	*/
 
@@ -57,6 +59,7 @@ export default function shoppingCart() {
 				quantity: 1,
 			};
 
+			console.log(clickedButtonDataset);
 			// Checks if there is a match in cart. If no match: push whole product, if match: change quantity
 			const matchInCart = cartProducts.find(product => product.id === clickedButtonDataset.id);
 			
