@@ -1,9 +1,14 @@
 export default function shoppingCart() {
 
-	// Created by following Kristiania teacher and frontend expert Alejandro Rojas' tutorial
+	// Created by following Kristiania teacher Alejandro Rojas' shopping cart tutorial
 
-	// Works with vinyls on main page and vinyl of the month, needs to be fixed so that it also works
-	// with details page buttons and filtered vinyls buttons
+	/*
+	* Works with vinyls on main page and vinyl of the month, needs to be fixed so that it also works
+	* with details page buttons and filtered vinyls buttons.
+	*
+	* TODO: Make cart clickable for mobile instead of using :hover
+	*
+	*/
 
 	let cartProducts = [];
 
@@ -52,6 +57,7 @@ export default function shoppingCart() {
 				quantity: 1,
 			};
 
+			// Checks if there is a match in cart. If no match: push whole product, if match: change quantity
 			const matchInCart = cartProducts.find(product => product.id === clickedButtonDataset.id);
 			
 			if (matchInCart) {
@@ -83,7 +89,7 @@ export default function shoppingCart() {
 	
 				shopCartItemQuantity.innerText = `${cartProduct.quantity}`;
 				shopCartItemTitle.innerText = `${cartProduct.name}`;
-				shopCartItemPrice.innerText = `${cartProduct.price} NOK`;
+				shopCartItemPrice.innerText = `${cartProduct.price * cartProduct.quantity} NOK`;
 	
 				shopCartContentProducts.append(
 					shopCartProduct,
