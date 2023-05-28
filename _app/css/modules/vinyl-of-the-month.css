@@ -68,10 +68,12 @@
 }
 
 .shop__container-monthly-vinyl-price {
+	width: 40%;
 	font-size: 1.4rem;
 }
 
 .shop__container-monthly-vinyl-buy {
+	width: 60%;
 	color: var(--secondary-color);
 	border: none;
 	padding: 1rem 4rem;
