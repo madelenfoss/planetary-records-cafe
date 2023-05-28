@@ -162,6 +162,7 @@ export default async function shopItems() {
 			filterButton.addEventListener('click', () => {
 				const filteredVinyls = vinyls.filter(vinyl => vinyl.genre === genre);
 				renderFilteredHTML(filteredVinyls);
+				
 			});
 		}
 	}

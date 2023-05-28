@@ -1,7 +1,7 @@
 import { sanity } from "../sanity.js";
 
 export default async function menuItems() {
-	const query = `*[_type == 'menuItem'] | order(orderNumber desc) {
+	const itemsQuery = `*[_type == 'menuItem'] | order(orderNumber desc) {
 		'name': name,
 		'image': image.asset->url,
 		'alt': image.alternative,
@@ -10,10 +10,16 @@ export default async function menuItems() {
 		'price': price,
 		'allergen': allergen[]->allergenName,
 		'category': category[]->foodType,
-		'number' : category[]->orderNumber
+		'number' : category[]->orderNumber,
 	 }`
+	const foodItems = await sanity.fetch(itemsQuery);
 
-	const foodItems = await sanity.fetch(query);
+	// const categoryQuery = `*[_type == 'menuCategory'] {
+	// 	foodType
+	//  }
+	//  `
+
+	//  const foodCategories = await sanity.fetch(foodCategories);
 
 	const menu = document.querySelector('.menu');
 	const categoriesAsideLinks = document.querySelector('.menu__aside');
@@ -29,6 +35,7 @@ export default async function menuItems() {
 		const categoriesList = document.createElement('ul');
 		categoriesList.classList.add('menu__aside-links');
 
+		console.log(categories);
 		for (const category of categories) {
 			const categoryListItem = document.createElement('li');
 			const categoryListItemLink = document.createElement('a');
@@ -47,7 +54,6 @@ export default async function menuItems() {
 
 	function renderMenuItems() {
 		const menuCategorySectionTitles = [...new Set(foodItems.map(foodItem => foodItem.category))];
-		// FIKSE
 
 		for (const foodItem of foodItems) {
 					

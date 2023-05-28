@@ -25,7 +25,7 @@
 
 .shop__cart:hover .shop__cart-content {
 	display: flex;
-	position: absolute;
+	/* position: absolute; Fix styling */ 
 	justify-content: center;
 	margin: 0 auto;
 	padding: 1rem;
