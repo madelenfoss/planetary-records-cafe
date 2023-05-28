@@ -168,6 +168,7 @@ export default async function shopItems() {
 	}
 
 	function renderFilteredHTML(vinyls) {
+		
 		shopContainerItems.innerText = '';
 
 		renderCards(vinyls)
