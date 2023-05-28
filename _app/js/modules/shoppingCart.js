@@ -76,6 +76,8 @@ export default function shoppingCart() {
 		}
 
 		function createProductItemDOM() {
+			shopCartContentProducts.innerText = '';
+
 			for (const cartProduct of cartProducts) {
 				const shopCartProduct = document.createElement('div');
 				const shopCartItemQuantity = document.createElement('div');
@@ -105,14 +107,6 @@ export default function shoppingCart() {
 			}
 		}
 
-		function insertProductItemDOM() {
-			shopCartContentProducts.innerText = '';
-
-			for (const cartProduct of cartProducts) {
-				shopCartContentProducts += createProductItemDOM();
-			}
-		}
-
 		function render() {
 			if (cartProducts.length > 0) {
 				const totalItems = cartProducts.reduce((total, currentProduct) => {
@@ -130,7 +124,7 @@ export default function shoppingCart() {
 				shoppingCart.classList.add('shop__cart--empty');
 			}
 
-			insertProductItemDOM();
+			createProductItemDOM();
 
 		}
 	}
