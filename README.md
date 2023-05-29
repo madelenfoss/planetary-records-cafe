@@ -42,7 +42,6 @@ All fonts from:
 fonts.google.com
 
 What I will do next:
-
 Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
 
 Add try catch the right way.
