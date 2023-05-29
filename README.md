@@ -46,8 +46,7 @@ Create a javascript file called fetchData.js to fetch all data from Sanity.io, a
 
 Add try catch the right way.
 
-Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - 
-including filtered vinyls.
+Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - including filtered vinyls.
 Add local storage to keep items in cart.
 
 Connect slideshow button dots to slideshow slides in javascript.
