@@ -5,7 +5,6 @@ import productDetails from "./modules/productDetails.js";
 import staffPersons from "./modules/staff.js";
 import slideshow from "./modules/slideshow.js";
 import vinylFilterToggle from "./modules/vinylFilterToggle.js";
-import menuItems from "./modules/menuItems.js";
 import shoppingCart from "./modules/shoppingCart.js";
 
 menuToggle();
@@ -15,7 +14,6 @@ slideshow();
 await shopItems(); 
 await productDetails(); 
 staffPersons();
-menuItems();
 vinylFilterToggle();
 shoppingCart();
 
