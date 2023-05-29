@@ -13,7 +13,7 @@ toTopButton();
 slideshow();
 // await to fetch the products from sanity before shoppingCart runs:
 await shopItems(); 
-productDetails(); 
+await productDetails(); 
 staffPersons();
 menuItems();
 vinylFilterToggle();
