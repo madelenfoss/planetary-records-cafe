@@ -35,7 +35,6 @@ export default async function menuItems() {
 		const categoriesList = document.createElement('ul');
 		categoriesList.classList.add('menu__aside-links');
 
-		console.log(categories);
 		for (const category of categories) {
 			const categoryListItem = document.createElement('li');
 			const categoryListItemLink = document.createElement('a');

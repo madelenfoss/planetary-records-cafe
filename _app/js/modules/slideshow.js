@@ -13,7 +13,6 @@ export default async function slideshow() {
 	const slideElementsSanity = await sanity.fetch(query);
 
 	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data? 
-	console.log(slideElementsSanity); // Lage eget slideshow-dokument for å løse problem?
 	
 	const slideshow = document.querySelector('.main__slideshow');
 	const allSlides = document.querySelector('.main__slideshow-slides');
