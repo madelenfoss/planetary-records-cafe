@@ -27,7 +27,6 @@
 .menu__aside-links {
 	list-style: none;
 	position: sticky;
-	overflow: scroll;
 	top: 0;
 }
 
