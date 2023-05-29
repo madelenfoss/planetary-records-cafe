@@ -6,6 +6,7 @@ export default function vinylFilterToggle() {
 	if (filterMenu) {
 		let filterVisible = false;
 
+
 		filterMenuIcon.addEventListener('click', handleFilterMenuIconClick);
 
 		function handleFilterMenuIconClick(event) {
