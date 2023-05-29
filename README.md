@@ -17,7 +17,6 @@ A simplified shopping cart, with the possibility to add
 products and see the items in the cart when hovering with 
 the cursor on desktop version, and when clicking on mobile version.
 
-
 Important links:
 
 Github repository:
@@ -43,6 +42,11 @@ All fonts from:
 fonts.google.com
 
 What I will do next:
+
 Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
 
-Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - vinyl details page and filtered vinyls.
+Add try catch the right way.
+
+Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - 
+including filtered vinyls.
+Add local storage to keep items in cart.
