@@ -16,23 +16,20 @@ export default async function shopItems() {
 	  	month
 	 }`;
 
+	try {
+
+	const vinyls = await sanity.fetch(query);
+
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
-	 const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	 const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); 
-	
-	try {
-		const vinyls = await sanity.fetch(query);
+	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
+	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); 
 
 		if (shopContainer) {
 			renderVinylOfTheMonth();
 			renderHTML();
 			createFilterButtons();
 		}
-
-	} catch (error) {
-		alert(error.message)
-	}
 
 	function renderVinylOfTheMonth() {
 		const vinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === true);
@@ -177,5 +174,13 @@ export default async function shopItems() {
 		shopContainerItems.innerText = '';
 
 		renderCards(vinyls)
+	}
+	} catch (error) {
+		const errorContainer = document.querySelectorAll('.display-error-message');
+		
+		errorContainer.forEach(element => {
+			element.innerText = error.message;
+			element.style.display = 'block';
+		})
 	}
 }

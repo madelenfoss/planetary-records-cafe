@@ -8,7 +8,9 @@ export default async function slideshow() {
 		  'description': description,
 		  'photographer': photographer
 		}
-	 }`
+	 }`;
+
+	try {
 
 	const slideElementsSanity = await sanity.fetch(query);
 
@@ -23,42 +25,6 @@ export default async function slideshow() {
 		renderSanitySlides(),
 		showFirstSlide()
 	}
-
-	// if (window.innerWidth > 768) {
-	// 	renderSanitySlides();
-	// 	showFirstSlide();
-	// } else {
-	// 	renderMobileImage();
-	// }
-
-	// function renderMobileImage() {
-	// 	for (const image of slideElements) {
-	// 	const mobileImageFigure = createMobileFigureDOM(image); 
-
-	// 	slideSlides.appendChild(mobileImageFigure);
-
-	// 	}
-	// }
-
-	// function createMobileFigureDOM(image) {
-	// 	const mobileImageFigure = document.createElement('figure');
-	// 	const mobileImage = document.createElement('img');
-	// 	const mobileImageFigCaption = document.createElement('figcaption');
-
-	// 	mobileImageFigure.classList.add('main__slideshow-slide');
-	// 	mobileImage.classList.add('main__slideshow-slide-image');
-	// 	mobileImageFigCaption.classList.add('main__slideshow-slide-caption');
-
-	// 	mobileImage.setAttribute('src', image.image);
-	// 	mobileImageFigCaption.innerText = image.description;
-
-	// 	mobileImageFigure.append(
-	// 		mobileImage,
-	// 		mobileImageFigCaption
-	// 	)
-
-	// 	return mobileImageFigure
-	// }
 
 	function handleButtonPreviousClick(event) {
 		previousSlide();
@@ -168,5 +134,15 @@ export default async function slideshow() {
 		slideshowSlides[currentSlideIndex].classList.add('main__slideshow-slide--active');
 		buttonDots[currentSlideIndex].classList.add('main__slideshow-dot--active');
 	}
+
+	} catch (error) {
+		const errorContainer = document.querySelectorAll('.display-error-message');
+		
+		errorContainer.forEach(element => {
+			element.innerText = error.message;
+			element.style.display = 'block';
+		})
+	}
+
 }
 

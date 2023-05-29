@@ -54,8 +54,16 @@ export function SanityClient(config) {
 
 		if (response.ok) {
 			return response_body.result;
-		} else {
-			throw new Error(response_body.message || response_body.error.description);
+		} else if (response.status === 404) {
+			throw new Error('Url not existing');
+		} else if (response.status === 401) {
+			throw new Error('Not authorized user');
+		} else if (response.status >= 500) {
+			throw new Error('Server not responding');
+		} else if (response.status === 400) {
+			throw new Error('Bad request');
+	} else {
+		throw new Error(response_body.message || response_body.error.description);
 		}
 	}
 
