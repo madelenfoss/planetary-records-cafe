@@ -22,7 +22,7 @@
 	display: none;
 }
 
-.shop__cart:hover .shop__cart-content {
+.shop__cart:hover .shop__cart-content  {
 	display: flex;
 	position: absolute; 	/*Fix styling */ 
 	justify-content: center;

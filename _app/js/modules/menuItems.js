@@ -11,15 +11,8 @@ export default async function menuItems() {
 		'allergen': allergen[]->allergenName,
 		'category': category[]->foodType,
 		'number' : category[]->orderNumber,
-	 }`
+	 }`;
 	const foodItems = await sanity.fetch(itemsQuery);
-
-	// const categoryQuery = `*[_type == 'menuCategory'] {
-	// 	foodType
-	//  }
-	//  `
-
-	//  const foodCategories = await sanity.fetch(foodCategories);
 
 	const menu = document.querySelector('.menu');
 	const categoriesAsideLinks = document.querySelector('.menu__aside');
