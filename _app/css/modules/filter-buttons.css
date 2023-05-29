@@ -74,19 +74,29 @@
 
 	.shop__container-filter-buttons--visible {
 		display: flex;
-		margin: 4rem auto;
+		flex-direction: column;
+		margin: 3.45rem auto;
 		padding: 1rem;
 		position: absolute;
 		flex-wrap: wrap;
-		width: 50%;
+		width: 41vw;
 		background-color: var(--secondary-color);
 		justify-content: center;
 		z-index: 50;
+		border: 0.1rem solid var(--primary-color);
 	}
 
 	.shop__container-filter-button {
 		margin: 0.3rem;
 		padding: 0.5rem 1rem;
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
+
+	.shop__container-filter-button:hover {
+		background: transparent;
+		box-shadow: none;
 	}
 }
 
@@ -102,19 +112,27 @@
 		position: relative;
 	}
 
-	.shop__container-filter-buttons-mobile {
-		width: 100%;
-		border: 0.1rem solid var(--primary-color);
-		margin: 0 auto;
-	}
+		.shop__container-filter-buttons-mobile {
+			width: 100%;
+			border: 0.1rem solid var(--primary-color);
+			margin: 0 auto;
+		}
 
-	.shop__container-filter-buttons--visible {
-		width: 100%;
-		margin-top: 3rem;
-	}
+		.shop__container-filter-buttons--visible {
+			width: 94vw;
+			margin-top: 2.45rem;
+		}
 
-	.shop__container-filter-button {
-		margin: 0.3rem;
-		padding: 0.5rem 1rem;
-	}
+		.shop__container-filter-button {
+			margin: 0.3rem;
+			padding: 0.5rem 1rem;
+			border: none;
+			background: none;
+			box-shadow: none;
+		}
+
+		.shop__container-filter-button:hover {
+			background: transparent;
+			box-shadow: none;
+		}
 }
