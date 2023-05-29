@@ -14,19 +14,24 @@ export default async function shopItems() {
 		price,
 		"slug": slug.current,
 	  	month
-	 }`
-	
-	const vinyls = await sanity.fetch(query);
-	
+	 }`;
+
 	const shopContainer = document.querySelector('.shop__container');
 	const shopContainerItems = document.querySelector('.shop__container-items');
-	const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
-	const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); 
+	 const monthlyVinylContainer = document.querySelector('.shop__container-monthly-vinyl');
+	 const filterButtonsContainer = document.querySelector('.shop__container-filter-buttons'); 
 	
-	if (shopContainer) {
-		renderVinylOfTheMonth();
-		renderHTML();
-		createFilterButtons();
+	try {
+		const vinyls = await sanity.fetch(query);
+
+		if (shopContainer) {
+			renderVinylOfTheMonth();
+			renderHTML();
+			createFilterButtons();
+		}
+
+	} catch (error) {
+		alert(error.message)
 	}
 
 	function renderVinylOfTheMonth() {
