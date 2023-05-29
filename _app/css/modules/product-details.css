@@ -128,6 +128,11 @@
 }
 
 @media screen and (max-width: 768px) {
+	.back-to-shop__shop-cart-container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.vinyl__details-card {
 		width: 96%;
 	}

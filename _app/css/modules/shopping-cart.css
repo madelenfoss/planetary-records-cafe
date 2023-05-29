@@ -34,6 +34,10 @@
 	border-radius: 0.1rem;
 }
 
+.shop__cart:hover .shop__cart-content-details {
+	top: 25rem;
+}
+
 .shop__cart--empty {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
@@ -123,12 +127,22 @@
 		width: 36vw;
 		margin: 1rem auto;
 	}
+
+	.shop__cart:hover .shop__cart-content-details {
+		top: 25rem;
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 894px) {
   .shop__cart:hover .shop__cart-content {
 	width: 48%;
 	top: 0;
+  }
+
+  .shop__cart:hover .shop__cart-content-details {
+	top: 25rem;
+	width: 50%;
   }
 }
 
@@ -141,6 +155,11 @@
 	.shop__cart:hover .shop__cart-content {
 		width: 96%;
 		margin: 0 auto;
+	}
+
+	.shop__cart:hover .shop__cart-content-details {
+		top: 25rem;
+		width: 96%;
 	}
 
 

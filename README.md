@@ -49,3 +49,5 @@ Add try catch the right way.
 Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - 
 including filtered vinyls.
 Add local storage to keep items in cart.
+
+Connect slideshow button dots to slideshow slides in javascript.

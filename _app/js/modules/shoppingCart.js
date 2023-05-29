@@ -80,7 +80,6 @@ export default function shoppingCart() {
 			cartProducts = [];
 		}
 
-
 		// Checkout function with redirection to shop page after checkout complete
 		function checkout() {
 			window.location.href = '../checkout/'; 
