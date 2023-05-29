@@ -21,6 +21,11 @@ export default function shoppingCart() {
 	const shopCartCheckoutButton = document.querySelector('.shop__cart-checkout-button');
 	const shopCartEmptyButton = document.querySelector('.shop__cart-empty-button');
 	const shoppingCartTotal = document.querySelector('.shop__cart-total');
+	const checkoutElement = document.querySelector('.checkout');
+
+	if (checkoutElement) {
+		redirectToHomeAfter30Seconds()
+	}
 
 	if (shoppingCart) {
 
@@ -30,7 +35,7 @@ export default function shoppingCart() {
 
 		shopCartEmptyButton.addEventListener('click', handleShopCartEmptyButtonClick);
 		shopCartCheckoutButton.addEventListener('click', handleShopCartCheckoutButtonClick);
-
+	}
 		function handleAddToCartButtonClick(event) {
 			const button = event.currentTarget;
 
@@ -75,8 +80,16 @@ export default function shoppingCart() {
 			cartProducts = [];
 		}
 
+
+		// Checkout function with redirection to shop page after checkout complete
 		function checkout() {
-			window.open('../checkout/'); // Create checkoutpage
+			window.location.href = '../checkout/'; 
+		}
+
+		function redirectToHomeAfter30Seconds() {
+			setTimeout(() => {
+				window.location.href = '../shop/';
+			}, 10000)
 		}
 
 		function createProductItemDOM() {
@@ -132,5 +145,3 @@ export default function shoppingCart() {
 
 		}
 	}
-
-}
