@@ -65,7 +65,6 @@ export default function shoppingCart() {
 				quantity: 1,
 			};
 
-			console.log(clickedButtonDataset);
 			// Checks if there is a match in cart. If no match: push whole product, if match: change quantity
 			const matchInCart = cartProducts.find(product => product.id === clickedButtonDataset.id);
 			
