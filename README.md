@@ -49,7 +49,7 @@ fonts.google.com
 What I will do next:
 Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
 
-Add try catch the right way.
+Add try catch the right way after fetchData file is added - for better performance.
 
 Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - including filtered vinyls.
 Add local storage to keep items in cart.
