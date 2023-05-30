@@ -63,7 +63,7 @@ export default async function slideshow() {
 			const slideshowSlides = document.createElement('figure');
 			const slideshowSlideImage = document.createElement('img');
 			const slideshowSlideCaption = document.createElement('figcaption');
-			const buttonDots = document.createElement('button');
+			const buttonDots = document.createElement('div');
 
 			slideshowSlides.classList.add('main__slideshow-slide');
 			slideshowSlideImage.classList.add('main__slideshow-slide-image');
@@ -72,7 +72,6 @@ export default async function slideshow() {
 
 			slideshowSlideImage.setAttribute('src', slideElement.image);
 			slideshowSlideImage.setAttribute('alt', slideElement.alt);
-			buttonDots.setAttribute('aria-label', `Bilde ${slideElements.currentSlideIndex} av ${slideElements.length}`);
 
 			slideshowSlideCaption.innerText = `${slideElement.description} Photo by: ${slideElement.photographer}`;
 
