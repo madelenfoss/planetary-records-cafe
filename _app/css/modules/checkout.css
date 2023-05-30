@@ -5,6 +5,7 @@
 	width: 60%;
 	border: 0.1rem solid var(--primary-color);
 	padding: 5rem;
+	background: var(--tertiary-color)
 }
 
 .checkout__title {
@@ -29,4 +30,17 @@
 	text-decoration: none;
 	color: var(--primary-color);
 	font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+	.checkout {
+		width: 95%;
+		margin: 1rem auto;
+		padding: 1rem;
+	}
+
+	.checkout__paragraph,
+	.checkout__email {
+		width: 100%;
+	}
 }
