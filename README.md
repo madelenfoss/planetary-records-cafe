@@ -55,9 +55,5 @@ What I will do next:
 
 - Add try catch the right way after fetchData file is added - for better performance.
 
-- Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - including filtered vinyls.
+- Make filtered vinyls 'buy' buttons work with the shoppingCart function.
 Add local storage to keep items in cart.
-
-- Connect slideshow button dots to slideshow slides in javascript.
-
-- Add preview to Sanity schemas.

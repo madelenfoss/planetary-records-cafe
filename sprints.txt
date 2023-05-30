@@ -1,0 +1,20 @@
+Sprint 1:
+First week of research and planning. Create figma project and make sure to chose
+a project you enjoy - and stick with it.  
+
+Sprint 2:
+Sanity will be used as database.
+Start working on project in VScode, create mockup-pages to see how to render
+and append elements from javascript files. 
+
+Sprint 3:
+Fetch data from Sanity. Create vinyl shop with data fetched from Sanity.
+Create simplified shop cart.
+
+Sprint 4:
+Create slideshow for main page with images fetched from Sanity.
+Create about page with staff info fetched from Sanity.
+
+Sprint 5:
+Make sure everything looks and works as it should, create comments and todos if
+something needs to be fixed at a later point.
