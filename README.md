@@ -47,6 +47,9 @@ Midjourney
 All fonts from:
 fonts.google.com
 
+Scroll to top button:
+https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
+
 What I will do next:
 - Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for 	each function that will be used in the project from the fetchData file.
 
