@@ -15,8 +15,9 @@ export default async function productDetails() {
 		price,
 		"slug": slug.current,
 	  	month
-	 }`
-	
+	 }`;
+
+	try {
 	const vinyls = await sanity.fetch(query);
 
 	const productDetailsContainer = document.querySelector('.product-details__container');
@@ -92,6 +93,14 @@ export default async function productDetails() {
 			vinylDetailsInfo,
 			vinylDetailsPriceAndCart
 		)
+	}
+	} catch (error) {
+		const errorContainer = document.querySelectorAll('.error-message');
+		
+		errorContainer.forEach(element => {
+			element.innerText = error.message;
+			element.style.display = 'block';
+		})
 	}
 
 }

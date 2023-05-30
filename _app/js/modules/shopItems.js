@@ -176,7 +176,7 @@ export default async function shopItems() {
 		renderCards(vinyls)
 	}
 	} catch (error) {
-		const errorContainer = document.querySelectorAll('.display-error-message');
+		const errorContainer = document.querySelectorAll('.error-message');
 		
 		errorContainer.forEach(element => {
 			element.innerText = error.message;

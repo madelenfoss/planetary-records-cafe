@@ -10,8 +10,9 @@ export default async function staffPersons() {
 		"altText": image.alternative,
 		"role": role->roleName,
 		"credits": image.credits 
-	 }`
+	 }`;
 
+	try {
 	const persons = await sanity.fetch(query);
 
 	const staffContainer = document.querySelector('.about__us-staff-container');
@@ -55,5 +56,12 @@ export default async function staffPersons() {
 
 		}
 	}
-
+	} catch (error) {
+		const errorContainer = document.querySelectorAll('.error-message');
+		
+		errorContainer.forEach(element => {
+			element.innerText = error.message;
+			element.style.display = 'block';
+		})
+	}
 }
