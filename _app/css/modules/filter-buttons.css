@@ -66,6 +66,7 @@
 		justify-content: center;
 		text-align: center;
 		cursor: pointer;
+		z-index: 80;
 	}
 
 	.shop__container-filter-buttons {
