@@ -5,7 +5,7 @@ This project is a café and vinyl shop concept to showcase everything we have le
 Content:
 - Main page with slideshow showing images of the café and record store.
 - About us page with info about the place and the staff with images.
-- The shop, displaying vinyls, filtered vinyls and vinyl of the month.
+- The shop, displaying vinyls, filtered vinyls, vinyl of the month and vinyl details page.
 - Menu page with info about dishes and drinks served in the café.
 - Contact page with contact information, opening hours, address and map.
 
@@ -31,6 +31,7 @@ Github project:
 https://github.com/users/madelenfoss/projects/5
 
 Sanity studio deploy:
+https://planetaryrecords.sanity.studio/content
 
 Netlify:
 https://planetaryrecords.netlify.app/index.html
@@ -47,13 +48,13 @@ All fonts from:
 fonts.google.com
 
 What I will do next:
-Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
+- Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for 	each function that will be used in the project from the fetchData file.
 
-Add try catch the right way after fetchData file is added - for better performance.
+- Add try catch the right way after fetchData file is added - for better performance.
 
-Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - including filtered vinyls.
+- Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - including filtered vinyls.
 Add local storage to keep items in cart.
 
-Connect slideshow button dots to slideshow slides in javascript.
+- Connect slideshow button dots to slideshow slides in javascript.
 
-Add preview to Sanity schemas.
+- Add preview to Sanity schemas.
