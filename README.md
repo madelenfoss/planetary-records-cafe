@@ -1,8 +1,13 @@
 # planetary records cafe
 
-Under construction
-
 This project is a café and vinyl shop concept to showcase everything we have learnt during the year of studying frontend development at Fagskolen Kristiania 22/23.
+
+Content:
+- Main page with slideshow showing images of the café and record store.
+- About us page with info about the place and the staff with images.
+- The shop, displaying vinyls, filtered vinyls and vinyl of the month.
+- Menu page with info about dishes and drinks served in the café.
+- Contact page with contact information, opening hours, address and map.
 
 MVP - Minimum Viable Product:
 
@@ -15,7 +20,7 @@ Make sure everything is accessible.
 Extra: 
 A simplified shopping cart, with the possibility to add 
 products and see the items in the cart when hovering with 
-the cursor on desktop version, and when clicking on mobile version.
+the cursor on desktop version.
 
 Important links:
 
@@ -50,3 +55,5 @@ Make all 'buy' and 'add to cart' buttons work with the shoppingCart function - i
 Add local storage to keep items in cart.
 
 Connect slideshow button dots to slideshow slides in javascript.
+
+Add preview to Sanity schemas.
