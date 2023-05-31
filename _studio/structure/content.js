@@ -6,12 +6,6 @@ export default Structure => {
 		.showIcons(false)
 		.items([
 
-			documentTypeListItem('menuItem'),
-			documentTypeListItem('menuCategory'),
-			documentTypeListItem('allergen'),
-
-			divider(),
-			
 			documentTypeListItem('album'),
 			documentTypeListItem('genre'),
 			documentTypeListItem('artist'),
