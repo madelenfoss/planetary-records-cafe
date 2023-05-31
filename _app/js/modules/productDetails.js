@@ -30,6 +30,7 @@ export default async function productDetails() {
 	} 
 
 	function renderHTML() {
+		// Finds the slug of the current vinyl
 		const currentVinyl = vinyls.find(vinyl => vinyl.slug === slug);
 
 		const vinylDetailsCard = document.createElement('div');
