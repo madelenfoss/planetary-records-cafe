@@ -21,6 +21,7 @@
 	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
+	font-size: var(--intro-font-size);
 }
 
 .about__us-staff {
@@ -108,24 +109,24 @@
 		width: 95%;
 		margin: 0.5rem auto;
 	}
+}
 
-	@media screen and (max-width: 430px) {
-		.about__us-staff-container {
-			gap: 1rem;
-			grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 430px) {
+	.about__us-staff-container {
+		gap: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	
+	.about__us-staff-container-person-img {
+		width: 94%;
+		margin: 0.5rem auto;
+	}
 
-		}
-		.about__us-staff-container-person-img {
-			width: 94%;
-			margin: 0.5rem auto;
-		}
+	.about__us-staff-container-person-name {
+		margin: 1rem auto;
+	}
 
-		.about__us-staff-container-person-name {
-			margin: 1rem auto;
-		}
-
-		.about__us-staff-container-person-credits {
-			margin: 1rem auto 2rem auto;
-		}
+	.about__us-staff-container-person-credits {
+		margin: 1rem auto 2rem auto;
 	}
 }

@@ -78,7 +78,7 @@
 	border: none;
 	padding: 1rem 4rem;
 	background: var(--primary-color);
-	font-size: 1.1rem;
+	font-size: var(--intro-font-size);
 	font-weight: 500;
 	box-shadow: var(--shop-item-button);
 }
@@ -146,7 +146,7 @@
 		.shop__container-monthly-vinyl-buy {
 			width: 90%;
 			margin: 1rem auto 0.5 auto;
-			font-size: 1rem;
+			font-size: var(--body-font-size);
 		}
 	}
 

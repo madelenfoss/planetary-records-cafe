@@ -80,7 +80,6 @@
 	box-shadow: var(--shop-item-button-active);
 }
 
-
 @media screen and (max-width: 1400px) {
 	.shop__container-items {
 		grid-template-columns: repeat(3, 1fr);
