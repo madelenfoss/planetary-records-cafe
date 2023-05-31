@@ -21,8 +21,8 @@ Make sure everything is accessible.
 ## Extra: 
 
 A simplified shopping cart, with the possibility to add 
-products and see the items in the cart when hovering with 
-the cursor on desktop version.
+products, see the items in the cart when hovering, and empty cart
+with one click.
 
 ## Important links:
 
@@ -44,6 +44,7 @@ https://planetaryrecords.netlify.app/index.html
 - CSS
 - Javascript
 - Sanity.io
+- Netlify
 
 ## Sources:
 
@@ -58,6 +59,8 @@ fonts.google.com
 
 Scroll to top button:
 https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
+
+Frontend teachers Carlo Alberto Burato and Alejandro Rojas
 
 ## What I will do next:
 

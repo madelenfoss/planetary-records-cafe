@@ -35,113 +35,114 @@ export default function shoppingCart() {
 		shopCartEmptyButton.addEventListener('click', handleShopCartEmptyButtonClick);
 		shopCartCheckoutButton.addEventListener('click', handleShopCartCheckoutButtonClick);
 	}
-		function handleAddToCartButtonClick(event) {
-			const button = event.currentTarget;
 
-			// To make the buttons work on their own inside link tags:
-			event.preventDefault();
+	function handleAddToCartButtonClick(event) {
+		const button = event.currentTarget;
 
-			addToCart(button);
-			render();
-		}
+		// To make the buttons work on their own inside link tags:
+		event.preventDefault();
 
-		function handleShopCartEmptyButtonClick() {
-			emptyCart();
-			render();
-		}
+		addToCart(button);
+		render();
+	}
 
-		function handleShopCartCheckoutButtonClick() {
-			checkout();
-			render();
-		}
+	function handleShopCartEmptyButtonClick() {
+		emptyCart();
+		render();
+	}
 
-		function addToCart(button) {	
-			const clickedButtonDataset = button.parentNode.parentNode.dataset;
-			const product = {
-				id: clickedButtonDataset.id,
-				name: clickedButtonDataset.name,
-				price: clickedButtonDataset.price,
-				quantity: 1,
-			};
+	function handleShopCartCheckoutButtonClick() {
+		checkout();
+		render();
+	}
 
-			// Checks if there is a match in cart. If no match: push whole product, if match: change quantity
-			const matchInCart = cartProducts.find(product => product.id === clickedButtonDataset.id);
-			
-			if (matchInCart) {
-				matchInCart.quantity += 1;
-			} else {
-				cartProducts.push(product);
-			}
-		}
+	function addToCart(button) {	
+		const clickedButtonDataset = button.parentNode.parentNode.dataset;
+		const product = {
+			id: clickedButtonDataset.id,
+			name: clickedButtonDataset.name,
+			price: clickedButtonDataset.price,
+			quantity: 1,
+		};
 
-		// Empties the product array
-		function emptyCart() {
-			cartProducts = [];
-		}
-
-		// Checkout function with redirection to shop page after checkout complete
-		function checkout() {
-			window.location.href = '../checkout/'; 
-		}
-
-		// Redirecting after 10 seconds
-		function redirectToShopAfter10Seconds() {
-			setTimeout(() => {
-				window.location.href = '../shop/';
-			}, 10000)
-		}
-
-		// Creates and appends item info in cart, including buttons
-		function createProductItemDOM() {
-			shopCartContentProducts.innerText = '';
-
-			for (const cartProduct of cartProducts) {
-				const shopCartProduct = document.createElement('div');
-				const shopCartItemQuantity = document.createElement('div');
-				const shopCartItemTitle = document.createElement('div');
-				const shopCartItemPrice = document.createElement('div');
-	
-				shopCartProduct.classList.add('shop__cart-product');
-				shopCartItemQuantity.classList.add('shop__cart-product-quantity');
-				shopCartItemTitle.classList.add('shop__cart-product-title');
-				shopCartItemPrice.classList.add('shop__cart-product-price');
-	
-				shopCartItemQuantity.innerText = `${cartProduct.quantity}`;
-				shopCartItemTitle.innerText = `${cartProduct.name}`;
-				shopCartItemPrice.innerText = `${cartProduct.price * cartProduct.quantity} NOK`;
-	
-				shopCartContentProducts.append(
-					shopCartProduct,
-					shopCartCheckoutButton,
-					shopCartEmptyButton 
-					)
-	
-				shopCartProduct.append(
-					shopCartItemQuantity,
-					shopCartItemTitle,
-					shopCartItemPrice
-					)
-			}
-		}
-
-		function render() {
-			if (cartProducts.length > 0) {
-				const totalItems = cartProducts.reduce((total, currentProduct) => {
-					return total + currentProduct.quantity;
-				}, 0);
-
-				const totalSum = cartProducts.reduce((total, currentProduct) => {
-					return total + (currentProduct.price * currentProduct.quantity);
-				}, 0);
-
-				shoppingCart.classList.remove('shop__cart--empty');
-				shoppingCartTotal.textContent = `${totalItems} items in cart (${totalSum} NOK)`;
-
-			} else {
-				shoppingCart.classList.add('shop__cart--empty');
-			}
-
-			createProductItemDOM();
-
+		// Checks if there is a match in cart. If no match: push whole product, if match: change quantity
+		const matchInCart = cartProducts.find(product => product.id === clickedButtonDataset.id);
+		
+		if (matchInCart) {
+			matchInCart.quantity += 1;
+		} else {
+			cartProducts.push(product);
 		}
 	}
+
+	// Empties the product array
+	function emptyCart() {
+		cartProducts = [];
+	}
+
+	// Checkout function with redirection to shop page after checkout complete
+	function checkout() {
+		window.location.href = '../checkout/'; 
+	}
+
+	// Redirecting after 10 seconds
+	function redirectToShopAfter10Seconds() {
+		setTimeout(() => {
+			window.location.href = '../shop/';
+		}, 10000)
+	}
+
+	// Creates and appends item info in cart, including buttons
+	function createProductItemDOM() {
+		shopCartContentProducts.innerText = '';
+
+		for (const cartProduct of cartProducts) {
+			const shopCartProduct = document.createElement('div');
+			const shopCartItemQuantity = document.createElement('div');
+			const shopCartItemTitle = document.createElement('div');
+			const shopCartItemPrice = document.createElement('div');
+
+			shopCartProduct.classList.add('shop__cart-product');
+			shopCartItemQuantity.classList.add('shop__cart-product-quantity');
+			shopCartItemTitle.classList.add('shop__cart-product-title');
+			shopCartItemPrice.classList.add('shop__cart-product-price');
+
+			shopCartItemQuantity.innerText = `${cartProduct.quantity}`;
+			shopCartItemTitle.innerText = `${cartProduct.name}`;
+			shopCartItemPrice.innerText = `${cartProduct.price * cartProduct.quantity} NOK`;
+
+			shopCartContentProducts.append(
+				shopCartProduct,
+				shopCartCheckoutButton,
+				shopCartEmptyButton 
+				)
+
+			shopCartProduct.append(
+				shopCartItemQuantity,
+				shopCartItemTitle,
+				shopCartItemPrice
+				)
+		}
+	}
+
+	function render() {
+		if (cartProducts.length > 0) {
+			const totalItems = cartProducts.reduce((total, currentProduct) => {
+				return total + currentProduct.quantity;
+			}, 0);
+
+			const totalSum = cartProducts.reduce((total, currentProduct) => {
+				return total + (currentProduct.price * currentProduct.quantity);
+			}, 0);
+
+			shoppingCart.classList.remove('shop__cart--empty');
+			shoppingCartTotal.textContent = `${totalItems} items in cart (${totalSum} NOK)`;
+
+		} else {
+			shoppingCart.classList.add('shop__cart--empty');
+		}
+
+		createProductItemDOM();
+
+	}
+}

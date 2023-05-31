@@ -1,5 +1,8 @@
 import { sanity } from "../sanity.js";
 
+// Slideshow created with help from Alejandro Rojas' panopto 
+// slideshow tutorial, with data fetched from Sanity.
+
 export default async function slideshow() {
 	const query = `*[_type == 'settings'] {
 		slideshowImages[] {
