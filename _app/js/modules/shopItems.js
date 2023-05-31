@@ -31,6 +31,7 @@ export default async function shopItems() {
 			createFilterButtons();
 		}
 
+	// Finds vinyl of the month with the boolean 'month === true'
 	function renderVinylOfTheMonth() {
 		const vinylOfTheMonth  = vinyls.find(vinyl => vinyl.month === true);
 
@@ -43,6 +44,7 @@ export default async function shopItems() {
 		const monthlyVinylPriceAndCart = document.createElement('div');
 		const monthlyVinylPrice = document.createElement('div');
 		const monthlyVinylAddToCartButton = document.createElement('button');
+		
 		monthlyVinylHeader.classList.add('shop__container-monthly-vinyl-header');
 		monthlyVinylImage.classList.add('shop__container-monthly-vinyl-image');
 		monthlyVinylArtist.classList.add('shop__container-monthly-vinyl-artist');
@@ -56,14 +58,15 @@ export default async function shopItems() {
 		monthlyVinylContainer.setAttribute('data-id', vinylOfTheMonth._id);
 		monthlyVinylContainer.setAttribute('data-name', vinylOfTheMonth.albumName);
 		monthlyVinylContainer.setAttribute('data-price', vinylOfTheMonth.price);
-		monthlyVinylHeader.innerText = "VINYL OF THE MONTH";
 		monthlyVinylImage.setAttribute('src', vinylOfTheMonth.image);
 		monthlyVinylImage.setAttribute('alt', vinylOfTheMonth.altText);
+		monthlyVinylReadMore.setAttribute('href', `/vinyl/?vinyl=${vinylOfTheMonth.slug}`);
+
+		monthlyVinylHeader.innerText = "VINYL OF THE MONTH";
 		monthlyVinylArtist.innerText = `${vinylOfTheMonth.artist}`;
 		monthlyVinylTitle.innerText = `${vinylOfTheMonth.albumName}`;
 		monthlyVinylDescription.innerText = `${vinylOfTheMonth.description}`;
 		monthlyVinylReadMore.innerText = "Read more...";
-		monthlyVinylReadMore.setAttribute('href', `/vinyl/?vinyl=${vinylOfTheMonth.slug}`);
 		monthlyVinylPrice.innerText = `${vinylOfTheMonth.price} NOK`;
 		monthlyVinylAddToCartButton.innerText = "ADD TO CART";
 
