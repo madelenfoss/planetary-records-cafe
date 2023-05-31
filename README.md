@@ -65,5 +65,5 @@ https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-h
 
 - Add try catch the right way after fetchData file is added - for better performance.
 
-- Make filtered vinyls 'buy' buttons work with the shoppingCart function.
+- Make it possible to add filtered vinyls to the the shopping cart.
 Add local storage to keep items in cart.
