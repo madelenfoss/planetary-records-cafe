@@ -8,7 +8,7 @@
 	width: 100%;
 	text-align: center;
 	font-family: var(--header-font-family);
-	font-size: 5rem;
+	font-size: var(--header-font-size);
 }
 
 .navbar__logo a {
@@ -125,7 +125,6 @@
 		position: relative;
 		flex-direction: column;
 		width: 100%;
-		position: relative; 
 		margin: 0 auto;
 		padding: 2rem;
 		background-color: var(--secondary-color);
@@ -187,5 +186,4 @@
 			padding: 2rem;
 		}
 	}
-
 }

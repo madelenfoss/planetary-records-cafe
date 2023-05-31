@@ -9,7 +9,7 @@ export default function shoppingCart() {
 	* TODO: 
 	* Make cart clickable for mobile instead of using :hover
 	* Make cart accessible using tabs.
-	* Add local storage to keep items in cart.
+	* Add local storage to keep items in cart when switching between main shop and shop details page.
 	*
 	*/
 
@@ -24,11 +24,10 @@ export default function shoppingCart() {
 	const checkoutElement = document.querySelector('.checkout');
 
 	if (checkoutElement) {
-		redirectToHomeAfter30Seconds()
+		redirectToShopAfter10Seconds()
 	}
 
 	if (shoppingCart) {
-
 		addToCartButtons.forEach(button => {
 			button.addEventListener('click', handleAddToCartButtonClick);
 		});
@@ -75,6 +74,7 @@ export default function shoppingCart() {
 			}
 		}
 
+		// Empties the product array
 		function emptyCart() {
 			cartProducts = [];
 		}
@@ -84,12 +84,14 @@ export default function shoppingCart() {
 			window.location.href = '../checkout/'; 
 		}
 
-		function redirectToHomeAfter30Seconds() {
+		// Redirecting after 10 seconds
+		function redirectToShopAfter10Seconds() {
 			setTimeout(() => {
 				window.location.href = '../shop/';
 			}, 10000)
 		}
 
+		// Creates and appends item info in cart, including buttons
 		function createProductItemDOM() {
 			shopCartContentProducts.innerText = '';
 

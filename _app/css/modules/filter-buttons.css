@@ -25,7 +25,7 @@
 	padding: 0.5rem 1.5rem;
 	border-radius: 5rem;
 	border: 1.5px solid var(--primary-color);
-	font-size: 1rem;
+	font-size: var(--body-font-size);
 	background: var(--tertiary-color);
 	color: var(--primary-color);
 	cursor: pointer;
@@ -113,27 +113,27 @@
 		position: relative;
 	}
 
-		.shop__container-filter-buttons-mobile {
-			width: 100%;
-			border: 0.1rem solid var(--primary-color);
-			margin: 0 auto;
-		}
+	.shop__container-filter-buttons-mobile {
+		width: 100%;
+		border: 0.1rem solid var(--primary-color);
+		margin: 0 auto;
+	}
 
-		.shop__container-filter-buttons--visible {
-			width: 94vw;
-			margin-top: 2.45rem;
-		}
+	.shop__container-filter-buttons--visible {
+		width: 94vw;
+		margin-top: 2.45rem;
+	}
 
-		.shop__container-filter-button {
-			margin: 0.3rem;
-			padding: 0.5rem 1rem;
-			border: none;
-			background: none;
-			box-shadow: none;
-		}
+	.shop__container-filter-button {
+		margin: 0.3rem;
+		padding: 0.5rem 1rem;
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
 
-		.shop__container-filter-button:hover {
-			background: transparent;
-			box-shadow: none;
-		}
+	.shop__container-filter-button:hover {
+		background: transparent;
+		box-shadow: none;
+	}
 }

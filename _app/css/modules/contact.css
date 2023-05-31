@@ -23,6 +23,7 @@
 	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
+	font-size: var(--intro-font-size);
 }
 
 .contact__email {
@@ -30,6 +31,7 @@
 	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
+	font-size: var(--intro-font-size);
 }
 
 .contact__email a {
@@ -42,6 +44,7 @@
 	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
+	font-size: var(--intro-font-size);
 
 }
 

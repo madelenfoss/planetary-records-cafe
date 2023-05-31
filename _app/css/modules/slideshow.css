@@ -19,6 +19,7 @@
 	padding: 1rem;
 	width: 80%;
 	color: var(--primary-color);
+	font-size: var(--intro-font-size);
 }
 
 .main__slideshow {
@@ -124,6 +125,7 @@
 @media screen and (max-width: 768px) {
 	.main__paragraph {
 		width: 95%;
+		font-size: var(--body-font-size);
 	}
 
 	.main__slideshow {
