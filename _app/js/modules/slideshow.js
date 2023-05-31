@@ -143,6 +143,5 @@ export default async function slideshow() {
 			element.style.display = 'block';
 		})
 	}
-
 }
 
