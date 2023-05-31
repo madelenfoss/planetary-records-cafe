@@ -62,6 +62,11 @@ https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-h
 
 Frontend teachers Carlo Alberto Burato and Alejandro Rojas
 
+## Access:
+http://localhost:5500
+http://localhost:3000
+
+
 ## What I will do next:
 
 - Create a javascript file called fetchData.js to fetch all data from Sanity.io, and then get the data needed for each function that will be used in the project from the fetchData file.
