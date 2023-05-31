@@ -6,8 +6,9 @@ This project is a café and vinyl shop concept to showcase everything we have le
 
 - Main page with slideshow showing images of the café and record store.
 - About us page with info about the place and the staff with images.
-- The shop, displaying vinyls, filtered vinyls, vinyl of the month and vinyl details page.
-- Menu page with info about dishes and drinks served in the café.
+- The shop, displaying vinyls, filtered vinyls, vinyl of the month and vinyl details page, 
+plus a simplified shopping cart with checkout and empty cart button.
+- Menu page with info about dishes and drinks served in the café - static with html and css.
 - Contact page with contact information, opening hours, address and map.
 
 ## MVP - Minimum Viable Product:
