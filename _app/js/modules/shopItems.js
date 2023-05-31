@@ -177,7 +177,7 @@ export default async function shopItems() {
 	}
 	} catch (error) {
 		const errorContainer = document.querySelectorAll('.error-message');
-		
+		// Error messages created in sanity-client.js
 		errorContainer.forEach(element => {
 			element.innerText = error.message;
 			element.style.display = 'block';

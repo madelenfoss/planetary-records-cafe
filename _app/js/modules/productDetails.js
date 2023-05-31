@@ -99,7 +99,8 @@ export default async function productDetails() {
 		const errorContainer = document.querySelectorAll('.error-message');
 		
 		errorContainer.forEach(element => {
-			element.innerText = error.message;
+		// Error messages created in sanity-client.js
+			element.innerText = error.message; 
 			element.style.display = 'block';
 		})
 	}

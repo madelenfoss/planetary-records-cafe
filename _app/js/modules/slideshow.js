@@ -14,7 +14,8 @@ export default async function slideshow() {
 
 	const slideElementsSanity = await sanity.fetch(query);
 
-	const slideElements = slideElementsSanity[1].slideshowImages; // Ghost-data? 
+	// Ghost-data because images are fetched from Settings in Sanity
+	const slideElements = slideElementsSanity[1].slideshowImages;  
 	
 	const slideshow = document.querySelector('.main__slideshow');
 	const allSlides = document.querySelector('.main__slideshow-slides');
@@ -136,7 +137,7 @@ export default async function slideshow() {
 
 	} catch (error) {
 		const errorContainer = document.querySelectorAll('.error-message');
-		
+		// Error messages created in sanity-client.js
 		errorContainer.forEach(element => {
 			element.innerText = error.message;
 			element.style.display = 'block';
