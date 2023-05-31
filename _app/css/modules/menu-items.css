@@ -130,7 +130,7 @@
 
 	.menu__aside-link {
 		padding: 0;
-		font-size: 1.1rem;
+		font-size: var(--intro-font-size);
 		margin: 0.5rem;
 		border: none;
 	}

@@ -85,7 +85,7 @@
 }
 
 .vinyl__details-price {
-	font-size: 1.2rem;
+	font-size: var(--navbar-font-size);
 }
 
 .vinyl__details-cart-button {
@@ -95,7 +95,7 @@
 	padding: 1rem 2rem;
 	border: none;
 	box-shadow: var(--shop-item-button);
-	font-size: 1.1rem;
+	font-size: var(--intro-font-size);
 }
 
 .vinyl__details-cart-button:hover {
@@ -118,10 +118,7 @@
 	}
 
 	.vinyl__details-info,
-	.vinyl__details-description {
-		width: 80%;
-	}
-
+	.vinyl__details-description,
 	.vinyl__details-price-cart-wrapper {
 		width: 80%;
 	}
@@ -161,5 +158,4 @@
 	.vinyl__details-description {
 		width: 85%;
 	}
-
 }
