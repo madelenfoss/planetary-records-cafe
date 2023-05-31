@@ -22,6 +22,7 @@ export default async function productDetails() {
 
 	const productDetailsContainer = document.querySelector('.product-details__container');
 
+	// Creates new search params using the vinyl slugs from Sanity
 	const urlParams = new URLSearchParams(window.location.search);
 	const slug = urlParams.get('vinyl');
 
