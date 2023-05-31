@@ -2,19 +2,42 @@ Sprint 1:
 First week of research and planning. Create figma project and make sure to chose
 a project you enjoy - and stick with it.  
 
+Sprint 1 retrospective:
+Good week with good workflow. Still missing some pieces in figma, but 
+on track. 
+
 Sprint 2:
 Sanity will be used as database.
 Start working on project in VScode, create mockup-pages to see how to render
 and append elements from javascript files. 
 
+Sprint 2 retrospective:
+Another effective week. Created website structure and mockups. 
+Added more elements/pages not mentioned in sprint 2, but it goes
+well with the theme.
+
 Sprint 3:
 Fetch data from Sanity. Create vinyl shop with data fetched from Sanity.
 Create simplified shop cart.
+
+Sprint 3 retrospective:
+Fetched data from Sanity. Managed to get all items on vinyl shop page,
+but did not have time to create shop cart properly.
 
 Sprint 4:
 Create slideshow for main page with images fetched from Sanity.
 Create about page with staff info fetched from Sanity.
 
+Sprint 4:
+Created slideshow with images fetched from Sanity. Had some trouble with ghost
+data (because images where fetched from settings in Sanity?), but found a way 
+to get the right data. 
+
 Sprint 5:
 Make sure everything looks and works as it should, create comments and todos if
 something needs to be fixed at a later point.
+
+Sprint 5 retrospective:
+Finished the simplified shopping cart. Checked indentation, comments, made sure
+all pieces are where they should be. 
+It has been 5 good weeks of work and learning.
