@@ -9,7 +9,7 @@ export default function shoppingCart() {
 	* TODO: 
 	* Make cart clickable for mobile instead of using :hover
 	* Make cart accessible using tabs.
-	* Add local storage to keep items in cart.
+	* Add local storage to keep items in cart when switching between main shop and shop details page.
 	*
 	*/
 
@@ -24,7 +24,7 @@ export default function shoppingCart() {
 	const checkoutElement = document.querySelector('.checkout');
 
 	if (checkoutElement) {
-		redirectToHomeAfter10Seconds()
+		redirectToShopAfter10Seconds()
 	}
 
 	if (shoppingCart) {
@@ -85,7 +85,7 @@ export default function shoppingCart() {
 		}
 
 		// Redirecting after 10 seconds
-		function redirectToHomeAfter10Seconds() {
+		function redirectToShopAfter10Seconds() {
 			setTimeout(() => {
 				window.location.href = '../shop/';
 			}, 10000)
