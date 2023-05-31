@@ -22,9 +22,10 @@
 	display: none;
 }
 
+/* Displaying cart content when hovering */
 .shop__cart:hover .shop__cart-content  {
 	display: flex;
-	position: absolute; 	/*Fix styling */ 
+	position: absolute; 	 
 	justify-content: center;
 	margin: 0 auto;
 	padding: 1rem;
@@ -35,6 +36,7 @@
 	z-index: 90;
 }
 
+/* Displaying cart content on details page when hovering */
 .shop__cart:hover .shop__cart-content-details {
 	top: 25rem;
 }
