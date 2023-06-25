@@ -102,7 +102,7 @@ export default async function slideshow() {
 
 			previousButton.addEventListener('click', handleButtonPreviousClick);
 			nextButton.addEventListener('click', handleButtonNextClick);
-		}
+	}
 
 	let currentSlideIndex = 0;
 
