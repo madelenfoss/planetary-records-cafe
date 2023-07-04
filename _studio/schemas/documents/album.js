@@ -86,7 +86,5 @@ export default {
 			name: 'month',
 			type: 'boolean'
 		}
-	],
-
-	
+	]
 }
